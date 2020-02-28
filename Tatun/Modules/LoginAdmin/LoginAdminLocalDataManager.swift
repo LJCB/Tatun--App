@@ -1,5 +1,5 @@
 //
-//  LoginLocalDataManager.swift
+//  LoginAdminLocalDataManager.swift
 //  Tatun
 //
 //  Created by LuisCS on 28/02/20.
@@ -8,7 +8,7 @@
 
 import Foundation
 
-class LoginLocalDataManager:LoginLocalDataManagerInputProtocol {
+class LoginAdminLocalDataManager:LoginAdminLocalDataManagerInputProtocol {
     
     
 }

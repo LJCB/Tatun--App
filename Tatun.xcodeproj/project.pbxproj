@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A42D79022409C19D0099B854 /* LoginAdminPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FB2409C19D0099B854 /* LoginAdminPresenter.swift */; };
+		A42D79032409C19D0099B854 /* LoginAdminLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FC2409C19D0099B854 /* LoginAdminLocalDataManager.swift */; };
+		A42D79042409C19D0099B854 /* LoginAdminProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FD2409C19D0099B854 /* LoginAdminProtocols.swift */; };
+		A42D79052409C19D0099B854 /* LoginAdminInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FE2409C19D0099B854 /* LoginAdminInteractor.swift */; };
+		A42D79062409C19D0099B854 /* LoginAdminView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FF2409C19D0099B854 /* LoginAdminView.swift */; };
+		A42D79072409C19D0099B854 /* LoginAdminRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D79002409C19D0099B854 /* LoginAdminRemoteDataManager.swift */; };
+		A42D79082409C19D0099B854 /* LoginAdminWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D79012409C19D0099B854 /* LoginAdminWireFrame.swift */; };
+		A42D790A2409C1CB0099B854 /* AdminLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A42D79092409C1CB0099B854 /* AdminLogin.storyboard */; };
 		A43CA20D2409B53600BD547F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA20C2409B53600BD547F /* AppDelegate.swift */; };
 		A43CA20F2409B53600BD547F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA20E2409B53600BD547F /* SceneDelegate.swift */; };
-		A43CA2142409B53600BD547F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2122409B53600BD547F /* Login.storyboard */; };
 		A43CA2162409B53800BD547F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2152409B53800BD547F /* Assets.xcassets */; };
 		A43CA2192409B53800BD547F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2172409B53800BD547F /* LaunchScreen.storyboard */; };
-		A43CA22B2409B59900BD547F /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA2242409B59900BD547F /* LoginPresenter.swift */; };
-		A43CA22C2409B59900BD547F /* LoginLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA2252409B59900BD547F /* LoginLocalDataManager.swift */; };
-		A43CA22D2409B59900BD547F /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA2262409B59900BD547F /* LoginProtocols.swift */; };
-		A43CA22E2409B59900BD547F /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA2272409B59900BD547F /* LoginInteractor.swift */; };
-		A43CA22F2409B59900BD547F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA2282409B59900BD547F /* LoginView.swift */; };
-		A43CA2302409B59900BD547F /* LoginRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA2292409B59900BD547F /* LoginRemoteDataManager.swift */; };
-		A43CA2312409B59900BD547F /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA22A2409B59900BD547F /* LoginWireFrame.swift */; };
 		A43CA23A2409B71D00BD547F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2352409B71D00BD547F /* Montserrat-Regular.ttf */; };
 		A43CA23B2409B71D00BD547F /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2362409B71D00BD547F /* Montserrat-Medium.ttf */; };
 		A43CA23C2409B71D00BD547F /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2372409B71D00BD547F /* Montserrat-SemiBold.ttf */; };
@@ -27,20 +27,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A42D78FB2409C19D0099B854 /* LoginAdminPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminPresenter.swift; sourceTree = "<group>"; };
+		A42D78FC2409C19D0099B854 /* LoginAdminLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminLocalDataManager.swift; sourceTree = "<group>"; };
+		A42D78FD2409C19D0099B854 /* LoginAdminProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminProtocols.swift; sourceTree = "<group>"; };
+		A42D78FE2409C19D0099B854 /* LoginAdminInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminInteractor.swift; sourceTree = "<group>"; };
+		A42D78FF2409C19D0099B854 /* LoginAdminView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminView.swift; sourceTree = "<group>"; };
+		A42D79002409C19D0099B854 /* LoginAdminRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminRemoteDataManager.swift; sourceTree = "<group>"; };
+		A42D79012409C19D0099B854 /* LoginAdminWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminWireFrame.swift; sourceTree = "<group>"; };
+		A42D79092409C1CB0099B854 /* AdminLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = AdminLogin.storyboard; sourceTree = "<group>"; };
 		A43CA2092409B53600BD547F /* Tatun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tatun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A43CA20C2409B53600BD547F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A43CA20E2409B53600BD547F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A43CA2132409B53600BD547F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
 		A43CA2152409B53800BD547F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A43CA2182409B53800BD547F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A43CA21A2409B53800BD547F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A43CA2242409B59900BD547F /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
-		A43CA2252409B59900BD547F /* LoginLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLocalDataManager.swift; sourceTree = "<group>"; };
-		A43CA2262409B59900BD547F /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
-		A43CA2272409B59900BD547F /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
-		A43CA2282409B59900BD547F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
-		A43CA2292409B59900BD547F /* LoginRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRemoteDataManager.swift; sourceTree = "<group>"; };
-		A43CA22A2409B59900BD547F /* LoginWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
 		A43CA2352409B71D00BD547F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
 		A43CA2362409B71D00BD547F /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
 		A43CA2372409B71D00BD547F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
@@ -59,6 +59,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A42D78FA2409C1270099B854 /* LoginAdmin */ = {
+			isa = PBXGroup;
+			children = (
+				A42D78FB2409C19D0099B854 /* LoginAdminPresenter.swift */,
+				A42D78FC2409C19D0099B854 /* LoginAdminLocalDataManager.swift */,
+				A42D78FD2409C19D0099B854 /* LoginAdminProtocols.swift */,
+				A42D78FE2409C19D0099B854 /* LoginAdminInteractor.swift */,
+				A42D78FF2409C19D0099B854 /* LoginAdminView.swift */,
+				A42D79002409C19D0099B854 /* LoginAdminRemoteDataManager.swift */,
+				A42D79012409C19D0099B854 /* LoginAdminWireFrame.swift */,
+				A42D79092409C1CB0099B854 /* AdminLogin.storyboard */,
+			);
+			path = LoginAdmin;
+			sourceTree = "<group>";
+		};
 		A43CA2002409B53600BD547F = {
 			isa = PBXGroup;
 			children = (
@@ -89,8 +104,8 @@
 		A43CA2202409B55300BD547F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A42D78FA2409C1270099B854 /* LoginAdmin */,
 				A43CA2332409B6B100BD547F /* LaunchScreen */,
-				A43CA2232409B58600BD547F /* Login */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -113,21 +128,6 @@
 				A43CA23F2409B72300BD547F /* Montserrat */,
 			);
 			path = Fonts;
-			sourceTree = "<group>";
-		};
-		A43CA2232409B58600BD547F /* Login */ = {
-			isa = PBXGroup;
-			children = (
-				A43CA2122409B53600BD547F /* Login.storyboard */,
-				A43CA2242409B59900BD547F /* LoginPresenter.swift */,
-				A43CA2252409B59900BD547F /* LoginLocalDataManager.swift */,
-				A43CA2262409B59900BD547F /* LoginProtocols.swift */,
-				A43CA2272409B59900BD547F /* LoginInteractor.swift */,
-				A43CA2282409B59900BD547F /* LoginView.swift */,
-				A43CA2292409B59900BD547F /* LoginRemoteDataManager.swift */,
-				A43CA22A2409B59900BD547F /* LoginWireFrame.swift */,
-			);
-			path = Login;
 			sourceTree = "<group>";
 		};
 		A43CA2322409B5A400BD547F /* Global */ = {
@@ -228,7 +228,7 @@
 				A43CA2192409B53800BD547F /* LaunchScreen.storyboard in Resources */,
 				A43CA23E2409B71D00BD547F /* Montserrat-Light.ttf in Resources */,
 				A43CA2162409B53800BD547F /* Assets.xcassets in Resources */,
-				A43CA2142409B53600BD547F /* Login.storyboard in Resources */,
+				A42D790A2409C1CB0099B854 /* AdminLogin.storyboard in Resources */,
 				A43CA23D2409B71D00BD547F /* Montserrat-Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -240,29 +240,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A43CA22B2409B59900BD547F /* LoginPresenter.swift in Sources */,
-				A43CA2302409B59900BD547F /* LoginRemoteDataManager.swift in Sources */,
-				A43CA22F2409B59900BD547F /* LoginView.swift in Sources */,
-				A43CA22D2409B59900BD547F /* LoginProtocols.swift in Sources */,
-				A43CA2312409B59900BD547F /* LoginWireFrame.swift in Sources */,
-				A43CA22E2409B59900BD547F /* LoginInteractor.swift in Sources */,
+				A42D79052409C19D0099B854 /* LoginAdminInteractor.swift in Sources */,
 				A43CA20D2409B53600BD547F /* AppDelegate.swift in Sources */,
+				A42D79022409C19D0099B854 /* LoginAdminPresenter.swift in Sources */,
+				A42D79042409C19D0099B854 /* LoginAdminProtocols.swift in Sources */,
+				A42D79032409C19D0099B854 /* LoginAdminLocalDataManager.swift in Sources */,
+				A42D79072409C19D0099B854 /* LoginAdminRemoteDataManager.swift in Sources */,
 				A43CA20F2409B53600BD547F /* SceneDelegate.swift in Sources */,
-				A43CA22C2409B59900BD547F /* LoginLocalDataManager.swift in Sources */,
+				A42D79062409C19D0099B854 /* LoginAdminView.swift in Sources */,
+				A42D79082409C19D0099B854 /* LoginAdminWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A43CA2122409B53600BD547F /* Login.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A43CA2132409B53600BD547F /* Base */,
-			);
-			name = Login.storyboard;
-			sourceTree = "<group>";
-		};
 		A43CA2172409B53800BD547F /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

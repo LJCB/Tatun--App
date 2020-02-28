@@ -1,5 +1,5 @@
 //
-//  LoginView.swift
+//  LoginAdminView.swift
 //  Tatun
 //
 //  Created by LuisCS on 28/02/20.
@@ -9,10 +9,10 @@
 import Foundation
 import UIKit
 
-class LoginView: UIViewController {
+class LoginAdminView: UIViewController {
 
     // MARK: Properties
-    var presenter: LoginPresenterProtocol?
+    var presenter: LoginAdminPresenterProtocol?
 
     // MARK: Lifecycle
 
@@ -21,6 +21,6 @@ class LoginView: UIViewController {
     }
 }
 
-extension LoginView: LoginViewProtocol {
+extension LoginAdminView: LoginAdminViewProtocol {
     // TODO: implement view output methods
 }
