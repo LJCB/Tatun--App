@@ -1,0 +1,451 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A43CA20D2409B53600BD547F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA20C2409B53600BD547F /* AppDelegate.swift */; };
+		A43CA20F2409B53600BD547F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA20E2409B53600BD547F /* SceneDelegate.swift */; };
+		A43CA2142409B53600BD547F /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2122409B53600BD547F /* Login.storyboard */; };
+		A43CA2162409B53800BD547F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2152409B53800BD547F /* Assets.xcassets */; };
+		A43CA2192409B53800BD547F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2172409B53800BD547F /* LaunchScreen.storyboard */; };
+		A43CA22B2409B59900BD547F /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA2242409B59900BD547F /* LoginPresenter.swift */; };
+		A43CA22C2409B59900BD547F /* LoginLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA2252409B59900BD547F /* LoginLocalDataManager.swift */; };
+		A43CA22D2409B59900BD547F /* LoginProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA2262409B59900BD547F /* LoginProtocols.swift */; };
+		A43CA22E2409B59900BD547F /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA2272409B59900BD547F /* LoginInteractor.swift */; };
+		A43CA22F2409B59900BD547F /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA2282409B59900BD547F /* LoginView.swift */; };
+		A43CA2302409B59900BD547F /* LoginRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA2292409B59900BD547F /* LoginRemoteDataManager.swift */; };
+		A43CA2312409B59900BD547F /* LoginWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A43CA22A2409B59900BD547F /* LoginWireFrame.swift */; };
+		A43CA23A2409B71D00BD547F /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2352409B71D00BD547F /* Montserrat-Regular.ttf */; };
+		A43CA23B2409B71D00BD547F /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2362409B71D00BD547F /* Montserrat-Medium.ttf */; };
+		A43CA23C2409B71D00BD547F /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2372409B71D00BD547F /* Montserrat-SemiBold.ttf */; };
+		A43CA23D2409B71D00BD547F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2382409B71D00BD547F /* Montserrat-Bold.ttf */; };
+		A43CA23E2409B71D00BD547F /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2392409B71D00BD547F /* Montserrat-Light.ttf */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A43CA2092409B53600BD547F /* Tatun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tatun.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A43CA20C2409B53600BD547F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A43CA20E2409B53600BD547F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		A43CA2132409B53600BD547F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Login.storyboard; sourceTree = "<group>"; };
+		A43CA2152409B53800BD547F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A43CA2182409B53800BD547F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A43CA21A2409B53800BD547F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A43CA2242409B59900BD547F /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		A43CA2252409B59900BD547F /* LoginLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginLocalDataManager.swift; sourceTree = "<group>"; };
+		A43CA2262409B59900BD547F /* LoginProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginProtocols.swift; sourceTree = "<group>"; };
+		A43CA2272409B59900BD547F /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		A43CA2282409B59900BD547F /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A43CA2292409B59900BD547F /* LoginRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRemoteDataManager.swift; sourceTree = "<group>"; };
+		A43CA22A2409B59900BD547F /* LoginWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWireFrame.swift; sourceTree = "<group>"; };
+		A43CA2352409B71D00BD547F /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		A43CA2362409B71D00BD547F /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		A43CA2372409B71D00BD547F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		A43CA2382409B71D00BD547F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		A43CA2392409B71D00BD547F /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A43CA2062409B53600BD547F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A43CA2002409B53600BD547F = {
+			isa = PBXGroup;
+			children = (
+				A43CA20B2409B53600BD547F /* Tatun */,
+				A43CA20A2409B53600BD547F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A43CA20A2409B53600BD547F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A43CA2092409B53600BD547F /* Tatun.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A43CA20B2409B53600BD547F /* Tatun */ = {
+			isa = PBXGroup;
+			children = (
+				A43CA2342409B6D800BD547F /* Frameworks */,
+				A43CA2322409B5A400BD547F /* Global */,
+				A43CA2212409B55D00BD547F /* Source */,
+				A43CA2202409B55300BD547F /* Modules */,
+			);
+			path = Tatun;
+			sourceTree = "<group>";
+		};
+		A43CA2202409B55300BD547F /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				A43CA2332409B6B100BD547F /* LaunchScreen */,
+				A43CA2232409B58600BD547F /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		A43CA2212409B55D00BD547F /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				A43CA21A2409B53800BD547F /* Info.plist */,
+				A43CA2152409B53800BD547F /* Assets.xcassets */,
+				A43CA20C2409B53600BD547F /* AppDelegate.swift */,
+				A43CA20E2409B53600BD547F /* SceneDelegate.swift */,
+				A43CA2222409B56300BD547F /* Fonts */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		A43CA2222409B56300BD547F /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				A43CA23F2409B72300BD547F /* Montserrat */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		A43CA2232409B58600BD547F /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				A43CA2122409B53600BD547F /* Login.storyboard */,
+				A43CA2242409B59900BD547F /* LoginPresenter.swift */,
+				A43CA2252409B59900BD547F /* LoginLocalDataManager.swift */,
+				A43CA2262409B59900BD547F /* LoginProtocols.swift */,
+				A43CA2272409B59900BD547F /* LoginInteractor.swift */,
+				A43CA2282409B59900BD547F /* LoginView.swift */,
+				A43CA2292409B59900BD547F /* LoginRemoteDataManager.swift */,
+				A43CA22A2409B59900BD547F /* LoginWireFrame.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		A43CA2322409B5A400BD547F /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		A43CA2332409B6B100BD547F /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				A43CA2172409B53800BD547F /* LaunchScreen.storyboard */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		A43CA2342409B6D800BD547F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Frameworks;
+			sourceTree = "<group>";
+		};
+		A43CA23F2409B72300BD547F /* Montserrat */ = {
+			isa = PBXGroup;
+			children = (
+				A43CA2382409B71D00BD547F /* Montserrat-Bold.ttf */,
+				A43CA2392409B71D00BD547F /* Montserrat-Light.ttf */,
+				A43CA2362409B71D00BD547F /* Montserrat-Medium.ttf */,
+				A43CA2352409B71D00BD547F /* Montserrat-Regular.ttf */,
+				A43CA2372409B71D00BD547F /* Montserrat-SemiBold.ttf */,
+			);
+			path = Montserrat;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A43CA2082409B53600BD547F /* Tatun */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A43CA21D2409B53800BD547F /* Build configuration list for PBXNativeTarget "Tatun" */;
+			buildPhases = (
+				A43CA2052409B53600BD547F /* Sources */,
+				A43CA2062409B53600BD547F /* Frameworks */,
+				A43CA2072409B53600BD547F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Tatun;
+			productName = Tatun;
+			productReference = A43CA2092409B53600BD547F /* Tatun.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A43CA2012409B53600BD547F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = CS;
+				TargetAttributes = {
+					A43CA2082409B53600BD547F = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+				};
+			};
+			buildConfigurationList = A43CA2042409B53600BD547F /* Build configuration list for PBXProject "Tatun" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A43CA2002409B53600BD547F;
+			productRefGroup = A43CA20A2409B53600BD547F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A43CA2082409B53600BD547F /* Tatun */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A43CA2072409B53600BD547F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A43CA23C2409B71D00BD547F /* Montserrat-SemiBold.ttf in Resources */,
+				A43CA23A2409B71D00BD547F /* Montserrat-Regular.ttf in Resources */,
+				A43CA23B2409B71D00BD547F /* Montserrat-Medium.ttf in Resources */,
+				A43CA2192409B53800BD547F /* LaunchScreen.storyboard in Resources */,
+				A43CA23E2409B71D00BD547F /* Montserrat-Light.ttf in Resources */,
+				A43CA2162409B53800BD547F /* Assets.xcassets in Resources */,
+				A43CA2142409B53600BD547F /* Login.storyboard in Resources */,
+				A43CA23D2409B71D00BD547F /* Montserrat-Bold.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A43CA2052409B53600BD547F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A43CA22B2409B59900BD547F /* LoginPresenter.swift in Sources */,
+				A43CA2302409B59900BD547F /* LoginRemoteDataManager.swift in Sources */,
+				A43CA22F2409B59900BD547F /* LoginView.swift in Sources */,
+				A43CA22D2409B59900BD547F /* LoginProtocols.swift in Sources */,
+				A43CA2312409B59900BD547F /* LoginWireFrame.swift in Sources */,
+				A43CA22E2409B59900BD547F /* LoginInteractor.swift in Sources */,
+				A43CA20D2409B53600BD547F /* AppDelegate.swift in Sources */,
+				A43CA20F2409B53600BD547F /* SceneDelegate.swift in Sources */,
+				A43CA22C2409B59900BD547F /* LoginLocalDataManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A43CA2122409B53600BD547F /* Login.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A43CA2132409B53600BD547F /* Base */,
+			);
+			name = Login.storyboard;
+			sourceTree = "<group>";
+		};
+		A43CA2172409B53800BD547F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A43CA2182409B53800BD547F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A43CA21B2409B53800BD547F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A43CA21C2409B53800BD547F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A43CA21E2409B53800BD547F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EEM8QJ4J6Y;
+				INFOPLIST_FILE = Tatun/Source/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CS.Tatun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A43CA21F2409B53800BD547F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EEM8QJ4J6Y;
+				INFOPLIST_FILE = Tatun/Source/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = CS.Tatun;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A43CA2042409B53600BD547F /* Build configuration list for PBXProject "Tatun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A43CA21B2409B53800BD547F /* Debug */,
+				A43CA21C2409B53800BD547F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A43CA21D2409B53800BD547F /* Build configuration list for PBXNativeTarget "Tatun" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A43CA21E2409B53800BD547F /* Debug */,
+				A43CA21F2409B53800BD547F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A43CA2012409B53600BD547F /* Project object */;
+}
