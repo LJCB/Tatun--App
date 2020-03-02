@@ -17,6 +17,8 @@
 		A41CA747240DB36200B0F9BD /* RegisterWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA740240DB36200B0F9BD /* RegisterWireFrame.swift */; };
 		A41CA74B240DB38600B0F9BD /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA74A240DB38600B0F9BD /* Register.storyboard */; };
 		A41CA74E240DB8BE00B0F9BD /* ValidateRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA74D240DB8BE00B0F9BD /* ValidateRegister.storyboard */; };
+		A41CA752240DBE2200B0F9BD /* RequestCode.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA751240DBE2200B0F9BD /* RequestCode.storyboard */; };
+		A41CA755240DC32800B0F9BD /* NewPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA754240DC32800B0F9BD /* NewPassword.storyboard */; };
 		A42D79022409C19D0099B854 /* LoginAdminPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FB2409C19D0099B854 /* LoginAdminPresenter.swift */; };
 		A42D79032409C19D0099B854 /* LoginAdminLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FC2409C19D0099B854 /* LoginAdminLocalDataManager.swift */; };
 		A42D79042409C19D0099B854 /* LoginAdminProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FD2409C19D0099B854 /* LoginAdminProtocols.swift */; };
@@ -47,6 +49,8 @@
 		A41CA740240DB36200B0F9BD /* RegisterWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWireFrame.swift; sourceTree = "<group>"; };
 		A41CA74A240DB38600B0F9BD /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
 		A41CA74D240DB8BE00B0F9BD /* ValidateRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ValidateRegister.storyboard; sourceTree = "<group>"; };
+		A41CA751240DBE2200B0F9BD /* RequestCode.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = RequestCode.storyboard; sourceTree = "<group>"; };
+		A41CA754240DC32800B0F9BD /* NewPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewPassword.storyboard; sourceTree = "<group>"; };
 		A42D78FB2409C19D0099B854 /* LoginAdminPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminPresenter.swift; sourceTree = "<group>"; };
 		A42D78FC2409C19D0099B854 /* LoginAdminLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminLocalDataManager.swift; sourceTree = "<group>"; };
 		A42D78FD2409C19D0099B854 /* LoginAdminProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminProtocols.swift; sourceTree = "<group>"; };
@@ -110,6 +114,31 @@
 			path = ValidateRegister;
 			sourceTree = "<group>";
 		};
+		A41CA74F240DBDE100B0F9BD /* RecoveryPassword */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA753240DC31500B0F9BD /* NewPassword */,
+				A41CA750240DBE0500B0F9BD /* RequestCode */,
+			);
+			path = RecoveryPassword;
+			sourceTree = "<group>";
+		};
+		A41CA750240DBE0500B0F9BD /* RequestCode */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA751240DBE2200B0F9BD /* RequestCode.storyboard */,
+			);
+			path = RequestCode;
+			sourceTree = "<group>";
+		};
+		A41CA753240DC31500B0F9BD /* NewPassword */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA754240DC32800B0F9BD /* NewPassword.storyboard */,
+			);
+			path = NewPassword;
+			sourceTree = "<group>";
+		};
 		A42D78FA2409C1270099B854 /* LoginAdmin */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +184,7 @@
 		A43CA2202409B55300BD547F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A41CA74F240DBDE100B0F9BD /* RecoveryPassword */,
 				A41CA74C240DB89F00B0F9BD /* ValidateRegister */,
 				A41CA739240DB34600B0F9BD /* Register */,
 				A41CA736240D985800B0F9BD /* LoginWaiter */,
@@ -281,11 +311,13 @@
 				A41CA738240D986900B0F9BD /* WaiterLogin.storyboard in Resources */,
 				A41CA74E240DB8BE00B0F9BD /* ValidateRegister.storyboard in Resources */,
 				A43CA23B2409B71D00BD547F /* Montserrat-Medium.ttf in Resources */,
+				A41CA752240DBE2200B0F9BD /* RequestCode.storyboard in Resources */,
 				A43CA2192409B53800BD547F /* LaunchScreen.storyboard in Resources */,
 				A43CA23E2409B71D00BD547F /* Montserrat-Light.ttf in Resources */,
 				A43CA2162409B53800BD547F /* Assets.xcassets in Resources */,
 				A42D790A2409C1CB0099B854 /* AdminLogin.storyboard in Resources */,
 				A43CA23D2409B71D00BD547F /* Montserrat-Bold.ttf in Resources */,
+				A41CA755240DC32800B0F9BD /* NewPassword.storyboard in Resources */,
 				A41CA74B240DB38600B0F9BD /* Register.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
