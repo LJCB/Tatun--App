@@ -16,6 +16,7 @@
 		A41CA746240DB36200B0F9BD /* RegisterRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA73F240DB36200B0F9BD /* RegisterRemoteDataManager.swift */; };
 		A41CA747240DB36200B0F9BD /* RegisterWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA740240DB36200B0F9BD /* RegisterWireFrame.swift */; };
 		A41CA74B240DB38600B0F9BD /* Register.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA74A240DB38600B0F9BD /* Register.storyboard */; };
+		A41CA74E240DB8BE00B0F9BD /* ValidateRegister.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA74D240DB8BE00B0F9BD /* ValidateRegister.storyboard */; };
 		A42D79022409C19D0099B854 /* LoginAdminPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FB2409C19D0099B854 /* LoginAdminPresenter.swift */; };
 		A42D79032409C19D0099B854 /* LoginAdminLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FC2409C19D0099B854 /* LoginAdminLocalDataManager.swift */; };
 		A42D79042409C19D0099B854 /* LoginAdminProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FD2409C19D0099B854 /* LoginAdminProtocols.swift */; };
@@ -45,6 +46,7 @@
 		A41CA73F240DB36200B0F9BD /* RegisterRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterRemoteDataManager.swift; sourceTree = "<group>"; };
 		A41CA740240DB36200B0F9BD /* RegisterWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterWireFrame.swift; sourceTree = "<group>"; };
 		A41CA74A240DB38600B0F9BD /* Register.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Register.storyboard; sourceTree = "<group>"; };
+		A41CA74D240DB8BE00B0F9BD /* ValidateRegister.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ValidateRegister.storyboard; sourceTree = "<group>"; };
 		A42D78FB2409C19D0099B854 /* LoginAdminPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminPresenter.swift; sourceTree = "<group>"; };
 		A42D78FC2409C19D0099B854 /* LoginAdminLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminLocalDataManager.swift; sourceTree = "<group>"; };
 		A42D78FD2409C19D0099B854 /* LoginAdminProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminProtocols.swift; sourceTree = "<group>"; };
@@ -100,6 +102,14 @@
 			path = Register;
 			sourceTree = "<group>";
 		};
+		A41CA74C240DB89F00B0F9BD /* ValidateRegister */ = {
+			isa = PBXGroup;
+			children = (
+				A41CA74D240DB8BE00B0F9BD /* ValidateRegister.storyboard */,
+			);
+			path = ValidateRegister;
+			sourceTree = "<group>";
+		};
 		A42D78FA2409C1270099B854 /* LoginAdmin */ = {
 			isa = PBXGroup;
 			children = (
@@ -145,6 +155,7 @@
 		A43CA2202409B55300BD547F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A41CA74C240DB89F00B0F9BD /* ValidateRegister */,
 				A41CA739240DB34600B0F9BD /* Register */,
 				A41CA736240D985800B0F9BD /* LoginWaiter */,
 				A42D78FA2409C1270099B854 /* LoginAdmin */,
@@ -268,6 +279,7 @@
 				A43CA23C2409B71D00BD547F /* Montserrat-SemiBold.ttf in Resources */,
 				A43CA23A2409B71D00BD547F /* Montserrat-Regular.ttf in Resources */,
 				A41CA738240D986900B0F9BD /* WaiterLogin.storyboard in Resources */,
+				A41CA74E240DB8BE00B0F9BD /* ValidateRegister.storyboard in Resources */,
 				A43CA23B2409B71D00BD547F /* Montserrat-Medium.ttf in Resources */,
 				A43CA2192409B53800BD547F /* LaunchScreen.storyboard in Resources */,
 				A43CA23E2409B71D00BD547F /* Montserrat-Light.ttf in Resources */,
