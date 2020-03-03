@@ -99,7 +99,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Menú" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AzK-fC-Yx7">
-                                                        <rect key="frame" x="59.999999999999986" y="14" width="248.66666666666663" height="22"/>
+                                                        <rect key="frame" x="59.999999999999986" y="14.666666666666686" width="248.66666666666663" height="21"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                                                         <color key="textColor" name="Blue"/>
                                                         <nil key="highlightedColor"/>
@@ -133,7 +133,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Meseros" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZP1-6G-8eM">
-                                                        <rect key="frame" x="59.999999999999986" y="14" width="248.66666666666663" height="22"/>
+                                                        <rect key="frame" x="59.999999999999986" y="14.666666666666686" width="248.66666666666663" height="21"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                                                         <color key="textColor" name="Blue"/>
                                                         <nil key="highlightedColor"/>
@@ -167,7 +167,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Datos del negocio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Si-7r-udS">
-                                                        <rect key="frame" x="59.999999999999986" y="14" width="248.66666666666663" height="22"/>
+                                                        <rect key="frame" x="59.999999999999986" y="14.666666666666686" width="248.66666666666663" height="21"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                                                         <color key="textColor" name="Blue"/>
                                                         <nil key="highlightedColor"/>
@@ -201,7 +201,7 @@
                                                         </constraints>
                                                     </imageView>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ventas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MpO-P9-F7N">
-                                                        <rect key="frame" x="59.999999999999986" y="14" width="248.66666666666663" height="22"/>
+                                                        <rect key="frame" x="59.999999999999986" y="14.666666666666686" width="248.66666666666663" height="21"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Medium" family="Montserrat" pointSize="18"/>
                                                         <color key="textColor" name="Blue"/>
                                                         <nil key="highlightedColor"/>
