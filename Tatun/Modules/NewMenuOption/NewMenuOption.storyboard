@@ -25,25 +25,25 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Wm-4E-Uxx">
-                                <rect key="frame" x="20" y="293" width="374" height="320"/>
+                                <rect key="frame" x="20" y="294.5" width="374" height="317"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nuevo elemento" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m6e-Ro-80W">
-                                        <rect key="frame" x="20" y="20" width="334" height="20"/>
+                                        <rect key="frame" x="20" y="20" width="334" height="19"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
                                         <color key="textColor" name="Blue"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bBU-6J-8cO" userLabel="Input_phone">
-                                        <rect key="frame" x="20" y="50" width="335" height="85"/>
+                                        <rect key="frame" x="20" y="49" width="335" height="84"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Huz-z6-djf">
-                                                <rect key="frame" x="0.0" y="10" width="335" height="20"/>
+                                                <rect key="frame" x="0.0" y="10" width="335" height="19"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                 <color key="textColor" name="Blue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="RSm-ad-JdP">
-                                                <rect key="frame" x="0.0" y="35" width="335" height="50"/>
+                                                <rect key="frame" x="0.0" y="34" width="335" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="M1E-MO-6cU"/>
                                                 </constraints>
@@ -63,7 +63,7 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="iMG-Wx-o9d">
-                                        <rect key="frame" x="20" y="250" width="335" height="50"/>
+                                        <rect key="frame" x="20" y="247" width="335" height="50"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zut-kr-OBN">
                                                 <rect key="frame" x="0.0" y="0.0" width="162.5" height="50"/>
@@ -119,16 +119,16 @@
                                         </constraints>
                                     </stackView>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITq-UA-QCt" userLabel="Input_phone">
-                                        <rect key="frame" x="20" y="145" width="335" height="85"/>
+                                        <rect key="frame" x="20" y="143" width="335" height="84"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Precio por unidad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gha-fJ-veC">
-                                                <rect key="frame" x="0.0" y="10" width="335" height="20"/>
+                                                <rect key="frame" x="0.0" y="10" width="335" height="19"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                 <color key="textColor" name="Blue"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Precio por unidad" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1Pb-lh-94Z">
-                                                <rect key="frame" x="0.0" y="35" width="335" height="50"/>
+                                                <rect key="frame" x="0.0" y="34" width="335" height="50"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="50" id="S8y-0e-o3E"/>
                                                 </constraints>

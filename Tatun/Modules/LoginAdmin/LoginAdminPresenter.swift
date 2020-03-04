@@ -9,20 +9,23 @@
 import Foundation
 
 class LoginAdminPresenter  {
-    
-    // MARK: Properties
-    weak var view: LoginAdminViewProtocol?
-    var interactor: LoginAdminInteractorInputProtocol?
-    var wireFrame: LoginAdminWireFrameProtocol?
-    
+  
+  // MARK: Properties
+  weak var view: LoginAdminViewProtocol?
+  var interactor: LoginAdminInteractorInputProtocol?
+  var wireFrame: LoginAdminWireFrameProtocol?
+  
 }
 
 extension LoginAdminPresenter: LoginAdminPresenterProtocol {
-    // TODO: implement presenter methods
-    func viewDidLoad() {
-    }
+  func go_waiter_login() {
+    wireFrame?.show_waiter_login(from: view!)
+  }
+  
+  func viewDidLoad() {
+  }
 }
 
 extension LoginAdminPresenter: LoginAdminInteractorOutputProtocol {
-    // TODO: implement interactor output methods
+  // TODO: implement interactor output methods
 }

@@ -10,17 +10,22 @@ import Foundation
 import UIKit
 
 class LoginAdminView: UIViewController {
-
-    // MARK: Properties
-    var presenter: LoginAdminPresenterProtocol?
-
-    // MARK: Lifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+  
+  // MARK: Properties
+  var presenter: LoginAdminPresenterProtocol?
+  
+  // MARK: Lifecycle
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    presenter?.viewDidLoad()
+  }
+  
+  @IBAction func waiter_login_action(_ sender: Any) {
+    presenter?.go_waiter_login()
+  }
 }
 
 extension LoginAdminView: LoginAdminViewProtocol {
-    // TODO: implement view output methods
+  
 }

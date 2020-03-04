@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fKr-DF-bhF">
     <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -16,16 +16,16 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login Admin View-->
         <scene sceneID="wtI-TY-sYJ">
             <objects>
-                <viewController id="xbs-4p-zvB" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LoginAdminView" modalPresentationStyle="fullScreen" id="xbs-4p-zvB" customClass="LoginAdminView" customModule="Tatun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="d0j-gf-p90">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gdd-ht-Xan">
-                                <rect key="frame" x="0.0" y="44" width="375" height="698"/>
+                                <rect key="frame" x="0.0" y="88" width="375" height="654"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MHd-RZ-ymM">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="667.66666666666663"/>
@@ -43,7 +43,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Rm4-UJ-dya" userLabel="Input_business_key">
-                                                <rect key="frame" x="20" y="173.33333333333334" width="335" height="83.666666666666657"/>
+                                                <rect key="frame" x="20" y="173.33333333333331" width="335" height="83.666666666666686"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Clave de negocio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwv-fQ-0Y9">
                                                         <rect key="frame" x="0.0" y="10.000000000000002" width="335" height="18.666666666666671"/>
@@ -52,7 +52,7 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Clave de negocio" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QqL-b5-41E">
-                                                        <rect key="frame" x="0.0" y="33.666666666666657" width="335" height="50"/>
+                                                        <rect key="frame" x="0.0" y="33.666666666666686" width="335" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="ayg-wp-nei"/>
                                                         </constraints>
@@ -130,7 +130,7 @@
                                                 </constraints>
                                             </view>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Wr-wi-2qP">
-                                                <rect key="frame" x="203" y="459.33333333333331" width="152" height="31"/>
+                                                <rect key="frame" x="203" y="459.33333333333337" width="152" height="31"/>
                                                 <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                 <state key="normal" title="Olvide mi contraseña">
                                                     <color key="titleColor" name="Blue"/>
@@ -223,6 +223,9 @@
                                     </imageView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="T8c-Ss-pnK">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="70"/>
+                                        <connections>
+                                            <action selector="waiter_login_action:" destination="xbs-4p-zvB" eventType="touchUpInside" id="Jhn-iV-aTv"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" name="Pink"/>
@@ -252,8 +255,27 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="sce-eI-HEJ"/>
                     </view>
+                    <navigationItem key="navigationItem" id="6e0-Ob-YPb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2y3-Li-ZXP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="-179.55665024630542"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="994-uV-Ne0">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="O3k-gB-Izr" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController storyboardIdentifier="NVCAdminLogin" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="fKr-DF-bhF" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="3YU-Vi-C6Q">
+                        <rect key="frame" x="0.0" y="44" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="xbs-4p-zvB" kind="relationship" relationship="rootViewController" id="wTA-aD-tM4"/>
+                    </connections>
+                </navigationController>
             </objects>
             <point key="canvasLocation" x="237.59999999999999" y="-179.55665024630542"/>
         </scene>

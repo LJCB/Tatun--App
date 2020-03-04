@@ -44,6 +44,13 @@
 		A4E29F222410368500BC04B8 /* MenuFood.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F212410368500BC04B8 /* MenuFood.storyboard */; };
 		A4E29F24241037CF00BC04B8 /* CancelMenuItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F23241037CF00BC04B8 /* CancelMenuItem.storyboard */; };
 		A4E29F2824103AE700BC04B8 /* NewMenuOption.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F2724103AE700BC04B8 /* NewMenuOption.storyboard */; };
+		A4E29F302410560300BC04B8 /* LoginWaiterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E29F292410560300BC04B8 /* LoginWaiterPresenter.swift */; };
+		A4E29F312410560300BC04B8 /* LoginWaiterLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E29F2A2410560300BC04B8 /* LoginWaiterLocalDataManager.swift */; };
+		A4E29F322410560300BC04B8 /* LoginWaiterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E29F2B2410560300BC04B8 /* LoginWaiterProtocols.swift */; };
+		A4E29F332410560300BC04B8 /* LoginWaiterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E29F2C2410560300BC04B8 /* LoginWaiterInteractor.swift */; };
+		A4E29F342410560300BC04B8 /* LoginWaiterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E29F2D2410560300BC04B8 /* LoginWaiterView.swift */; };
+		A4E29F352410560300BC04B8 /* LoginWaiterRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E29F2E2410560300BC04B8 /* LoginWaiterRemoteDataManager.swift */; };
+		A4E29F362410560300BC04B8 /* LoginWaiterWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4E29F2F2410560300BC04B8 /* LoginWaiterWireFrame.swift */; };
 		A4ED0544240F2A64008CF14C /* NewOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4ED0543240F2A64008CF14C /* NewOrder.storyboard */; };
 		A4ED0547240F3215008CF14C /* TablesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4ED0546240F3215008CF14C /* TablesList.storyboard */; };
 /* End PBXBuildFile section */
@@ -88,6 +95,13 @@
 		A4E29F212410368500BC04B8 /* MenuFood.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuFood.storyboard; sourceTree = "<group>"; };
 		A4E29F23241037CF00BC04B8 /* CancelMenuItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CancelMenuItem.storyboard; sourceTree = "<group>"; };
 		A4E29F2724103AE700BC04B8 /* NewMenuOption.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewMenuOption.storyboard; sourceTree = "<group>"; };
+		A4E29F292410560300BC04B8 /* LoginWaiterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWaiterPresenter.swift; sourceTree = "<group>"; };
+		A4E29F2A2410560300BC04B8 /* LoginWaiterLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWaiterLocalDataManager.swift; sourceTree = "<group>"; };
+		A4E29F2B2410560300BC04B8 /* LoginWaiterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWaiterProtocols.swift; sourceTree = "<group>"; };
+		A4E29F2C2410560300BC04B8 /* LoginWaiterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWaiterInteractor.swift; sourceTree = "<group>"; };
+		A4E29F2D2410560300BC04B8 /* LoginWaiterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWaiterView.swift; sourceTree = "<group>"; };
+		A4E29F2E2410560300BC04B8 /* LoginWaiterRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWaiterRemoteDataManager.swift; sourceTree = "<group>"; };
+		A4E29F2F2410560300BC04B8 /* LoginWaiterWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginWaiterWireFrame.swift; sourceTree = "<group>"; };
 		A4ED0543240F2A64008CF14C /* NewOrder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewOrder.storyboard; sourceTree = "<group>"; };
 		A4ED0546240F3215008CF14C /* TablesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TablesList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -107,6 +121,13 @@
 			isa = PBXGroup;
 			children = (
 				A41CA737240D986900B0F9BD /* WaiterLogin.storyboard */,
+				A4E29F292410560300BC04B8 /* LoginWaiterPresenter.swift */,
+				A4E29F2A2410560300BC04B8 /* LoginWaiterLocalDataManager.swift */,
+				A4E29F2B2410560300BC04B8 /* LoginWaiterProtocols.swift */,
+				A4E29F2C2410560300BC04B8 /* LoginWaiterInteractor.swift */,
+				A4E29F2D2410560300BC04B8 /* LoginWaiterView.swift */,
+				A4E29F2E2410560300BC04B8 /* LoginWaiterRemoteDataManager.swift */,
+				A4E29F2F2410560300BC04B8 /* LoginWaiterWireFrame.swift */,
 			);
 			path = LoginWaiter;
 			sourceTree = "<group>";
@@ -451,19 +472,26 @@
 			files = (
 				A41CA743240DB36200B0F9BD /* RegisterProtocols.swift in Sources */,
 				A42D79052409C19D0099B854 /* LoginAdminInteractor.swift in Sources */,
+				A4E29F332410560300BC04B8 /* LoginWaiterInteractor.swift in Sources */,
 				A43CA20D2409B53600BD547F /* AppDelegate.swift in Sources */,
+				A4E29F312410560300BC04B8 /* LoginWaiterLocalDataManager.swift in Sources */,
 				A41CA745240DB36200B0F9BD /* RegisterView.swift in Sources */,
 				A42D79022409C19D0099B854 /* LoginAdminPresenter.swift in Sources */,
 				A41CA742240DB36200B0F9BD /* RegisterLocalDataManager.swift in Sources */,
+				A4E29F342410560300BC04B8 /* LoginWaiterView.swift in Sources */,
+				A4E29F352410560300BC04B8 /* LoginWaiterRemoteDataManager.swift in Sources */,
 				A42D79042409C19D0099B854 /* LoginAdminProtocols.swift in Sources */,
 				A42D79032409C19D0099B854 /* LoginAdminLocalDataManager.swift in Sources */,
 				A41CA741240DB36200B0F9BD /* RegisterPresenter.swift in Sources */,
+				A4E29F362410560300BC04B8 /* LoginWaiterWireFrame.swift in Sources */,
 				A41CA747240DB36200B0F9BD /* RegisterWireFrame.swift in Sources */,
 				A42D79072409C19D0099B854 /* LoginAdminRemoteDataManager.swift in Sources */,
 				A43CA20F2409B53600BD547F /* SceneDelegate.swift in Sources */,
 				A41CA744240DB36200B0F9BD /* RegisterInteractor.swift in Sources */,
+				A4E29F322410560300BC04B8 /* LoginWaiterProtocols.swift in Sources */,
 				A42D79062409C19D0099B854 /* LoginAdminView.swift in Sources */,
 				A41CA746240DB36200B0F9BD /* RegisterRemoteDataManager.swift in Sources */,
+				A4E29F302410560300BC04B8 /* LoginWaiterPresenter.swift in Sources */,
 				A42D79082409C19D0099B854 /* LoginAdminWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
