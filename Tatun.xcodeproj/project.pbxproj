@@ -41,6 +41,9 @@
 		A43CA23E2409B71D00BD547F /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2392409B71D00BD547F /* Montserrat-Light.ttf */; };
 		A4E29F1C241031AF00BC04B8 /* TableDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */; };
 		A4E29F1F2410348E00BC04B8 /* OrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */; };
+		A4E29F222410368500BC04B8 /* MenuFood.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F212410368500BC04B8 /* MenuFood.storyboard */; };
+		A4E29F24241037CF00BC04B8 /* CancelMenuItem.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F23241037CF00BC04B8 /* CancelMenuItem.storyboard */; };
+		A4E29F2824103AE700BC04B8 /* NewMenuOption.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F2724103AE700BC04B8 /* NewMenuOption.storyboard */; };
 		A4ED0544240F2A64008CF14C /* NewOrder.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4ED0543240F2A64008CF14C /* NewOrder.storyboard */; };
 		A4ED0547240F3215008CF14C /* TablesList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4ED0546240F3215008CF14C /* TablesList.storyboard */; };
 /* End PBXBuildFile section */
@@ -82,6 +85,9 @@
 		A43CA2392409B71D00BD547F /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
 		A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderDetail.storyboard; sourceTree = "<group>"; };
+		A4E29F212410368500BC04B8 /* MenuFood.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuFood.storyboard; sourceTree = "<group>"; };
+		A4E29F23241037CF00BC04B8 /* CancelMenuItem.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CancelMenuItem.storyboard; sourceTree = "<group>"; };
+		A4E29F2724103AE700BC04B8 /* NewMenuOption.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewMenuOption.storyboard; sourceTree = "<group>"; };
 		A4ED0543240F2A64008CF14C /* NewOrder.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewOrder.storyboard; sourceTree = "<group>"; };
 		A4ED0546240F3215008CF14C /* TablesList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TablesList.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -222,6 +228,9 @@
 		A43CA2202409B55300BD547F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A4E29F26241038C900BC04B8 /* NewMenuOption */,
+				A4E29F252410382900BC04B8 /* CancelMenuItem */,
+				A4E29F202410364100BC04B8 /* MenuFood */,
 				A4E29F1D2410347600BC04B8 /* OrderDetail */,
 				A4E29F1A2410316200BC04B8 /* TableDetail */,
 				A4ED0545240F3201008CF14C /* TablesList */,
@@ -309,6 +318,30 @@
 			path = OrderDetail;
 			sourceTree = "<group>";
 		};
+		A4E29F202410364100BC04B8 /* MenuFood */ = {
+			isa = PBXGroup;
+			children = (
+				A4E29F212410368500BC04B8 /* MenuFood.storyboard */,
+			);
+			path = MenuFood;
+			sourceTree = "<group>";
+		};
+		A4E29F252410382900BC04B8 /* CancelMenuItem */ = {
+			isa = PBXGroup;
+			children = (
+				A4E29F23241037CF00BC04B8 /* CancelMenuItem.storyboard */,
+			);
+			path = CancelMenuItem;
+			sourceTree = "<group>";
+		};
+		A4E29F26241038C900BC04B8 /* NewMenuOption */ = {
+			isa = PBXGroup;
+			children = (
+				A4E29F2724103AE700BC04B8 /* NewMenuOption.storyboard */,
+			);
+			path = NewMenuOption;
+			sourceTree = "<group>";
+		};
 		A4ED0542240F2A4C008CF14C /* NewOrder */ = {
 			isa = PBXGroup;
 			children = (
@@ -389,10 +422,13 @@
 				A41CA74E240DB8BE00B0F9BD /* ValidateRegister.storyboard in Resources */,
 				A4E29F1F2410348E00BC04B8 /* OrderDetail.storyboard in Resources */,
 				A4E29F1C241031AF00BC04B8 /* TableDetail.storyboard in Resources */,
+				A4E29F24241037CF00BC04B8 /* CancelMenuItem.storyboard in Resources */,
 				A43CA23B2409B71D00BD547F /* Montserrat-Medium.ttf in Resources */,
 				A41CA752240DBE2200B0F9BD /* RequestCode.storyboard in Resources */,
 				A41CA75E240DDB2600B0F9BD /* MenuBottom.storyboard in Resources */,
 				A43CA2192409B53800BD547F /* LaunchScreen.storyboard in Resources */,
+				A4E29F222410368500BC04B8 /* MenuFood.storyboard in Resources */,
+				A4E29F2824103AE700BC04B8 /* NewMenuOption.storyboard in Resources */,
 				A41CA758240DD00700B0F9BD /* Menu.storyboard in Resources */,
 				A43CA23E2409B71D00BD547F /* Montserrat-Light.ttf in Resources */,
 				A43CA2162409B53800BD547F /* Assets.xcassets in Resources */,
