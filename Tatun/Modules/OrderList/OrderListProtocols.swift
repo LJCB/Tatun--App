@@ -13,6 +13,10 @@ protocol OrderListViewProtocol: class {
   // PRESENTER -> VIEW
   var presenter: OrderListPresenterProtocol? { get set }
   func set_layout()
+  func add_menu()
+  func show_menu()
+  func hide_menu()
+  
 }
 
 protocol OrderListWireFrameProtocol: class {
@@ -29,6 +33,7 @@ protocol OrderListPresenterProtocol: class {
   
   func viewDidLoad()
   func go_new_order()
+  func menu_action(menu_showed: Bool)
 }
 
 protocol OrderListInteractorOutputProtocol: class {

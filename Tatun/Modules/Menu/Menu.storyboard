@@ -19,14 +19,18 @@
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Menu View-->
         <scene sceneID="NWi-x9-3Qa">
             <objects>
-                <viewController id="Rmj-dq-i52" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MenuVC" modalPresentationStyle="overFullScreen" id="Rmj-dq-i52" customClass="MenuView" customModule="Tatun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G16-RV-EDL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="esz-Qs-3ez">
+                                <rect key="frame" x="0.0" y="0.0" width="318.66666666666669" height="812"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ed2-el-qCz">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                                 <subviews>
@@ -82,11 +86,6 @@
                                                     <constraint firstItem="TuT-qc-WXO" firstAttribute="leading" secondItem="QUG-hp-jD3" secondAttribute="leading" constant="10" id="tRc-eF-4uB"/>
                                                     <constraint firstItem="zPk-vU-N0h" firstAttribute="top" secondItem="l5k-to-4Sy" secondAttribute="bottom" constant="5" id="vFV-xX-JKX"/>
                                                 </constraints>
-                                                <userDefinedRuntimeAttributes>
-                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                        <integer key="value" value="40"/>
-                                                    </userDefinedRuntimeAttribute>
-                                                </userDefinedRuntimeAttributes>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="KH5-Cl-s6u" userLabel="View_button_menu">
                                                 <rect key="frame" x="0.0" y="301.33333333333331" width="318.66666666666669" height="50"/>
@@ -190,7 +189,7 @@
                                                     <constraint firstItem="2Si-7r-udS" firstAttribute="centerY" secondItem="IOP-1N-hLn" secondAttribute="centerY" id="sHO-Lk-DqS"/>
                                                 </constraints>
                                             </view>
-                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvj-t0-MdO" userLabel="View_button_config">
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvj-t0-MdO" userLabel="View_button_sales">
                                                 <rect key="frame" x="0.0" y="496.33333333333326" width="318.66666666666669" height="50"/>
                                                 <subviews>
                                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="price" translatesAutoresizingMaskIntoConstraints="NO" id="JqB-cP-PD2">
@@ -254,9 +253,14 @@
                                 </constraints>
                             </scrollView>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.49502090669014087" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="bottom" secondItem="esz-Qs-3ez" secondAttribute="bottom" id="2UP-5l-dxv"/>
+                            <constraint firstItem="esz-Qs-3ez" firstAttribute="top" secondItem="G16-RV-EDL" secondAttribute="top" id="6CK-Uw-tCc"/>
+                            <constraint firstItem="esz-Qs-3ez" firstAttribute="height" secondItem="G16-RV-EDL" secondAttribute="height" id="6yt-xk-SBp"/>
                             <constraint firstAttribute="bottom" secondItem="Ed2-el-qCz" secondAttribute="bottom" id="8KT-rl-WFX"/>
+                            <constraint firstItem="esz-Qs-3ez" firstAttribute="width" secondItem="H4J-yc-XwR" secondAttribute="width" id="J8v-eS-mcP"/>
+                            <constraint firstItem="esz-Qs-3ez" firstAttribute="leading" secondItem="iCY-zx-3Hz" secondAttribute="leading" id="LTB-Ya-WFn"/>
                             <constraint firstItem="Ed2-el-qCz" firstAttribute="leading" secondItem="G16-RV-EDL" secondAttribute="leading" id="UBU-az-O9a"/>
                             <constraint firstItem="Ed2-el-qCz" firstAttribute="top" secondItem="G16-RV-EDL" secondAttribute="top" id="aj9-92-OCa"/>
                             <constraint firstItem="H4J-yc-XwR" firstAttribute="width" secondItem="G16-RV-EDL" secondAttribute="width" multiplier="0.85" id="n1w-Bf-s8B"/>
@@ -267,7 +271,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Yhl-En-w9E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-42.028985507246382" y="118.52678571428571"/>
+            <point key="canvasLocation" x="-42.399999999999999" y="118.22660098522168"/>
         </scene>
     </scenes>
     <resources>

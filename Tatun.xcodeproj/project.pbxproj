@@ -68,6 +68,13 @@
 		A470B1902411BB4400A13A6C /* NewOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1892411BB4400A13A6C /* NewOrderView.swift */; };
 		A470B1912411BB4400A13A6C /* NewOrderRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B18A2411BB4400A13A6C /* NewOrderRemoteDataManager.swift */; };
 		A470B1922411BB4400A13A6C /* NewOrderWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B18B2411BB4400A13A6C /* NewOrderWireFrame.swift */; };
+		A470B19A2411C20F00A13A6C /* MenuPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1932411C20F00A13A6C /* MenuPresenter.swift */; };
+		A470B19B2411C20F00A13A6C /* MenuLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1942411C20F00A13A6C /* MenuLocalDataManager.swift */; };
+		A470B19C2411C20F00A13A6C /* MenuProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1952411C20F00A13A6C /* MenuProtocols.swift */; };
+		A470B19D2411C20F00A13A6C /* MenuInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1962411C20F00A13A6C /* MenuInteractor.swift */; };
+		A470B19E2411C20F00A13A6C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1972411C20F00A13A6C /* MenuView.swift */; };
+		A470B19F2411C20F00A13A6C /* MenuRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1982411C20F00A13A6C /* MenuRemoteDataManager.swift */; };
+		A470B1A02411C20F00A13A6C /* MenuWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1992411C20F00A13A6C /* MenuWireFrame.swift */; };
 		A4E29F1C241031AF00BC04B8 /* TableDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */; };
 		A4E29F1F2410348E00BC04B8 /* OrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */; };
 		A4E29F222410368500BC04B8 /* MenuFood.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F212410368500BC04B8 /* MenuFood.storyboard */; };
@@ -148,6 +155,13 @@
 		A470B1892411BB4400A13A6C /* NewOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderView.swift; sourceTree = "<group>"; };
 		A470B18A2411BB4400A13A6C /* NewOrderRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderRemoteDataManager.swift; sourceTree = "<group>"; };
 		A470B18B2411BB4400A13A6C /* NewOrderWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderWireFrame.swift; sourceTree = "<group>"; };
+		A470B1932411C20F00A13A6C /* MenuPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPresenter.swift; sourceTree = "<group>"; };
+		A470B1942411C20F00A13A6C /* MenuLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuLocalDataManager.swift; sourceTree = "<group>"; };
+		A470B1952411C20F00A13A6C /* MenuProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuProtocols.swift; sourceTree = "<group>"; };
+		A470B1962411C20F00A13A6C /* MenuInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuInteractor.swift; sourceTree = "<group>"; };
+		A470B1972411C20F00A13A6C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		A470B1982411C20F00A13A6C /* MenuRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRemoteDataManager.swift; sourceTree = "<group>"; };
+		A470B1992411C20F00A13A6C /* MenuWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWireFrame.swift; sourceTree = "<group>"; };
 		A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F212410368500BC04B8 /* MenuFood.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuFood.storyboard; sourceTree = "<group>"; };
@@ -256,6 +270,13 @@
 			isa = PBXGroup;
 			children = (
 				A41CA757240DD00700B0F9BD /* Menu.storyboard */,
+				A470B1932411C20F00A13A6C /* MenuPresenter.swift */,
+				A470B1942411C20F00A13A6C /* MenuLocalDataManager.swift */,
+				A470B1952411C20F00A13A6C /* MenuProtocols.swift */,
+				A470B1962411C20F00A13A6C /* MenuInteractor.swift */,
+				A470B1972411C20F00A13A6C /* MenuView.swift */,
+				A470B1982411C20F00A13A6C /* MenuRemoteDataManager.swift */,
+				A470B1992411C20F00A13A6C /* MenuWireFrame.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -564,23 +585,29 @@
 				A470B1832411B1C000A13A6C /* OrderListRemoteDataManager.swift in Sources */,
 				A42D79052409C19D0099B854 /* LoginAdminInteractor.swift in Sources */,
 				A470B1812411B1C000A13A6C /* OrderListInteractor.swift in Sources */,
+				A470B19D2411C20F00A13A6C /* MenuInteractor.swift in Sources */,
 				A470B1752411877300A13A6C /* NewPasswordRemoteDataManager.swift in Sources */,
+				A470B19A2411C20F00A13A6C /* MenuPresenter.swift in Sources */,
 				A470B18D2411BB4400A13A6C /* NewOrderLocalDataManager.swift in Sources */,
 				A4E29F332410560300BC04B8 /* LoginWaiterInteractor.swift in Sources */,
 				A470B160241174E200A13A6C /* RequestCodeLocalDataManager.swift in Sources */,
 				A43CA20D2409B53600BD547F /* AppDelegate.swift in Sources */,
 				A470B17E2411B1C000A13A6C /* OrderListPresenter.swift in Sources */,
+				A470B1A02411C20F00A13A6C /* MenuWireFrame.swift in Sources */,
 				A470B162241174E200A13A6C /* RequestCodeInteractor.swift in Sources */,
 				A470B1922411BB4400A13A6C /* NewOrderWireFrame.swift in Sources */,
 				A470B163241174E200A13A6C /* RequestCodeView.swift in Sources */,
 				A4E29F312410560300BC04B8 /* LoginWaiterLocalDataManager.swift in Sources */,
 				A41CA745240DB36200B0F9BD /* RegisterView.swift in Sources */,
 				A470B1702411877300A13A6C /* NewPasswordPresenter.swift in Sources */,
+				A470B19B2411C20F00A13A6C /* MenuLocalDataManager.swift in Sources */,
+				A470B19E2411C20F00A13A6C /* MenuView.swift in Sources */,
 				A42D79022409C19D0099B854 /* LoginAdminPresenter.swift in Sources */,
 				A470B1762411877300A13A6C /* NewPasswordWireFrame.swift in Sources */,
 				A41CA742240DB36200B0F9BD /* RegisterLocalDataManager.swift in Sources */,
 				A4E29F342410560300BC04B8 /* LoginWaiterView.swift in Sources */,
 				A470B1902411BB4400A13A6C /* NewOrderView.swift in Sources */,
+				A470B19F2411C20F00A13A6C /* MenuRemoteDataManager.swift in Sources */,
 				A470B15F241174E200A13A6C /* RequestCodePresenter.swift in Sources */,
 				A4E29F352410560300BC04B8 /* LoginWaiterRemoteDataManager.swift in Sources */,
 				A470B1802411B1C000A13A6C /* OrderListProtocols.swift in Sources */,
@@ -596,6 +623,7 @@
 				A4E29F362410560300BC04B8 /* LoginWaiterWireFrame.swift in Sources */,
 				A41CA747240DB36200B0F9BD /* RegisterWireFrame.swift in Sources */,
 				A42D79072409C19D0099B854 /* LoginAdminRemoteDataManager.swift in Sources */,
+				A470B19C2411C20F00A13A6C /* MenuProtocols.swift in Sources */,
 				A470B1732411877300A13A6C /* NewPasswordInteractor.swift in Sources */,
 				A470B1842411B1C000A13A6C /* OrderListWireFrame.swift in Sources */,
 				A43CA20F2409B53600BD547F /* SceneDelegate.swift in Sources */,
