@@ -18,6 +18,10 @@ class RequestCodePresenter  {
 }
 
 extension RequestCodePresenter: RequestCodePresenterProtocol {
+  func go_new_password() {
+    wireFrame?.show_form_new_password(from: view!)
+  }
+  
   
   func viewDidLoad() {
     view?.set_layout()

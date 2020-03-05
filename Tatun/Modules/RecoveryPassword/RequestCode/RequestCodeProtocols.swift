@@ -19,6 +19,7 @@ protocol RequestCodeViewProtocol: class {
 protocol RequestCodeWireFrameProtocol: class {
   // PRESENTER -> WIREFRAME
   static func createRequestCodeModule() -> UIViewController
+  func show_form_new_password(from view: RequestCodeViewProtocol)
 }
 
 protocol RequestCodePresenterProtocol: class {
@@ -29,6 +30,7 @@ protocol RequestCodePresenterProtocol: class {
   
   func viewDidLoad()
   func cancel_action()
+  func go_new_password()
 }
 
 protocol RequestCodeInteractorOutputProtocol: class {

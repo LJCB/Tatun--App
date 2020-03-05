@@ -47,6 +47,13 @@
 		A470B164241174E200A13A6C /* RequestCodeRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B15D241174E200A13A6C /* RequestCodeRemoteDataManager.swift */; };
 		A470B165241174E200A13A6C /* RequestCodeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B15E241174E200A13A6C /* RequestCodeWireFrame.swift */; };
 		A470B16724117EB400A13A6C /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B16624117EB400A13A6C /* GlobalFunctions.swift */; };
+		A470B1702411877300A13A6C /* NewPasswordPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1692411877300A13A6C /* NewPasswordPresenter.swift */; };
+		A470B1712411877300A13A6C /* NewPasswordLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B16A2411877300A13A6C /* NewPasswordLocalDataManager.swift */; };
+		A470B1722411877300A13A6C /* NewPasswordProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B16B2411877300A13A6C /* NewPasswordProtocols.swift */; };
+		A470B1732411877300A13A6C /* NewPasswordInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B16C2411877300A13A6C /* NewPasswordInteractor.swift */; };
+		A470B1742411877300A13A6C /* NewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B16D2411877300A13A6C /* NewPasswordView.swift */; };
+		A470B1752411877300A13A6C /* NewPasswordRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B16E2411877300A13A6C /* NewPasswordRemoteDataManager.swift */; };
+		A470B1762411877300A13A6C /* NewPasswordWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B16F2411877300A13A6C /* NewPasswordWireFrame.swift */; };
 		A4E29F1C241031AF00BC04B8 /* TableDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */; };
 		A4E29F1F2410348E00BC04B8 /* OrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */; };
 		A4E29F222410368500BC04B8 /* MenuFood.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F212410368500BC04B8 /* MenuFood.storyboard */; };
@@ -106,6 +113,13 @@
 		A470B15D241174E200A13A6C /* RequestCodeRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeRemoteDataManager.swift; sourceTree = "<group>"; };
 		A470B15E241174E200A13A6C /* RequestCodeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeWireFrame.swift; sourceTree = "<group>"; };
 		A470B16624117EB400A13A6C /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
+		A470B1692411877300A13A6C /* NewPasswordPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordPresenter.swift; sourceTree = "<group>"; };
+		A470B16A2411877300A13A6C /* NewPasswordLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordLocalDataManager.swift; sourceTree = "<group>"; };
+		A470B16B2411877300A13A6C /* NewPasswordProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordProtocols.swift; sourceTree = "<group>"; };
+		A470B16C2411877300A13A6C /* NewPasswordInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordInteractor.swift; sourceTree = "<group>"; };
+		A470B16D2411877300A13A6C /* NewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordView.swift; sourceTree = "<group>"; };
+		A470B16E2411877300A13A6C /* NewPasswordRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordRemoteDataManager.swift; sourceTree = "<group>"; };
+		A470B16F2411877300A13A6C /* NewPasswordWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordWireFrame.swift; sourceTree = "<group>"; };
 		A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F212410368500BC04B8 /* MenuFood.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuFood.storyboard; sourceTree = "<group>"; };
@@ -199,6 +213,13 @@
 			isa = PBXGroup;
 			children = (
 				A41CA754240DC32800B0F9BD /* NewPassword.storyboard */,
+				A470B1692411877300A13A6C /* NewPasswordPresenter.swift */,
+				A470B16A2411877300A13A6C /* NewPasswordLocalDataManager.swift */,
+				A470B16B2411877300A13A6C /* NewPasswordProtocols.swift */,
+				A470B16C2411877300A13A6C /* NewPasswordInteractor.swift */,
+				A470B16D2411877300A13A6C /* NewPasswordView.swift */,
+				A470B16E2411877300A13A6C /* NewPasswordRemoteDataManager.swift */,
+				A470B16F2411877300A13A6C /* NewPasswordWireFrame.swift */,
 			);
 			path = NewPassword;
 			sourceTree = "<group>";
@@ -494,9 +515,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A470B1742411877300A13A6C /* NewPasswordView.swift in Sources */,
 				A470B161241174E200A13A6C /* RequestCodeProtocols.swift in Sources */,
 				A41CA743240DB36200B0F9BD /* RegisterProtocols.swift in Sources */,
 				A42D79052409C19D0099B854 /* LoginAdminInteractor.swift in Sources */,
+				A470B1752411877300A13A6C /* NewPasswordRemoteDataManager.swift in Sources */,
 				A4E29F332410560300BC04B8 /* LoginWaiterInteractor.swift in Sources */,
 				A470B160241174E200A13A6C /* RequestCodeLocalDataManager.swift in Sources */,
 				A43CA20D2409B53600BD547F /* AppDelegate.swift in Sources */,
@@ -504,13 +527,16 @@
 				A470B163241174E200A13A6C /* RequestCodeView.swift in Sources */,
 				A4E29F312410560300BC04B8 /* LoginWaiterLocalDataManager.swift in Sources */,
 				A41CA745240DB36200B0F9BD /* RegisterView.swift in Sources */,
+				A470B1702411877300A13A6C /* NewPasswordPresenter.swift in Sources */,
 				A42D79022409C19D0099B854 /* LoginAdminPresenter.swift in Sources */,
+				A470B1762411877300A13A6C /* NewPasswordWireFrame.swift in Sources */,
 				A41CA742240DB36200B0F9BD /* RegisterLocalDataManager.swift in Sources */,
 				A4E29F342410560300BC04B8 /* LoginWaiterView.swift in Sources */,
 				A470B15F241174E200A13A6C /* RequestCodePresenter.swift in Sources */,
 				A4E29F352410560300BC04B8 /* LoginWaiterRemoteDataManager.swift in Sources */,
 				A470B165241174E200A13A6C /* RequestCodeWireFrame.swift in Sources */,
 				A470B16724117EB400A13A6C /* GlobalFunctions.swift in Sources */,
+				A470B1712411877300A13A6C /* NewPasswordLocalDataManager.swift in Sources */,
 				A42D79042409C19D0099B854 /* LoginAdminProtocols.swift in Sources */,
 				A42D79032409C19D0099B854 /* LoginAdminLocalDataManager.swift in Sources */,
 				A470B164241174E200A13A6C /* RequestCodeRemoteDataManager.swift in Sources */,
@@ -518,6 +544,7 @@
 				A4E29F362410560300BC04B8 /* LoginWaiterWireFrame.swift in Sources */,
 				A41CA747240DB36200B0F9BD /* RegisterWireFrame.swift in Sources */,
 				A42D79072409C19D0099B854 /* LoginAdminRemoteDataManager.swift in Sources */,
+				A470B1732411877300A13A6C /* NewPasswordInteractor.swift in Sources */,
 				A43CA20F2409B53600BD547F /* SceneDelegate.swift in Sources */,
 				A41CA744240DB36200B0F9BD /* RegisterInteractor.swift in Sources */,
 				A4E29F322410560300BC04B8 /* LoginWaiterProtocols.swift in Sources */,
@@ -525,6 +552,7 @@
 				A41CA746240DB36200B0F9BD /* RegisterRemoteDataManager.swift in Sources */,
 				A4E29F302410560300BC04B8 /* LoginWaiterPresenter.swift in Sources */,
 				A42D79082409C19D0099B854 /* LoginAdminWireFrame.swift in Sources */,
+				A470B1722411877300A13A6C /* NewPasswordProtocols.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
