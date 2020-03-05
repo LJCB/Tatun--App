@@ -39,6 +39,14 @@
 		A43CA23C2409B71D00BD547F /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2372409B71D00BD547F /* Montserrat-SemiBold.ttf */; };
 		A43CA23D2409B71D00BD547F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2382409B71D00BD547F /* Montserrat-Bold.ttf */; };
 		A43CA23E2409B71D00BD547F /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2392409B71D00BD547F /* Montserrat-Light.ttf */; };
+		A470B15F241174E200A13A6C /* RequestCodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B158241174E200A13A6C /* RequestCodePresenter.swift */; };
+		A470B160241174E200A13A6C /* RequestCodeLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B159241174E200A13A6C /* RequestCodeLocalDataManager.swift */; };
+		A470B161241174E200A13A6C /* RequestCodeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B15A241174E200A13A6C /* RequestCodeProtocols.swift */; };
+		A470B162241174E200A13A6C /* RequestCodeInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B15B241174E200A13A6C /* RequestCodeInteractor.swift */; };
+		A470B163241174E200A13A6C /* RequestCodeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B15C241174E200A13A6C /* RequestCodeView.swift */; };
+		A470B164241174E200A13A6C /* RequestCodeRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B15D241174E200A13A6C /* RequestCodeRemoteDataManager.swift */; };
+		A470B165241174E200A13A6C /* RequestCodeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B15E241174E200A13A6C /* RequestCodeWireFrame.swift */; };
+		A470B16724117EB400A13A6C /* GlobalFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B16624117EB400A13A6C /* GlobalFunctions.swift */; };
 		A4E29F1C241031AF00BC04B8 /* TableDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */; };
 		A4E29F1F2410348E00BC04B8 /* OrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */; };
 		A4E29F222410368500BC04B8 /* MenuFood.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F212410368500BC04B8 /* MenuFood.storyboard */; };
@@ -90,6 +98,14 @@
 		A43CA2372409B71D00BD547F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		A43CA2382409B71D00BD547F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		A43CA2392409B71D00BD547F /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		A470B158241174E200A13A6C /* RequestCodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodePresenter.swift; sourceTree = "<group>"; };
+		A470B159241174E200A13A6C /* RequestCodeLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeLocalDataManager.swift; sourceTree = "<group>"; };
+		A470B15A241174E200A13A6C /* RequestCodeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeProtocols.swift; sourceTree = "<group>"; };
+		A470B15B241174E200A13A6C /* RequestCodeInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeInteractor.swift; sourceTree = "<group>"; };
+		A470B15C241174E200A13A6C /* RequestCodeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeView.swift; sourceTree = "<group>"; };
+		A470B15D241174E200A13A6C /* RequestCodeRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeRemoteDataManager.swift; sourceTree = "<group>"; };
+		A470B15E241174E200A13A6C /* RequestCodeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeWireFrame.swift; sourceTree = "<group>"; };
+		A470B16624117EB400A13A6C /* GlobalFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalFunctions.swift; sourceTree = "<group>"; };
 		A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F212410368500BC04B8 /* MenuFood.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuFood.storyboard; sourceTree = "<group>"; };
@@ -168,6 +184,13 @@
 			isa = PBXGroup;
 			children = (
 				A41CA751240DBE2200B0F9BD /* RequestCode.storyboard */,
+				A470B158241174E200A13A6C /* RequestCodePresenter.swift */,
+				A470B159241174E200A13A6C /* RequestCodeLocalDataManager.swift */,
+				A470B15A241174E200A13A6C /* RequestCodeProtocols.swift */,
+				A470B15B241174E200A13A6C /* RequestCodeInteractor.swift */,
+				A470B15C241174E200A13A6C /* RequestCodeView.swift */,
+				A470B15D241174E200A13A6C /* RequestCodeRemoteDataManager.swift */,
+				A470B15E241174E200A13A6C /* RequestCodeWireFrame.swift */,
 			);
 			path = RequestCode;
 			sourceTree = "<group>";
@@ -292,6 +315,7 @@
 		A43CA2322409B5A400BD547F /* Global */ = {
 			isa = PBXGroup;
 			children = (
+				A470B16624117EB400A13A6C /* GlobalFunctions.swift */,
 			);
 			path = Global;
 			sourceTree = "<group>";
@@ -470,18 +494,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A470B161241174E200A13A6C /* RequestCodeProtocols.swift in Sources */,
 				A41CA743240DB36200B0F9BD /* RegisterProtocols.swift in Sources */,
 				A42D79052409C19D0099B854 /* LoginAdminInteractor.swift in Sources */,
 				A4E29F332410560300BC04B8 /* LoginWaiterInteractor.swift in Sources */,
+				A470B160241174E200A13A6C /* RequestCodeLocalDataManager.swift in Sources */,
 				A43CA20D2409B53600BD547F /* AppDelegate.swift in Sources */,
+				A470B162241174E200A13A6C /* RequestCodeInteractor.swift in Sources */,
+				A470B163241174E200A13A6C /* RequestCodeView.swift in Sources */,
 				A4E29F312410560300BC04B8 /* LoginWaiterLocalDataManager.swift in Sources */,
 				A41CA745240DB36200B0F9BD /* RegisterView.swift in Sources */,
 				A42D79022409C19D0099B854 /* LoginAdminPresenter.swift in Sources */,
 				A41CA742240DB36200B0F9BD /* RegisterLocalDataManager.swift in Sources */,
 				A4E29F342410560300BC04B8 /* LoginWaiterView.swift in Sources */,
+				A470B15F241174E200A13A6C /* RequestCodePresenter.swift in Sources */,
 				A4E29F352410560300BC04B8 /* LoginWaiterRemoteDataManager.swift in Sources */,
+				A470B165241174E200A13A6C /* RequestCodeWireFrame.swift in Sources */,
+				A470B16724117EB400A13A6C /* GlobalFunctions.swift in Sources */,
 				A42D79042409C19D0099B854 /* LoginAdminProtocols.swift in Sources */,
 				A42D79032409C19D0099B854 /* LoginAdminLocalDataManager.swift in Sources */,
+				A470B164241174E200A13A6C /* RequestCodeRemoteDataManager.swift in Sources */,
 				A41CA741240DB36200B0F9BD /* RegisterPresenter.swift in Sources */,
 				A4E29F362410560300BC04B8 /* LoginWaiterWireFrame.swift in Sources */,
 				A41CA747240DB36200B0F9BD /* RegisterWireFrame.swift in Sources */,

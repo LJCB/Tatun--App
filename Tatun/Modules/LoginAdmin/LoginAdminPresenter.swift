@@ -18,11 +18,20 @@ class LoginAdminPresenter  {
 }
 
 extension LoginAdminPresenter: LoginAdminPresenterProtocol {
+  func go_request_code() {
+    wireFrame?.show_form_request_code(from: view!)
+  }
+  
+  func go_register() {
+    wireFrame?.show_register(from: view!)
+  }
+  
   func go_waiter_login() {
     wireFrame?.show_waiter_login(from: view!)
   }
   
   func viewDidLoad() {
+    view?.set_layout()
   }
 }
 

@@ -10,48 +10,49 @@ import Foundation
 import UIKit
 
 protocol RegisterViewProtocol: class {
-    // PRESENTER -> VIEW
-    var presenter: RegisterPresenterProtocol? { get set }
+  // PRESENTER -> VIEW
+  var presenter: RegisterPresenterProtocol? { get set }
+  func set_layout()
 }
 
 protocol RegisterWireFrameProtocol: class {
-    // PRESENTER -> WIREFRAME
-    static func createRegisterModule() -> UIViewController
+  // PRESENTER -> WIREFRAME
+  static func createRegisterModule() -> UIViewController
 }
 
 protocol RegisterPresenterProtocol: class {
-    // VIEW -> PRESENTER
-    var view: RegisterViewProtocol? { get set }
-    var interactor: RegisterInteractorInputProtocol? { get set }
-    var wireFrame: RegisterWireFrameProtocol? { get set }
-    
-    func viewDidLoad()
+  // VIEW -> PRESENTER
+  var view: RegisterViewProtocol? { get set }
+  var interactor: RegisterInteractorInputProtocol? { get set }
+  var wireFrame: RegisterWireFrameProtocol? { get set }
+  
+  func viewDidLoad()
 }
 
 protocol RegisterInteractorOutputProtocol: class {
-// INTERACTOR -> PRESENTER
+  // INTERACTOR -> PRESENTER
 }
 
 protocol RegisterInteractorInputProtocol: class {
-    // PRESENTER -> INTERACTOR
-    var presenter: RegisterInteractorOutputProtocol? { get set }
-    var localDatamanager: RegisterLocalDataManagerInputProtocol? { get set }
-    var remoteDatamanager: RegisterRemoteDataManagerInputProtocol? { get set }
+  // PRESENTER -> INTERACTOR
+  var presenter: RegisterInteractorOutputProtocol? { get set }
+  var localDatamanager: RegisterLocalDataManagerInputProtocol? { get set }
+  var remoteDatamanager: RegisterRemoteDataManagerInputProtocol? { get set }
 }
 
 protocol RegisterDataManagerInputProtocol: class {
-    // INTERACTOR -> DATAMANAGER
+  // INTERACTOR -> DATAMANAGER
 }
 
 protocol RegisterRemoteDataManagerInputProtocol: class {
-    // INTERACTOR -> REMOTEDATAMANAGER
-    var remoteRequestHandler: RegisterRemoteDataManagerOutputProtocol? { get set }
+  // INTERACTOR -> REMOTEDATAMANAGER
+  var remoteRequestHandler: RegisterRemoteDataManagerOutputProtocol? { get set }
 }
 
 protocol RegisterRemoteDataManagerOutputProtocol: class {
-    // REMOTEDATAMANAGER -> INTERACTOR
+  // REMOTEDATAMANAGER -> INTERACTOR
 }
 
 protocol RegisterLocalDataManagerInputProtocol: class {
-    // INTERACTOR -> LOCALDATAMANAGER
+  // INTERACTOR -> LOCALDATAMANAGER
 }

@@ -12,8 +12,8 @@ import UIKit
 class RegisterWireFrame: RegisterWireFrameProtocol {
 
     class func createRegisterModule() -> UIViewController {
-        let navController = mainStoryboard.instantiateViewController(withIdentifier: "RegisterView")
-        if let view = navController.children.first as? RegisterView {
+        let viewController = mainStoryboard.instantiateViewController(withIdentifier: "VCRegister")
+        if let view = viewController as? RegisterView {
             let presenter: RegisterPresenterProtocol & RegisterInteractorOutputProtocol = RegisterPresenter()
             let interactor: RegisterInteractorInputProtocol & RegisterRemoteDataManagerOutputProtocol = RegisterInteractor()
             let localDataManager: RegisterLocalDataManagerInputProtocol = RegisterLocalDataManager()
@@ -29,13 +29,13 @@ class RegisterWireFrame: RegisterWireFrameProtocol {
             interactor.remoteDatamanager = remoteDataManager
             remoteDataManager.remoteRequestHandler = interactor
             
-            return navController
+            return viewController
         }
         return UIViewController()
     }
     
     static var mainStoryboard: UIStoryboard {
-        return UIStoryboard(name: "RegisterView", bundle: Bundle.main)
+        return UIStoryboard(name: "Register", bundle: Bundle.main)
     }
     
 }

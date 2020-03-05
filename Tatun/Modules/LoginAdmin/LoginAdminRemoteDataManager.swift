@@ -9,7 +9,6 @@
 import Foundation
 
 class LoginAdminRemoteDataManager:LoginAdminRemoteDataManagerInputProtocol {
-    
     var remoteRequestHandler: LoginAdminRemoteDataManagerOutputProtocol?
     
 }

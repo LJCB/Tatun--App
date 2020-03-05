@@ -12,12 +12,15 @@ import UIKit
 protocol LoginAdminViewProtocol: class {
   // PRESENTER -> VIEW
   var presenter: LoginAdminPresenterProtocol? { get set }
+  func set_layout()
 }
 
 protocol LoginAdminWireFrameProtocol: class {
   // PRESENTER -> WIREFRAME
   static func createLoginAdminModule() -> UIViewController
   func show_waiter_login(from view: LoginAdminViewProtocol)
+  func show_register(from view: LoginAdminViewProtocol)
+  func show_form_request_code(from view: LoginAdminViewProtocol)
 }
 
 protocol LoginAdminPresenterProtocol: class {
@@ -28,6 +31,9 @@ protocol LoginAdminPresenterProtocol: class {
   
   func viewDidLoad()
   func go_waiter_login()
+  func go_register()
+  func go_request_code()
+  
 }
 
 protocol LoginAdminInteractorOutputProtocol: class {

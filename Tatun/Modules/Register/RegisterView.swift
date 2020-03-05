@@ -10,17 +10,25 @@ import Foundation
 import UIKit
 
 class RegisterView: UIViewController {
-
-    // MARK: Properties
-    var presenter: RegisterPresenterProtocol?
-
-    // MARK: Lifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+  
+  // MARK: Properties
+  var presenter: RegisterPresenterProtocol?
+  
+  // MARK: Lifecycle
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    presenter?.viewDidLoad()
+  }
 }
 
 extension RegisterView: RegisterViewProtocol {
-    // TODO: implement view output methods
+  func set_layout() {
+    self.navigationController?.navigationBar.isHidden = false
+    self.navigationController?.navigationBar.topItem?.title = ""
+    self.navigationController?.navigationBar.tintColor = UIColor(named: "Blue")
+    self.navigationController?.navigationBar.backgroundColor = UIColor.white
+    self.navigationController?.navigationBar.isTranslucent = false
+    
+  }
 }

@@ -45,4 +45,18 @@ class LoginAdminWireFrame: LoginAdminWireFrameProtocol {
       new_view.navigationController?.pushViewController(new_view_controller, animated: true)
     }
   }
+  
+  func show_register(from view: LoginAdminViewProtocol) {
+    let new_view_controller = RegisterWireFrame.createRegisterModule()
+    if let new_view = view as? UIViewController{
+      new_view.navigationController?.pushViewController(new_view_controller, animated: true)
+    }
+  }
+  
+  func show_form_request_code(from view: LoginAdminViewProtocol) {
+    let new_view_controller = RequestCodeWireFrame.createRequestCodeModule()
+    if let new_view = view as? UIViewController{
+      new_view.navigationController?.present(new_view_controller, animated: true, completion: nil)
+    }
+  }
 }

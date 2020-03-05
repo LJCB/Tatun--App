@@ -20,6 +20,7 @@ class RegisterPresenter  {
 extension RegisterPresenter: RegisterPresenterProtocol {
     // TODO: implement presenter methods
     func viewDidLoad() {
+      view?.set_layout()
     }
 }
 

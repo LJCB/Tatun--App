@@ -42,7 +42,7 @@ class LoginWaiterWireFrame: LoginWaiterWireFrameProtocol {
     let new_view_controller = LoginAdminWireFrame.createLoginAdminModule()
     if let new_view = view as? UIViewController{
       print("HAciendo el push")
-      new_view.navigationController?.pushViewController(new_view_controller, animated: true)
+      new_view.navigationController?.present(new_view_controller, animated: true, completion: nil)
     }
   }
 }
