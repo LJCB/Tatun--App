@@ -54,6 +54,20 @@
 		A470B1742411877300A13A6C /* NewPasswordView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B16D2411877300A13A6C /* NewPasswordView.swift */; };
 		A470B1752411877300A13A6C /* NewPasswordRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B16E2411877300A13A6C /* NewPasswordRemoteDataManager.swift */; };
 		A470B1762411877300A13A6C /* NewPasswordWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B16F2411877300A13A6C /* NewPasswordWireFrame.swift */; };
+		A470B17E2411B1C000A13A6C /* OrderListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1772411B1C000A13A6C /* OrderListPresenter.swift */; };
+		A470B17F2411B1C000A13A6C /* OrderListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1782411B1C000A13A6C /* OrderListLocalDataManager.swift */; };
+		A470B1802411B1C000A13A6C /* OrderListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1792411B1C000A13A6C /* OrderListProtocols.swift */; };
+		A470B1812411B1C000A13A6C /* OrderListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B17A2411B1C000A13A6C /* OrderListInteractor.swift */; };
+		A470B1822411B1C000A13A6C /* OrderListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B17B2411B1C000A13A6C /* OrderListView.swift */; };
+		A470B1832411B1C000A13A6C /* OrderListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B17C2411B1C000A13A6C /* OrderListRemoteDataManager.swift */; };
+		A470B1842411B1C000A13A6C /* OrderListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B17D2411B1C000A13A6C /* OrderListWireFrame.swift */; };
+		A470B18C2411BB4400A13A6C /* NewOrderPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1852411BB4400A13A6C /* NewOrderPresenter.swift */; };
+		A470B18D2411BB4400A13A6C /* NewOrderLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1862411BB4400A13A6C /* NewOrderLocalDataManager.swift */; };
+		A470B18E2411BB4400A13A6C /* NewOrderProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1872411BB4400A13A6C /* NewOrderProtocols.swift */; };
+		A470B18F2411BB4400A13A6C /* NewOrderInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1882411BB4400A13A6C /* NewOrderInteractor.swift */; };
+		A470B1902411BB4400A13A6C /* NewOrderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1892411BB4400A13A6C /* NewOrderView.swift */; };
+		A470B1912411BB4400A13A6C /* NewOrderRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B18A2411BB4400A13A6C /* NewOrderRemoteDataManager.swift */; };
+		A470B1922411BB4400A13A6C /* NewOrderWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B18B2411BB4400A13A6C /* NewOrderWireFrame.swift */; };
 		A4E29F1C241031AF00BC04B8 /* TableDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */; };
 		A4E29F1F2410348E00BC04B8 /* OrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */; };
 		A4E29F222410368500BC04B8 /* MenuFood.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F212410368500BC04B8 /* MenuFood.storyboard */; };
@@ -120,6 +134,20 @@
 		A470B16D2411877300A13A6C /* NewPasswordView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordView.swift; sourceTree = "<group>"; };
 		A470B16E2411877300A13A6C /* NewPasswordRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordRemoteDataManager.swift; sourceTree = "<group>"; };
 		A470B16F2411877300A13A6C /* NewPasswordWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewPasswordWireFrame.swift; sourceTree = "<group>"; };
+		A470B1772411B1C000A13A6C /* OrderListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListPresenter.swift; sourceTree = "<group>"; };
+		A470B1782411B1C000A13A6C /* OrderListLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListLocalDataManager.swift; sourceTree = "<group>"; };
+		A470B1792411B1C000A13A6C /* OrderListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListProtocols.swift; sourceTree = "<group>"; };
+		A470B17A2411B1C000A13A6C /* OrderListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListInteractor.swift; sourceTree = "<group>"; };
+		A470B17B2411B1C000A13A6C /* OrderListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListView.swift; sourceTree = "<group>"; };
+		A470B17C2411B1C000A13A6C /* OrderListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListRemoteDataManager.swift; sourceTree = "<group>"; };
+		A470B17D2411B1C000A13A6C /* OrderListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderListWireFrame.swift; sourceTree = "<group>"; };
+		A470B1852411BB4400A13A6C /* NewOrderPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderPresenter.swift; sourceTree = "<group>"; };
+		A470B1862411BB4400A13A6C /* NewOrderLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderLocalDataManager.swift; sourceTree = "<group>"; };
+		A470B1872411BB4400A13A6C /* NewOrderProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderProtocols.swift; sourceTree = "<group>"; };
+		A470B1882411BB4400A13A6C /* NewOrderInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderInteractor.swift; sourceTree = "<group>"; };
+		A470B1892411BB4400A13A6C /* NewOrderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderView.swift; sourceTree = "<group>"; };
+		A470B18A2411BB4400A13A6C /* NewOrderRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderRemoteDataManager.swift; sourceTree = "<group>"; };
+		A470B18B2411BB4400A13A6C /* NewOrderWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewOrderWireFrame.swift; sourceTree = "<group>"; };
 		A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F212410368500BC04B8 /* MenuFood.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuFood.storyboard; sourceTree = "<group>"; };
@@ -236,6 +264,13 @@
 			isa = PBXGroup;
 			children = (
 				A41CA75A240DD6C600B0F9BD /* OrderList.storyboard */,
+				A470B1772411B1C000A13A6C /* OrderListPresenter.swift */,
+				A470B1782411B1C000A13A6C /* OrderListLocalDataManager.swift */,
+				A470B1792411B1C000A13A6C /* OrderListProtocols.swift */,
+				A470B17A2411B1C000A13A6C /* OrderListInteractor.swift */,
+				A470B17B2411B1C000A13A6C /* OrderListView.swift */,
+				A470B17C2411B1C000A13A6C /* OrderListRemoteDataManager.swift */,
+				A470B17D2411B1C000A13A6C /* OrderListWireFrame.swift */,
 			);
 			path = OrderList;
 			sourceTree = "<group>";
@@ -412,6 +447,13 @@
 			isa = PBXGroup;
 			children = (
 				A4ED0543240F2A64008CF14C /* NewOrder.storyboard */,
+				A470B1852411BB4400A13A6C /* NewOrderPresenter.swift */,
+				A470B1862411BB4400A13A6C /* NewOrderLocalDataManager.swift */,
+				A470B1872411BB4400A13A6C /* NewOrderProtocols.swift */,
+				A470B1882411BB4400A13A6C /* NewOrderInteractor.swift */,
+				A470B1892411BB4400A13A6C /* NewOrderView.swift */,
+				A470B18A2411BB4400A13A6C /* NewOrderRemoteDataManager.swift */,
+				A470B18B2411BB4400A13A6C /* NewOrderWireFrame.swift */,
 			);
 			path = NewOrder;
 			sourceTree = "<group>";
@@ -517,13 +559,19 @@
 			files = (
 				A470B1742411877300A13A6C /* NewPasswordView.swift in Sources */,
 				A470B161241174E200A13A6C /* RequestCodeProtocols.swift in Sources */,
+				A470B17F2411B1C000A13A6C /* OrderListLocalDataManager.swift in Sources */,
 				A41CA743240DB36200B0F9BD /* RegisterProtocols.swift in Sources */,
+				A470B1832411B1C000A13A6C /* OrderListRemoteDataManager.swift in Sources */,
 				A42D79052409C19D0099B854 /* LoginAdminInteractor.swift in Sources */,
+				A470B1812411B1C000A13A6C /* OrderListInteractor.swift in Sources */,
 				A470B1752411877300A13A6C /* NewPasswordRemoteDataManager.swift in Sources */,
+				A470B18D2411BB4400A13A6C /* NewOrderLocalDataManager.swift in Sources */,
 				A4E29F332410560300BC04B8 /* LoginWaiterInteractor.swift in Sources */,
 				A470B160241174E200A13A6C /* RequestCodeLocalDataManager.swift in Sources */,
 				A43CA20D2409B53600BD547F /* AppDelegate.swift in Sources */,
+				A470B17E2411B1C000A13A6C /* OrderListPresenter.swift in Sources */,
 				A470B162241174E200A13A6C /* RequestCodeInteractor.swift in Sources */,
+				A470B1922411BB4400A13A6C /* NewOrderWireFrame.swift in Sources */,
 				A470B163241174E200A13A6C /* RequestCodeView.swift in Sources */,
 				A4E29F312410560300BC04B8 /* LoginWaiterLocalDataManager.swift in Sources */,
 				A41CA745240DB36200B0F9BD /* RegisterView.swift in Sources */,
@@ -532,25 +580,33 @@
 				A470B1762411877300A13A6C /* NewPasswordWireFrame.swift in Sources */,
 				A41CA742240DB36200B0F9BD /* RegisterLocalDataManager.swift in Sources */,
 				A4E29F342410560300BC04B8 /* LoginWaiterView.swift in Sources */,
+				A470B1902411BB4400A13A6C /* NewOrderView.swift in Sources */,
 				A470B15F241174E200A13A6C /* RequestCodePresenter.swift in Sources */,
 				A4E29F352410560300BC04B8 /* LoginWaiterRemoteDataManager.swift in Sources */,
+				A470B1802411B1C000A13A6C /* OrderListProtocols.swift in Sources */,
 				A470B165241174E200A13A6C /* RequestCodeWireFrame.swift in Sources */,
 				A470B16724117EB400A13A6C /* GlobalFunctions.swift in Sources */,
 				A470B1712411877300A13A6C /* NewPasswordLocalDataManager.swift in Sources */,
+				A470B18F2411BB4400A13A6C /* NewOrderInteractor.swift in Sources */,
 				A42D79042409C19D0099B854 /* LoginAdminProtocols.swift in Sources */,
 				A42D79032409C19D0099B854 /* LoginAdminLocalDataManager.swift in Sources */,
+				A470B1822411B1C000A13A6C /* OrderListView.swift in Sources */,
 				A470B164241174E200A13A6C /* RequestCodeRemoteDataManager.swift in Sources */,
 				A41CA741240DB36200B0F9BD /* RegisterPresenter.swift in Sources */,
 				A4E29F362410560300BC04B8 /* LoginWaiterWireFrame.swift in Sources */,
 				A41CA747240DB36200B0F9BD /* RegisterWireFrame.swift in Sources */,
 				A42D79072409C19D0099B854 /* LoginAdminRemoteDataManager.swift in Sources */,
 				A470B1732411877300A13A6C /* NewPasswordInteractor.swift in Sources */,
+				A470B1842411B1C000A13A6C /* OrderListWireFrame.swift in Sources */,
 				A43CA20F2409B53600BD547F /* SceneDelegate.swift in Sources */,
 				A41CA744240DB36200B0F9BD /* RegisterInteractor.swift in Sources */,
+				A470B1912411BB4400A13A6C /* NewOrderRemoteDataManager.swift in Sources */,
 				A4E29F322410560300BC04B8 /* LoginWaiterProtocols.swift in Sources */,
 				A42D79062409C19D0099B854 /* LoginAdminView.swift in Sources */,
 				A41CA746240DB36200B0F9BD /* RegisterRemoteDataManager.swift in Sources */,
+				A470B18C2411BB4400A13A6C /* NewOrderPresenter.swift in Sources */,
 				A4E29F302410560300BC04B8 /* LoginWaiterPresenter.swift in Sources */,
+				A470B18E2411BB4400A13A6C /* NewOrderProtocols.swift in Sources */,
 				A42D79082409C19D0099B854 /* LoginAdminWireFrame.swift in Sources */,
 				A470B1722411877300A13A6C /* NewPasswordProtocols.swift in Sources */,
 			);

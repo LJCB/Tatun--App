@@ -21,6 +21,7 @@ protocol LoginAdminWireFrameProtocol: class {
   func show_waiter_login(from view: LoginAdminViewProtocol)
   func show_register(from view: LoginAdminViewProtocol)
   func show_form_request_code(from view: LoginAdminViewProtocol)
+  func show_order_list(from view: LoginAdminViewProtocol)
 }
 
 protocol LoginAdminPresenterProtocol: class {
@@ -33,6 +34,7 @@ protocol LoginAdminPresenterProtocol: class {
   func go_waiter_login()
   func go_register()
   func go_request_code()
+  func go_order_list()
   
 }
 

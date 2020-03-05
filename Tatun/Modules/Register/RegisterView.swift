@@ -24,11 +24,7 @@ class RegisterView: UIViewController {
 
 extension RegisterView: RegisterViewProtocol {
   func set_layout() {
-    self.navigationController?.navigationBar.isHidden = false
-    self.navigationController?.navigationBar.topItem?.title = ""
-    self.navigationController?.navigationBar.tintColor = UIColor(named: "Blue")
-    self.navigationController?.navigationBar.backgroundColor = UIColor.white
-    self.navigationController?.navigationBar.isTranslucent = false
+    GlobalFunctions.sharedInstance.custom_nav_bar(view_controller: self)
     
   }
 }

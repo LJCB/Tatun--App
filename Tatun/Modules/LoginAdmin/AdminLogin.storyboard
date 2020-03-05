@@ -154,6 +154,9 @@
                                                         <integer key="value" value="25"/>
                                                     </userDefinedRuntimeAttribute>
                                                 </userDefinedRuntimeAttributes>
+                                                <connections>
+                                                    <action selector="login_action:" destination="xbs-4p-zvB" eventType="touchUpInside" id="EtO-0d-qyJ"/>
+                                                </connections>
                                             </button>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Tu negocio aún no forma parte de nosotros?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MdK-RP-x2P">
                                                 <rect key="frame" x="20" y="550.33333333333337" width="335" height="16.333333333333371"/>

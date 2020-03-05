@@ -59,4 +59,11 @@ class LoginAdminWireFrame: LoginAdminWireFrameProtocol {
       new_view.navigationController?.present(new_view_controller, animated: true, completion: nil)
     }
   }
+  
+  func show_order_list(from view: LoginAdminViewProtocol) {
+    let new_view_controller = OrderListWireFrame.createOrderListModule()
+    if let new_view = view as? UIViewController{
+      new_view.navigationController?.present(new_view_controller, animated: true, completion: nil)
+    }
+  }
 }

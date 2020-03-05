@@ -32,12 +32,14 @@ class LoginAdminView: UIViewController {
   @IBAction func recovery_password_action(_ sender: Any) {
     presenter?.go_request_code()
   }
+  
+  @IBAction func login_action(_ sender: Any) {
+    presenter?.go_order_list()
+  }
 }
 
 extension LoginAdminView: LoginAdminViewProtocol {
   func set_layout() {
     self.navigationController?.navigationBar.isHidden = true
   }
-  
-  
 }

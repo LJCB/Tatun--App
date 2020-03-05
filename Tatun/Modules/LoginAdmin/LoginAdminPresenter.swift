@@ -14,10 +14,13 @@ class LoginAdminPresenter  {
   weak var view: LoginAdminViewProtocol?
   var interactor: LoginAdminInteractorInputProtocol?
   var wireFrame: LoginAdminWireFrameProtocol?
-  
 }
 
 extension LoginAdminPresenter: LoginAdminPresenterProtocol {
+  func go_order_list() {
+    wireFrame?.show_order_list(from: view!)
+  }
+  
   func go_request_code() {
     wireFrame?.show_form_request_code(from: view!)
   }
