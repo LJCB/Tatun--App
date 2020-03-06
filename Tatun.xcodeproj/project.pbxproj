@@ -14,6 +14,7 @@
 		A40476BF2412BFC4003B7741 /* EditAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40476BE2412BFC4003B7741 /* EditAccount.storyboard */; };
 		A40476C12412C051003B7741 /* SalesDay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40476C02412C051003B7741 /* SalesDay.storyboard */; };
 		A40476C52412C076003B7741 /* SalesMonth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40476C42412C076003B7741 /* SalesMonth.storyboard */; };
+		A40476C82412D1AC003B7741 /* SelectDate.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40476C72412D1AC003B7741 /* SelectDate.storyboard */; };
 		A41CA738240D986900B0F9BD /* WaiterLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA737240D986900B0F9BD /* WaiterLogin.storyboard */; };
 		A41CA741240DB36200B0F9BD /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA73A240DB36200B0F9BD /* RegisterPresenter.swift */; };
 		A41CA742240DB36200B0F9BD /* RegisterLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA73B240DB36200B0F9BD /* RegisterLocalDataManager.swift */; };
@@ -113,6 +114,7 @@
 		A40476BE2412BFC4003B7741 /* EditAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditAccount.storyboard; sourceTree = "<group>"; };
 		A40476C02412C051003B7741 /* SalesDay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SalesDay.storyboard; sourceTree = "<group>"; };
 		A40476C42412C076003B7741 /* SalesMonth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SalesMonth.storyboard; sourceTree = "<group>"; };
+		A40476C72412D1AC003B7741 /* SelectDate.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SelectDate.storyboard; sourceTree = "<group>"; };
 		A41CA737240D986900B0F9BD /* WaiterLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WaiterLogin.storyboard; sourceTree = "<group>"; };
 		A41CA73A240DB36200B0F9BD /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		A41CA73B240DB36200B0F9BD /* RegisterLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLocalDataManager.swift; sourceTree = "<group>"; };
@@ -263,6 +265,7 @@
 		A40476BB2412BF84003B7741 /* Sales */ = {
 			isa = PBXGroup;
 			children = (
+				A40476C62412D187003B7741 /* SelectDate */,
 				A40476C32412C064003B7741 /* SalesMonth */,
 				A40476C22412C058003B7741 /* SalesDay */,
 			);
@@ -299,6 +302,14 @@
 				A40476C42412C076003B7741 /* SalesMonth.storyboard */,
 			);
 			path = SalesMonth;
+			sourceTree = "<group>";
+		};
+		A40476C62412D187003B7741 /* SelectDate */ = {
+			isa = PBXGroup;
+			children = (
+				A40476C72412D1AC003B7741 /* SelectDate.storyboard */,
+			);
+			path = SelectDate;
 			sourceTree = "<group>";
 		};
 		A41CA736240D985800B0F9BD /* LoginWaiter */ = {
@@ -669,6 +680,7 @@
 			files = (
 				A43CA23C2409B71D00BD547F /* Montserrat-SemiBold.ttf in Resources */,
 				A40476B42412B713003B7741 /* DisableWaiter.storyboard in Resources */,
+				A40476C82412D1AC003B7741 /* SelectDate.storyboard in Resources */,
 				A43CA23A2409B71D00BD547F /* Montserrat-Regular.ttf in Resources */,
 				A41CA738240D986900B0F9BD /* WaiterLogin.storyboard in Resources */,
 				A40476BF2412BFC4003B7741 /* EditAccount.storyboard in Resources */,

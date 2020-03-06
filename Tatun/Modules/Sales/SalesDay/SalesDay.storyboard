@@ -1,7 +1,191 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13142" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12042"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Ventas por día-->
+        <scene sceneID="JWc-iq-k1P">
+            <objects>
+                <viewController id="y43-pJ-TfQ" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="2o9-9F-ayC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIf-Rp-cxB">
+                                <rect key="frame" x="0.0" y="200" width="414" height="80"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha: Marzo 28, 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRu-lu-Lnh">
+                                        <rect key="frame" x="40" y="28.5" width="334" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" name="Blue"/>
+                                <constraints>
+                                    <constraint firstItem="rRu-lu-Lnh" firstAttribute="centerY" secondItem="WIf-Rp-cxB" secondAttribute="centerY" id="4FL-Ft-dos"/>
+                                    <constraint firstItem="rRu-lu-Lnh" firstAttribute="leading" secondItem="WIf-Rp-cxB" secondAttribute="leading" constant="40" id="6kh-vY-Xjk"/>
+                                    <constraint firstAttribute="trailing" secondItem="rRu-lu-Lnh" secondAttribute="trailing" constant="40" id="Bfx-yP-ASW"/>
+                                    <constraint firstAttribute="height" constant="80" id="JtB-ei-Cl8"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9C-e0-aEB">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="210"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="price_white" translatesAutoresizingMaskIntoConstraints="NO" id="pZD-wv-S9w">
+                                        <rect key="frame" x="132" y="20" width="150" height="150"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="150" id="Kkx-iv-anD"/>
+                                            <constraint firstAttribute="height" constant="150" id="fgg-vC-YVO"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" name="Yellow"/>
+                                <constraints>
+                                    <constraint firstItem="pZD-wv-S9w" firstAttribute="top" secondItem="b9C-e0-aEB" secondAttribute="top" constant="20" id="8hE-eZ-YmL"/>
+                                    <constraint firstItem="pZD-wv-S9w" firstAttribute="centerX" secondItem="b9C-e0-aEB" secondAttribute="centerX" id="I7L-gf-C5a"/>
+                                    <constraint firstAttribute="bottom" secondItem="pZD-wv-S9w" secondAttribute="bottom" constant="40" id="TdI-ZG-rox"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LgS-QB-FoL">
+                                <rect key="frame" x="20" y="311" width="374" height="463"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="53" id="oIP-Z8-J5r">
+                                        <rect key="frame" x="0.0" y="28" width="374" height="53"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="oIP-Z8-J5r" id="MSU-91-zDg">
+                                            <rect key="frame" x="0.0" y="0.0" width="374" height="53"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" id="nFe-mu-Ycb">
+                                                    <rect key="frame" x="0.0" y="15" width="374" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Producto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgv-PG-UIn">
+                                                            <rect key="frame" x="0.0" y="1.5" width="124.5" height="19"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                            <color key="textColor" name="DarkGray"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5c1-cf-l57">
+                                                            <rect key="frame" x="124.5" y="1.5" width="125" height="19"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                            <color key="textColor" name="DarkGray"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sY8-LM-isl">
+                                                            <rect key="frame" x="249.5" y="1.5" width="124.5" height="19"/>
+                                                            <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                            <color key="textColor" name="DarkGray"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FZb-nF-X6g">
+                                <rect key="frame" x="20" y="290" width="374" height="21"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Producto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whh-xA-wuf">
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                        <color key="textColor" name="DarkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oi-Hm-7wQ">
+                                        <rect key="frame" x="124.5" y="0.0" width="125" height="21"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                        <color key="textColor" name="DarkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhm-yc-mvq">
+                                        <rect key="frame" x="249.5" y="0.0" width="124.5" height="21"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
+                                        <color key="textColor" name="DarkGray"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WIf-Rp-cxB" firstAttribute="leading" secondItem="d6d-aj-6ih" secondAttribute="leading" id="AkW-Nb-MXw"/>
+                            <constraint firstItem="FZb-nF-X6g" firstAttribute="top" secondItem="WIf-Rp-cxB" secondAttribute="bottom" constant="10" id="Dxg-OB-yYr"/>
+                            <constraint firstItem="b9C-e0-aEB" firstAttribute="leading" secondItem="d6d-aj-6ih" secondAttribute="leading" id="L65-ik-iv3"/>
+                            <constraint firstItem="FZb-nF-X6g" firstAttribute="leading" secondItem="d6d-aj-6ih" secondAttribute="leading" constant="20" id="UGi-CG-Jox"/>
+                            <constraint firstItem="LgS-QB-FoL" firstAttribute="trailing" secondItem="FZb-nF-X6g" secondAttribute="trailing" id="Uk6-5M-RA1"/>
+                            <constraint firstItem="LgS-QB-FoL" firstAttribute="leading" secondItem="FZb-nF-X6g" secondAttribute="leading" id="Wqs-xA-OF2"/>
+                            <constraint firstItem="LgS-QB-FoL" firstAttribute="top" secondItem="FZb-nF-X6g" secondAttribute="bottom" id="Ym8-A4-cJt"/>
+                            <constraint firstItem="WIf-Rp-cxB" firstAttribute="top" secondItem="b9C-e0-aEB" secondAttribute="bottom" constant="-10" id="akO-Ag-Ctg"/>
+                            <constraint firstItem="WIf-Rp-cxB" firstAttribute="trailing" secondItem="d6d-aj-6ih" secondAttribute="trailing" id="n8x-la-V7c"/>
+                            <constraint firstItem="b9C-e0-aEB" firstAttribute="trailing" secondItem="d6d-aj-6ih" secondAttribute="trailing" id="rGP-bO-8nn"/>
+                            <constraint firstItem="LgS-QB-FoL" firstAttribute="bottom" secondItem="d6d-aj-6ih" secondAttribute="bottom" id="syF-Uc-kAk"/>
+                            <constraint firstItem="b9C-e0-aEB" firstAttribute="top" secondItem="d6d-aj-6ih" secondAttribute="top" id="uS0-mV-EwN"/>
+                            <constraint firstItem="d6d-aj-6ih" firstAttribute="trailing" secondItem="FZb-nF-X6g" secondAttribute="trailing" constant="20" id="ws8-7g-vrz"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="d6d-aj-6ih"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Ventas por día" id="geT-PQ-4kp">
+                        <barButtonItem key="leftBarButtonItem" image="hamburguer" id="S00-FF-DxU"/>
+                        <barButtonItem key="rightBarButtonItem" title="Mes" id="JrB-na-vkh"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jre-6z-9pd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1079.7101449275362" y="187.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Ak8-Vy-DgG">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9z3-6q-SH3" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="48P-m3-ZUO">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="Yellow"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="y43-pJ-TfQ" kind="relationship" relationship="rootViewController" id="Z0d-7r-EAq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="p7h-Mr-YI0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="169.56521739130437" y="187.5"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="hamburguer" width="30" height="22"/>
+        <image name="price_white" width="200" height="200"/>
+        <namedColor name="Blue">
+            <color red="0.0078431372549019607" green="0.33333333333333331" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkGray">
+            <color red="0.30980392156862746" green="0.29803921568627451" blue="0.29803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Yellow">
+            <color red="0.84313725490196079" green="0.8666666666666667" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
 </document>
