@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aiW-af-eBQ">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -16,13 +16,13 @@
         <!--Meseros-->
         <scene sceneID="694-tE-dCw">
             <objects>
-                <viewController title="Meseros" id="CrW-oh-ecK" sceneMemberID="viewController">
+                <viewController title="Meseros" modalPresentationStyle="fullScreen" id="CrW-oh-ecK" customClass="WaiterListView" customModule="Tatun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zlR-9N-o3b">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Gbq-df-edd">
-                                <rect key="frame" x="20" y="44" width="374" height="818"/>
+                                <rect key="frame" x="20" y="10" width="374" height="764"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" indentationWidth="10" rowHeight="86" id="5Cm-yl-xX4">
@@ -103,18 +103,41 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Gbq-df-edd" firstAttribute="top" secondItem="4JI-A7-a5N" secondAttribute="top" id="CFr-tn-yJV"/>
+                            <constraint firstItem="Gbq-df-edd" firstAttribute="top" secondItem="4JI-A7-a5N" secondAttribute="top" constant="10" id="CFr-tn-yJV"/>
                             <constraint firstItem="4JI-A7-a5N" firstAttribute="bottom" secondItem="Gbq-df-edd" secondAttribute="bottom" id="Ded-ax-8Dq"/>
                             <constraint firstItem="4JI-A7-a5N" firstAttribute="trailing" secondItem="Gbq-df-edd" secondAttribute="trailing" constant="20" id="aog-QH-lcX"/>
                             <constraint firstItem="Gbq-df-edd" firstAttribute="leading" secondItem="4JI-A7-a5N" secondAttribute="leading" constant="20" id="jmL-3d-ht6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="4JI-A7-a5N"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Mesas" id="tSx-lP-wN5">
+                    <navigationItem key="navigationItem" title="Meseros" id="tSx-lP-wN5">
                         <barButtonItem key="leftBarButtonItem" image="hamburguer" id="zUd-FN-d7L"/>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sLO-5Y-GUq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1620.289855072464" y="143.97321428571428"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="BUs-I6-zxu">
+            <objects>
+                <navigationController storyboardIdentifier="NVCWaitersList" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="aiW-af-eBQ" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="0lp-wM-Gf0">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="barTintColor" name="Yellow"/>
+                        <textAttributes key="titleTextAttributes">
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CrW-oh-ecK" kind="relationship" relationship="rootViewController" id="FXv-0j-A2M"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="myG-45-nvk" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="710.14492753623199" y="143.97321428571428"/>
         </scene>
@@ -124,6 +147,9 @@
         <image name="hamburguer" width="30" height="22"/>
         <namedColor name="Blue">
             <color red="0.0078431372549019607" green="0.33333333333333331" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Yellow">
+            <color red="0.84313725490196079" green="0.8666666666666667" blue="0.20784313725490197" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>

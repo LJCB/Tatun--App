@@ -27,6 +27,12 @@ class MenuView: UIViewController {
     switch sender.tag {
     case 0:
       presenter?.go_menu()
+    case 1:
+      presenter?.go_waiters_list()
+    case 2:
+      presenter?.go_account()
+    case 3:
+      presenter?.go_sales()
     default:
       print("Default action")
     }

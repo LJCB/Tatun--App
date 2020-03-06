@@ -19,6 +19,9 @@ protocol MenuWireFrameProtocol: class {
   // PRESENTER -> WIREFRAME
   static func createMenuModule() -> UIViewController
   func show_menu(from view: MenuViewProtocol)
+  func show_waiters_list(from view: MenuViewProtocol)
+  func show_account(from view: MenuViewProtocol)
+  func show_sales_day(from view: MenuViewProtocol)
 }
 
 protocol MenuPresenterProtocol: class {
@@ -29,9 +32,9 @@ protocol MenuPresenterProtocol: class {
   
   func viewDidLoad()
   func go_menu()
- // func go_waiters()
-  //func go_account()
-  //func go_sales()
+  func go_waiters_list()
+  func go_account()
+  func go_sales()
 }
 
 protocol MenuInteractorOutputProtocol: class {

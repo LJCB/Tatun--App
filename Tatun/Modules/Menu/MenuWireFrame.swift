@@ -44,4 +44,25 @@ class MenuWireFrame: MenuWireFrameProtocol {
       new_view.show(new_view_controller, sender: view)
     }
   }
+  
+  func show_waiters_list(from view: MenuViewProtocol) {
+    let new_view_controller = WaiterListWireFrame.createWaiterListModule()
+    if let new_view = view as? UIViewController{
+      new_view.show(new_view_controller, sender: view)
+    }
+  }
+  
+  func show_account(from view: MenuViewProtocol) {
+    let new_view_controller = ShowAccountWireFrame.createShowAccountModule()
+    if let new_view = view as? UIViewController{
+      new_view.show(new_view_controller, sender: view)
+    }
+  }
+  
+  func show_sales_day(from view: MenuViewProtocol) {
+    let new_view_controller = SalesDayWireFrame.createSalesDayModule()
+    if let new_view = view as? UIViewController{
+      new_view.show(new_view_controller, sender: view)
+    }
+  }
 }

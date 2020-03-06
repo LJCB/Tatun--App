@@ -14,10 +14,21 @@ class MenuPresenter  {
   weak var view: MenuViewProtocol?
   var interactor: MenuInteractorInputProtocol?
   var wireFrame: MenuWireFrameProtocol?
-  
 }
 
 extension MenuPresenter: MenuPresenterProtocol {
+  func go_sales() {
+    wireFrame?.show_sales_day(from: view!)
+  }
+  
+  func go_account() {
+    wireFrame?.show_account(from: view!)
+  }
+  
+  func go_waiters_list() {
+    wireFrame?.show_waiters_list(from: view!)
+  }
+  
   
   func viewDidLoad() {
     view?.set_layout()
