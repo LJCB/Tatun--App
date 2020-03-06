@@ -10,17 +10,32 @@ import Foundation
 import UIKit
 
 class MenuView: UIViewController {
-
-    // MARK: Properties
-    var presenter: MenuPresenterProtocol?
-
-    // MARK: Lifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
+  
+  @IBOutlet weak var img_user: UIImageView!
+  @IBOutlet weak var view_header: UIView!
+  
+  // MARK: Properties
+  var presenter: MenuPresenterProtocol?
+  
+  // MARK: Lifecycle
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    presenter?.viewDidLoad()
+  }
+  
+  @IBAction func menu_item_action(_ sender: UIButton) {
+    switch sender.tag {
+    case 0:
+      presenter?.go_menu()
+    default:
+      print("Default action")
     }
+  }
 }
 
 extension MenuView: MenuViewProtocol {
-    // TODO: implement view output methods
+  func set_layout() {
+    view_header.layer.cornerRadius = 40
+    view_header.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+  }
 }

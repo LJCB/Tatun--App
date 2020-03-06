@@ -75,6 +75,13 @@
 		A470B19E2411C20F00A13A6C /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1972411C20F00A13A6C /* MenuView.swift */; };
 		A470B19F2411C20F00A13A6C /* MenuRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1982411C20F00A13A6C /* MenuRemoteDataManager.swift */; };
 		A470B1A02411C20F00A13A6C /* MenuWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1992411C20F00A13A6C /* MenuWireFrame.swift */; };
+		A470B1A82411D3A400A13A6C /* MenuFoodPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1A12411D3A400A13A6C /* MenuFoodPresenter.swift */; };
+		A470B1A92411D3A400A13A6C /* MenuFoodLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1A22411D3A400A13A6C /* MenuFoodLocalDataManager.swift */; };
+		A470B1AA2411D3A400A13A6C /* MenuFoodProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1A32411D3A400A13A6C /* MenuFoodProtocols.swift */; };
+		A470B1AB2411D3A400A13A6C /* MenuFoodInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1A42411D3A400A13A6C /* MenuFoodInteractor.swift */; };
+		A470B1AC2411D3A400A13A6C /* MenuFoodView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1A52411D3A400A13A6C /* MenuFoodView.swift */; };
+		A470B1AD2411D3A400A13A6C /* MenuFoodRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1A62411D3A400A13A6C /* MenuFoodRemoteDataManager.swift */; };
+		A470B1AE2411D3A400A13A6C /* MenuFoodWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1A72411D3A400A13A6C /* MenuFoodWireFrame.swift */; };
 		A4E29F1C241031AF00BC04B8 /* TableDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */; };
 		A4E29F1F2410348E00BC04B8 /* OrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */; };
 		A4E29F222410368500BC04B8 /* MenuFood.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F212410368500BC04B8 /* MenuFood.storyboard */; };
@@ -162,6 +169,13 @@
 		A470B1972411C20F00A13A6C /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		A470B1982411C20F00A13A6C /* MenuRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuRemoteDataManager.swift; sourceTree = "<group>"; };
 		A470B1992411C20F00A13A6C /* MenuWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuWireFrame.swift; sourceTree = "<group>"; };
+		A470B1A12411D3A400A13A6C /* MenuFoodPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFoodPresenter.swift; sourceTree = "<group>"; };
+		A470B1A22411D3A400A13A6C /* MenuFoodLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFoodLocalDataManager.swift; sourceTree = "<group>"; };
+		A470B1A32411D3A400A13A6C /* MenuFoodProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFoodProtocols.swift; sourceTree = "<group>"; };
+		A470B1A42411D3A400A13A6C /* MenuFoodInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFoodInteractor.swift; sourceTree = "<group>"; };
+		A470B1A52411D3A400A13A6C /* MenuFoodView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFoodView.swift; sourceTree = "<group>"; };
+		A470B1A62411D3A400A13A6C /* MenuFoodRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFoodRemoteDataManager.swift; sourceTree = "<group>"; };
+		A470B1A72411D3A400A13A6C /* MenuFoodWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFoodWireFrame.swift; sourceTree = "<group>"; };
 		A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F212410368500BC04B8 /* MenuFood.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuFood.storyboard; sourceTree = "<group>"; };
@@ -444,6 +458,13 @@
 			isa = PBXGroup;
 			children = (
 				A4E29F212410368500BC04B8 /* MenuFood.storyboard */,
+				A470B1A12411D3A400A13A6C /* MenuFoodPresenter.swift */,
+				A470B1A22411D3A400A13A6C /* MenuFoodLocalDataManager.swift */,
+				A470B1A32411D3A400A13A6C /* MenuFoodProtocols.swift */,
+				A470B1A42411D3A400A13A6C /* MenuFoodInteractor.swift */,
+				A470B1A52411D3A400A13A6C /* MenuFoodView.swift */,
+				A470B1A62411D3A400A13A6C /* MenuFoodRemoteDataManager.swift */,
+				A470B1A72411D3A400A13A6C /* MenuFoodWireFrame.swift */,
 			);
 			path = MenuFood;
 			sourceTree = "<group>";
@@ -589,10 +610,12 @@
 				A470B1752411877300A13A6C /* NewPasswordRemoteDataManager.swift in Sources */,
 				A470B19A2411C20F00A13A6C /* MenuPresenter.swift in Sources */,
 				A470B18D2411BB4400A13A6C /* NewOrderLocalDataManager.swift in Sources */,
+				A470B1A82411D3A400A13A6C /* MenuFoodPresenter.swift in Sources */,
 				A4E29F332410560300BC04B8 /* LoginWaiterInteractor.swift in Sources */,
 				A470B160241174E200A13A6C /* RequestCodeLocalDataManager.swift in Sources */,
 				A43CA20D2409B53600BD547F /* AppDelegate.swift in Sources */,
 				A470B17E2411B1C000A13A6C /* OrderListPresenter.swift in Sources */,
+				A470B1AB2411D3A400A13A6C /* MenuFoodInteractor.swift in Sources */,
 				A470B1A02411C20F00A13A6C /* MenuWireFrame.swift in Sources */,
 				A470B162241174E200A13A6C /* RequestCodeInteractor.swift in Sources */,
 				A470B1922411BB4400A13A6C /* NewOrderWireFrame.swift in Sources */,
@@ -613,10 +636,12 @@
 				A470B1802411B1C000A13A6C /* OrderListProtocols.swift in Sources */,
 				A470B165241174E200A13A6C /* RequestCodeWireFrame.swift in Sources */,
 				A470B16724117EB400A13A6C /* GlobalFunctions.swift in Sources */,
+				A470B1AC2411D3A400A13A6C /* MenuFoodView.swift in Sources */,
 				A470B1712411877300A13A6C /* NewPasswordLocalDataManager.swift in Sources */,
 				A470B18F2411BB4400A13A6C /* NewOrderInteractor.swift in Sources */,
 				A42D79042409C19D0099B854 /* LoginAdminProtocols.swift in Sources */,
 				A42D79032409C19D0099B854 /* LoginAdminLocalDataManager.swift in Sources */,
+				A470B1AA2411D3A400A13A6C /* MenuFoodProtocols.swift in Sources */,
 				A470B1822411B1C000A13A6C /* OrderListView.swift in Sources */,
 				A470B164241174E200A13A6C /* RequestCodeRemoteDataManager.swift in Sources */,
 				A41CA741240DB36200B0F9BD /* RegisterPresenter.swift in Sources */,
@@ -625,10 +650,12 @@
 				A42D79072409C19D0099B854 /* LoginAdminRemoteDataManager.swift in Sources */,
 				A470B19C2411C20F00A13A6C /* MenuProtocols.swift in Sources */,
 				A470B1732411877300A13A6C /* NewPasswordInteractor.swift in Sources */,
+				A470B1AD2411D3A400A13A6C /* MenuFoodRemoteDataManager.swift in Sources */,
 				A470B1842411B1C000A13A6C /* OrderListWireFrame.swift in Sources */,
 				A43CA20F2409B53600BD547F /* SceneDelegate.swift in Sources */,
 				A41CA744240DB36200B0F9BD /* RegisterInteractor.swift in Sources */,
 				A470B1912411BB4400A13A6C /* NewOrderRemoteDataManager.swift in Sources */,
+				A470B1A92411D3A400A13A6C /* MenuFoodLocalDataManager.swift in Sources */,
 				A4E29F322410560300BC04B8 /* LoginWaiterProtocols.swift in Sources */,
 				A42D79062409C19D0099B854 /* LoginAdminView.swift in Sources */,
 				A41CA746240DB36200B0F9BD /* RegisterRemoteDataManager.swift in Sources */,
@@ -637,6 +664,7 @@
 				A470B18E2411BB4400A13A6C /* NewOrderProtocols.swift in Sources */,
 				A42D79082409C19D0099B854 /* LoginAdminWireFrame.swift in Sources */,
 				A470B1722411877300A13A6C /* NewPasswordProtocols.swift in Sources */,
+				A470B1AE2411D3A400A13A6C /* MenuFoodWireFrame.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

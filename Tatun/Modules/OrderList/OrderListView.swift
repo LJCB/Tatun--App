@@ -35,9 +35,9 @@ class OrderListView: UIViewController {
 
 extension OrderListView: OrderListViewProtocol {
   func add_menu() {
-    let storyboard = UIStoryboard(name: "Menu", bundle: nil)
-    MenuVC = storyboard.instantiateViewController(withIdentifier: "MenuVC") as! MenuView
-    MenuVC.view.frame = CGRect(x: -self.view.frame.width, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+    let new_view_controller = MenuWireFrame.createMenuModule()
+    new_view_controller.view.frame = CGRect(x: -self.view.frame.width, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+    MenuVC = new_view_controller
     self.addChild(MenuVC)
     self.view.addSubview(MenuVC.view)
   }
