@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A40476B02412B406003B7741 /* WaiterList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40476AF2412B406003B7741 /* WaiterList.storyboard */; };
+		A40476B42412B713003B7741 /* DisableWaiter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40476B32412B713003B7741 /* DisableWaiter.storyboard */; };
+		A40476B72412B863003B7741 /* NewWaiter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40476B62412B863003B7741 /* NewWaiter.storyboard */; };
+		A40476BA2412B9B1003B7741 /* ShowAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40476B92412B9B1003B7741 /* ShowAccount.storyboard */; };
+		A40476BF2412BFC4003B7741 /* EditAccount.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40476BE2412BFC4003B7741 /* EditAccount.storyboard */; };
+		A40476C12412C051003B7741 /* SalesDay.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40476C02412C051003B7741 /* SalesDay.storyboard */; };
+		A40476C52412C076003B7741 /* SalesMonth.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A40476C42412C076003B7741 /* SalesMonth.storyboard */; };
 		A41CA738240D986900B0F9BD /* WaiterLogin.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA737240D986900B0F9BD /* WaiterLogin.storyboard */; };
 		A41CA741240DB36200B0F9BD /* RegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA73A240DB36200B0F9BD /* RegisterPresenter.swift */; };
 		A41CA742240DB36200B0F9BD /* RegisterLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A41CA73B240DB36200B0F9BD /* RegisterLocalDataManager.swift */; };
@@ -99,6 +106,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A40476AF2412B406003B7741 /* WaiterList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WaiterList.storyboard; sourceTree = "<group>"; };
+		A40476B32412B713003B7741 /* DisableWaiter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DisableWaiter.storyboard; sourceTree = "<group>"; };
+		A40476B62412B863003B7741 /* NewWaiter.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewWaiter.storyboard; sourceTree = "<group>"; };
+		A40476B92412B9B1003B7741 /* ShowAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ShowAccount.storyboard; sourceTree = "<group>"; };
+		A40476BE2412BFC4003B7741 /* EditAccount.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EditAccount.storyboard; sourceTree = "<group>"; };
+		A40476C02412C051003B7741 /* SalesDay.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SalesDay.storyboard; sourceTree = "<group>"; };
+		A40476C42412C076003B7741 /* SalesMonth.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SalesMonth.storyboard; sourceTree = "<group>"; };
 		A41CA737240D986900B0F9BD /* WaiterLogin.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = WaiterLogin.storyboard; sourceTree = "<group>"; };
 		A41CA73A240DB36200B0F9BD /* RegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterPresenter.swift; sourceTree = "<group>"; };
 		A41CA73B240DB36200B0F9BD /* RegisterLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterLocalDataManager.swift; sourceTree = "<group>"; };
@@ -203,6 +217,90 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A40476AE2412B2F9003B7741 /* WaitersList */ = {
+			isa = PBXGroup;
+			children = (
+				A40476AF2412B406003B7741 /* WaiterList.storyboard */,
+			);
+			path = WaitersList;
+			sourceTree = "<group>";
+		};
+		A40476B12412B6E3003B7741 /* Waiter */ = {
+			isa = PBXGroup;
+			children = (
+				A40476B52412B806003B7741 /* NewWaiter */,
+				A40476B22412B6EA003B7741 /* DisableWaiter */,
+				A40476AE2412B2F9003B7741 /* WaitersList */,
+			);
+			path = Waiter;
+			sourceTree = "<group>";
+		};
+		A40476B22412B6EA003B7741 /* DisableWaiter */ = {
+			isa = PBXGroup;
+			children = (
+				A40476B32412B713003B7741 /* DisableWaiter.storyboard */,
+			);
+			path = DisableWaiter;
+			sourceTree = "<group>";
+		};
+		A40476B52412B806003B7741 /* NewWaiter */ = {
+			isa = PBXGroup;
+			children = (
+				A40476B62412B863003B7741 /* NewWaiter.storyboard */,
+			);
+			path = NewWaiter;
+			sourceTree = "<group>";
+		};
+		A40476B82412B99E003B7741 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				A40476BD2412BFB3003B7741 /* EditAccount */,
+				A40476BC2412BFAA003B7741 /* ShowAccount */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		A40476BB2412BF84003B7741 /* Sales */ = {
+			isa = PBXGroup;
+			children = (
+				A40476C32412C064003B7741 /* SalesMonth */,
+				A40476C22412C058003B7741 /* SalesDay */,
+			);
+			path = Sales;
+			sourceTree = "<group>";
+		};
+		A40476BC2412BFAA003B7741 /* ShowAccount */ = {
+			isa = PBXGroup;
+			children = (
+				A40476B92412B9B1003B7741 /* ShowAccount.storyboard */,
+			);
+			path = ShowAccount;
+			sourceTree = "<group>";
+		};
+		A40476BD2412BFB3003B7741 /* EditAccount */ = {
+			isa = PBXGroup;
+			children = (
+				A40476BE2412BFC4003B7741 /* EditAccount.storyboard */,
+			);
+			path = EditAccount;
+			sourceTree = "<group>";
+		};
+		A40476C22412C058003B7741 /* SalesDay */ = {
+			isa = PBXGroup;
+			children = (
+				A40476C02412C051003B7741 /* SalesDay.storyboard */,
+			);
+			path = SalesDay;
+			sourceTree = "<group>";
+		};
+		A40476C32412C064003B7741 /* SalesMonth */ = {
+			isa = PBXGroup;
+			children = (
+				A40476C42412C076003B7741 /* SalesMonth.storyboard */,
+			);
+			path = SalesMonth;
+			sourceTree = "<group>";
+		};
 		A41CA736240D985800B0F9BD /* LoginWaiter */ = {
 			isa = PBXGroup;
 			children = (
@@ -363,6 +461,9 @@
 		A43CA2202409B55300BD547F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A40476BB2412BF84003B7741 /* Sales */,
+				A40476B82412B99E003B7741 /* Account */,
+				A40476B12412B6E3003B7741 /* Waiter */,
 				A4E29F26241038C900BC04B8 /* NewMenuOption */,
 				A4E29F252410382900BC04B8 /* CancelMenuItem */,
 				A4E29F202410364100BC04B8 /* MenuFood */,
@@ -567,8 +668,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A43CA23C2409B71D00BD547F /* Montserrat-SemiBold.ttf in Resources */,
+				A40476B42412B713003B7741 /* DisableWaiter.storyboard in Resources */,
 				A43CA23A2409B71D00BD547F /* Montserrat-Regular.ttf in Resources */,
 				A41CA738240D986900B0F9BD /* WaiterLogin.storyboard in Resources */,
+				A40476BF2412BFC4003B7741 /* EditAccount.storyboard in Resources */,
 				A41CA74E240DB8BE00B0F9BD /* ValidateRegister.storyboard in Resources */,
 				A4E29F1F2410348E00BC04B8 /* OrderDetail.storyboard in Resources */,
 				A4E29F1C241031AF00BC04B8 /* TableDetail.storyboard in Resources */,
@@ -576,17 +679,22 @@
 				A43CA23B2409B71D00BD547F /* Montserrat-Medium.ttf in Resources */,
 				A41CA752240DBE2200B0F9BD /* RequestCode.storyboard in Resources */,
 				A41CA75E240DDB2600B0F9BD /* MenuBottom.storyboard in Resources */,
+				A40476C52412C076003B7741 /* SalesMonth.storyboard in Resources */,
+				A40476C12412C051003B7741 /* SalesDay.storyboard in Resources */,
 				A43CA2192409B53800BD547F /* LaunchScreen.storyboard in Resources */,
 				A4E29F222410368500BC04B8 /* MenuFood.storyboard in Resources */,
 				A4E29F2824103AE700BC04B8 /* NewMenuOption.storyboard in Resources */,
 				A41CA758240DD00700B0F9BD /* Menu.storyboard in Resources */,
 				A43CA23E2409B71D00BD547F /* Montserrat-Light.ttf in Resources */,
+				A40476BA2412B9B1003B7741 /* ShowAccount.storyboard in Resources */,
 				A43CA2162409B53800BD547F /* Assets.xcassets in Resources */,
 				A42D790A2409C1CB0099B854 /* AdminLogin.storyboard in Resources */,
 				A43CA23D2409B71D00BD547F /* Montserrat-Bold.ttf in Resources */,
 				A41CA755240DC32800B0F9BD /* NewPassword.storyboard in Resources */,
 				A41CA75B240DD6C600B0F9BD /* OrderList.storyboard in Resources */,
+				A40476B02412B406003B7741 /* WaiterList.storyboard in Resources */,
 				A4ED0547240F3215008CF14C /* TablesList.storyboard in Resources */,
+				A40476B72412B863003B7741 /* NewWaiter.storyboard in Resources */,
 				A4ED0544240F2A64008CF14C /* NewOrder.storyboard in Resources */,
 				A41CA74B240DB38600B0F9BD /* Register.storyboard in Resources */,
 			);

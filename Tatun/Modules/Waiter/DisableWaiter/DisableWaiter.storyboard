@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Montserrat-Regular.ttf">
+            <string>Montserrat-Regular</string>
+        </array>
+        <array key="Montserrat-SemiBold.ttf">
+            <string>Montserrat-SemiBold</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Request Code View-->
+        <scene sceneID="zQi-8D-IPU">
+            <objects>
+                <viewController storyboardIdentifier="VCDisableWaiter" modalTransitionStyle="crossDissolve" modalPresentationStyle="overFullScreen" id="wDf-9v-gtC" customClass="RequestCodeView" customModule="Tatun" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vCe-rh-kV6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8cC-94-cJe">
+                                <rect key="frame" x="20" y="369" width="374" height="168"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Suspender mesero 1?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z3H-nf-nIl">
+                                        <rect key="frame" x="20" y="20" width="334" height="19"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="16"/>
+                                        <color key="textColor" name="Blue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="El mesero no tendrá acceso a la aplicación" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ADB-1D-VkD">
+                                        <rect key="frame" x="20" y="59" width="334" height="19"/>
+                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                        <color key="textColor" name="Blue"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="GiD-ME-BBq">
+                                        <rect key="frame" x="20" y="98" width="335" height="50"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cSm-sf-ecs">
+                                                <rect key="frame" x="0.0" y="0.0" width="162.5" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hUk-Km-GGP">
+                                                        <rect key="frame" x="0.0" y="0.0" width="162.5" height="50"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                        <state key="normal" title="Cancelar">
+                                                            <color key="titleColor" name="Pink"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="cancel_action:" destination="wDf-9v-gtC" eventType="touchUpInside" id="fqp-Zb-Vpy"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="hUk-Km-GGP" firstAttribute="leading" secondItem="cSm-sf-ecs" secondAttribute="leading" id="4wE-Gk-dpg"/>
+                                                    <constraint firstAttribute="trailing" secondItem="hUk-Km-GGP" secondAttribute="trailing" id="NPr-Kf-wQa"/>
+                                                    <constraint firstAttribute="bottom" secondItem="hUk-Km-GGP" secondAttribute="bottom" id="TBG-ju-h8b"/>
+                                                    <constraint firstItem="hUk-Km-GGP" firstAttribute="top" secondItem="cSm-sf-ecs" secondAttribute="top" id="TvC-py-7fd"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DSK-7v-Fk0">
+                                                <rect key="frame" x="172.5" y="0.0" width="162.5" height="50"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mHi-L1-fK2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="162.5" height="50"/>
+                                                        <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
+                                                        <state key="normal" title="Aceptar">
+                                                            <color key="titleColor" name="Blue"/>
+                                                        </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                                <integer key="value" value="15"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
+                                                        <connections>
+                                                            <action selector="accept_action:" destination="wDf-9v-gtC" eventType="touchUpInside" id="1H3-Uo-Nyy"/>
+                                                        </connections>
+                                                    </button>
+                                                </subviews>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                                <constraints>
+                                                    <constraint firstItem="mHi-L1-fK2" firstAttribute="top" secondItem="DSK-7v-Fk0" secondAttribute="top" id="3Pv-JQ-NgY"/>
+                                                    <constraint firstAttribute="trailing" secondItem="mHi-L1-fK2" secondAttribute="trailing" id="DCq-LY-d6b"/>
+                                                    <constraint firstItem="mHi-L1-fK2" firstAttribute="leading" secondItem="DSK-7v-Fk0" secondAttribute="leading" id="O2R-K7-pal"/>
+                                                    <constraint firstAttribute="bottom" secondItem="mHi-L1-fK2" secondAttribute="bottom" id="ThJ-fW-cie"/>
+                                                </constraints>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                        <integer key="value" value="20"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="50" id="gLe-EU-5kx"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="GiD-ME-BBq" firstAttribute="top" secondItem="ADB-1D-VkD" secondAttribute="bottom" constant="20" id="78s-Tq-wAG"/>
+                                    <constraint firstItem="ADB-1D-VkD" firstAttribute="trailing" secondItem="z3H-nf-nIl" secondAttribute="trailing" id="9hv-Im-nnE"/>
+                                    <constraint firstAttribute="bottom" secondItem="GiD-ME-BBq" secondAttribute="bottom" constant="20" id="Gvc-r1-uQn"/>
+                                    <constraint firstItem="z3H-nf-nIl" firstAttribute="leading" secondItem="8cC-94-cJe" secondAttribute="leading" constant="20" id="ODW-Ot-pdE"/>
+                                    <constraint firstAttribute="trailing" secondItem="z3H-nf-nIl" secondAttribute="trailing" constant="20" id="Sg2-e6-kEV"/>
+                                    <constraint firstItem="ADB-1D-VkD" firstAttribute="leading" secondItem="z3H-nf-nIl" secondAttribute="leading" id="XpN-5p-aVI"/>
+                                    <constraint firstItem="z3H-nf-nIl" firstAttribute="top" secondItem="8cC-94-cJe" secondAttribute="top" constant="20" id="kmT-bI-mo8"/>
+                                    <constraint firstItem="ADB-1D-VkD" firstAttribute="top" secondItem="z3H-nf-nIl" secondAttribute="bottom" constant="20" id="lhe-wT-8K2"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="40"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.5" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="8cC-94-cJe" firstAttribute="leading" secondItem="CON-Ob-bFQ" secondAttribute="leading" constant="20" id="IOb-Ij-FV3"/>
+                            <constraint firstItem="8cC-94-cJe" firstAttribute="centerY" secondItem="CON-Ob-bFQ" secondAttribute="centerY" id="TGM-0e-XFs"/>
+                            <constraint firstItem="CON-Ob-bFQ" firstAttribute="trailing" secondItem="8cC-94-cJe" secondAttribute="trailing" constant="20" id="Tsx-ek-NI4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CON-Ob-bFQ"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="zQL-54-XtM"/>
+                    <connections>
+                        <outlet property="btn_accept" destination="mHi-L1-fK2" id="l26-8y-Vlz"/>
+                        <outlet property="btn_cancel" destination="hUk-Km-GGP" id="qwa-f1-uLl"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lrk-7r-03I" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="842.02898550724649" y="125.89285714285714"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="Blue">
+            <color red="0.0078431372549019607" green="0.33333333333333331" blue="0.54509803921568623" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="Pink">
+            <color red="0.89411764705882357" green="0.17647058823529413" blue="0.62352941176470589" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
