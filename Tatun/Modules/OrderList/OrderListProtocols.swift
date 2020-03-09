@@ -14,8 +14,8 @@ protocol OrderListViewProtocol: class {
   var presenter: OrderListPresenterProtocol? { get set }
   func set_layout()
   func add_menu()
-  func show_menu()
-  func hide_menu()
+  func animate_menu()
+  
   
 }
 
@@ -33,7 +33,7 @@ protocol OrderListPresenterProtocol: class {
   
   func viewDidLoad()
   func go_new_order()
-  func menu_action(menu_showed: Bool)
+  func menu_action()
 }
 
 protocol OrderListInteractorOutputProtocol: class {

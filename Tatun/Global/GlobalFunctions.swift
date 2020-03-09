@@ -11,6 +11,9 @@ import UIKit
 class GlobalFunctions {
   static let sharedInstance = GlobalFunctions()
   
+  var hide_menu = Bool()
+  var menuVC = UIViewController()
+  
   func set_border_button(color: String, button: UIButton){
     button.layer.borderColor = UIColor(named: color)?.cgColor
     button.layer.borderWidth = 1
@@ -27,6 +30,29 @@ class GlobalFunctions {
     }else{
       view_controller.navigationController?.navigationBar.tintColor = UIColor.white
     }
-    
+  }
+  
+  func add_menu(viewController :UIViewController, view: UIView) {
+    hide_menu = false
+    menuVC = MenuWireFrame.createMenuModule()
+    menuVC.view.frame = CGRect(x: -view.frame.width, y: 0, width: view.frame.width, height: view.frame.height)
+    viewController.addChild(menuVC)
+    view.addSubview(menuVC.view)
+  }
+  
+  func animateMenu(in view: UIView) {
+    if !hide_menu {
+      //Menu In Animation
+      UIView.animate(withDuration: 0.3, animations: {
+        self.menuVC.view.frame = CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height)
+      })
+      hide_menu = true
+    }else {
+      //Menu Out Animation
+      UIView.animate(withDuration: 0.3, animations: {
+        self.menuVC.view.frame = CGRect(x: -view.frame.width, y: 0, width: view.frame.width, height: view.frame.height)
+      })
+      hide_menu = false
+    }
   }
 }

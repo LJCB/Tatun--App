@@ -18,12 +18,8 @@ class OrderListPresenter  {
 }
 
 extension OrderListPresenter: OrderListPresenterProtocol {
-  func menu_action(menu_showed: Bool) {
-    if menu_showed{
-      view?.hide_menu()
-    }else{
-      view?.show_menu()
-    }
+  func menu_action() {
+    view?.animate_menu()
   }
   
   

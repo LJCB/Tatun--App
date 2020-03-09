@@ -10,17 +10,31 @@ import Foundation
 import UIKit
 
 class SalesDayView: UIViewController {
-
-    // MARK: Properties
-    var presenter: SalesDayPresenterProtocol?
-
-    // MARK: Lifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+  
+  @IBOutlet weak var view_green: UIView!
+  @IBOutlet weak var view_blue: UIView!
+  // MARK: Properties
+  var presenter: SalesDayPresenterProtocol?
+  
+  // MARK: Lifecycle
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    presenter?.viewDidLoad()
+  }
+  
+  @IBAction func month_action(_ sender: Any) {
+    presenter?.go_sales_month()
+  }
 }
 
 extension SalesDayView: SalesDayViewProtocol {
-    // TODO: implement view output methods
+  func set_layout() {
+    view_blue.layer.cornerRadius = 40
+    view_green.layer.cornerRadius = 40
+    view_blue.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+    view_green.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+  }
+  
+  // TODO: implement view output methods
 }

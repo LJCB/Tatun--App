@@ -68,6 +68,13 @@
 		A43CA23C2409B71D00BD547F /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2372409B71D00BD547F /* Montserrat-SemiBold.ttf */; };
 		A43CA23D2409B71D00BD547F /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2382409B71D00BD547F /* Montserrat-Bold.ttf */; };
 		A43CA23E2409B71D00BD547F /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = A43CA2392409B71D00BD547F /* Montserrat-Light.ttf */; };
+		A45961A32416A67900855C76 /* SalesMonthPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A459619C2416A67900855C76 /* SalesMonthPresenter.swift */; };
+		A45961A42416A67900855C76 /* SalesMonthLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A459619D2416A67900855C76 /* SalesMonthLocalDataManager.swift */; };
+		A45961A52416A67900855C76 /* SalesMonthProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A459619E2416A67900855C76 /* SalesMonthProtocols.swift */; };
+		A45961A62416A67900855C76 /* SalesMonthInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A459619F2416A67900855C76 /* SalesMonthInteractor.swift */; };
+		A45961A72416A67900855C76 /* SalesMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961A02416A67900855C76 /* SalesMonthView.swift */; };
+		A45961A82416A67900855C76 /* SalesMonthRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961A12416A67900855C76 /* SalesMonthRemoteDataManager.swift */; };
+		A45961A92416A67900855C76 /* SalesMonthWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961A22416A67900855C76 /* SalesMonthWireFrame.swift */; };
 		A470B15F241174E200A13A6C /* RequestCodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B158241174E200A13A6C /* RequestCodePresenter.swift */; };
 		A470B160241174E200A13A6C /* RequestCodeLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B159241174E200A13A6C /* RequestCodeLocalDataManager.swift */; };
 		A470B161241174E200A13A6C /* RequestCodeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B15A241174E200A13A6C /* RequestCodeProtocols.swift */; };
@@ -191,6 +198,13 @@
 		A43CA2372409B71D00BD547F /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
 		A43CA2382409B71D00BD547F /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
 		A43CA2392409B71D00BD547F /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		A459619C2416A67900855C76 /* SalesMonthPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesMonthPresenter.swift; sourceTree = "<group>"; };
+		A459619D2416A67900855C76 /* SalesMonthLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesMonthLocalDataManager.swift; sourceTree = "<group>"; };
+		A459619E2416A67900855C76 /* SalesMonthProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesMonthProtocols.swift; sourceTree = "<group>"; };
+		A459619F2416A67900855C76 /* SalesMonthInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesMonthInteractor.swift; sourceTree = "<group>"; };
+		A45961A02416A67900855C76 /* SalesMonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesMonthView.swift; sourceTree = "<group>"; };
+		A45961A12416A67900855C76 /* SalesMonthRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesMonthRemoteDataManager.swift; sourceTree = "<group>"; };
+		A45961A22416A67900855C76 /* SalesMonthWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesMonthWireFrame.swift; sourceTree = "<group>"; };
 		A470B158241174E200A13A6C /* RequestCodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodePresenter.swift; sourceTree = "<group>"; };
 		A470B159241174E200A13A6C /* RequestCodeLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeLocalDataManager.swift; sourceTree = "<group>"; };
 		A470B15A241174E200A13A6C /* RequestCodeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeProtocols.swift; sourceTree = "<group>"; };
@@ -363,6 +377,13 @@
 			isa = PBXGroup;
 			children = (
 				A40476C42412C076003B7741 /* SalesMonth.storyboard */,
+				A459619C2416A67900855C76 /* SalesMonthPresenter.swift */,
+				A459619D2416A67900855C76 /* SalesMonthLocalDataManager.swift */,
+				A459619E2416A67900855C76 /* SalesMonthProtocols.swift */,
+				A459619F2416A67900855C76 /* SalesMonthInteractor.swift */,
+				A45961A02416A67900855C76 /* SalesMonthView.swift */,
+				A45961A12416A67900855C76 /* SalesMonthRemoteDataManager.swift */,
+				A45961A22416A67900855C76 /* SalesMonthWireFrame.swift */,
 			);
 			path = SalesMonth;
 			sourceTree = "<group>";
@@ -786,10 +807,12 @@
 				A40476E02412D6D3003B7741 /* ShowAccountProtocols.swift in Sources */,
 				A470B1742411877300A13A6C /* NewPasswordView.swift in Sources */,
 				A470B161241174E200A13A6C /* RequestCodeProtocols.swift in Sources */,
+				A45961A82416A67900855C76 /* SalesMonthRemoteDataManager.swift in Sources */,
 				A470B17F2411B1C000A13A6C /* OrderListLocalDataManager.swift in Sources */,
 				A40476F12412D812003B7741 /* SalesDayRemoteDataManager.swift in Sources */,
 				A41CA743240DB36200B0F9BD /* RegisterProtocols.swift in Sources */,
 				A470B1832411B1C000A13A6C /* OrderListRemoteDataManager.swift in Sources */,
+				A45961A72416A67900855C76 /* SalesMonthView.swift in Sources */,
 				A42D79052409C19D0099B854 /* LoginAdminInteractor.swift in Sources */,
 				A470B1812411B1C000A13A6C /* OrderListInteractor.swift in Sources */,
 				A470B19D2411C20F00A13A6C /* MenuInteractor.swift in Sources */,
@@ -826,6 +849,7 @@
 				A470B1902411BB4400A13A6C /* NewOrderView.swift in Sources */,
 				A470B19F2411C20F00A13A6C /* MenuRemoteDataManager.swift in Sources */,
 				A470B15F241174E200A13A6C /* RequestCodePresenter.swift in Sources */,
+				A45961A92416A67900855C76 /* SalesMonthWireFrame.swift in Sources */,
 				A4E29F352410560300BC04B8 /* LoginWaiterRemoteDataManager.swift in Sources */,
 				A470B1802411B1C000A13A6C /* OrderListProtocols.swift in Sources */,
 				A470B165241174E200A13A6C /* RequestCodeWireFrame.swift in Sources */,
@@ -833,6 +857,8 @@
 				A470B1AC2411D3A400A13A6C /* MenuFoodView.swift in Sources */,
 				A470B1712411877300A13A6C /* NewPasswordLocalDataManager.swift in Sources */,
 				A470B18F2411BB4400A13A6C /* NewOrderInteractor.swift in Sources */,
+				A45961A52416A67900855C76 /* SalesMonthProtocols.swift in Sources */,
+				A45961A42416A67900855C76 /* SalesMonthLocalDataManager.swift in Sources */,
 				A40476ED2412D812003B7741 /* SalesDayLocalDataManager.swift in Sources */,
 				A42D79042409C19D0099B854 /* LoginAdminProtocols.swift in Sources */,
 				A42D79032409C19D0099B854 /* LoginAdminLocalDataManager.swift in Sources */,
@@ -842,6 +868,7 @@
 				A41CA741240DB36200B0F9BD /* RegisterPresenter.swift in Sources */,
 				A40476E32412D6D3003B7741 /* ShowAccountRemoteDataManager.swift in Sources */,
 				A4E29F362410560300BC04B8 /* LoginWaiterWireFrame.swift in Sources */,
+				A45961A62416A67900855C76 /* SalesMonthInteractor.swift in Sources */,
 				A40476EE2412D812003B7741 /* SalesDayProtocols.swift in Sources */,
 				A41CA747240DB36200B0F9BD /* RegisterWireFrame.swift in Sources */,
 				A42D79072409C19D0099B854 /* LoginAdminRemoteDataManager.swift in Sources */,
@@ -864,6 +891,7 @@
 				A40476E22412D6D3003B7741 /* ShowAccountView.swift in Sources */,
 				A40476F22412D812003B7741 /* SalesDayWireFrame.swift in Sources */,
 				A4E29F302410560300BC04B8 /* LoginWaiterPresenter.swift in Sources */,
+				A45961A32416A67900855C76 /* SalesMonthPresenter.swift in Sources */,
 				A40476D02412D3F9003B7741 /* WaiterListPresenter.swift in Sources */,
 				A470B18E2411BB4400A13A6C /* NewOrderProtocols.swift in Sources */,
 				A42D79082409C19D0099B854 /* LoginAdminWireFrame.swift in Sources */,

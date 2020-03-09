@@ -25,10 +25,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="WIf-Rp-cxB">
-                                <rect key="frame" x="0.0" y="200" width="414" height="80"/>
+                                <rect key="frame" x="0.0" y="160" width="414" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha: Marzo 28, 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRu-lu-Lnh">
-                                        <rect key="frame" x="40" y="28" width="334" height="24.5"/>
+                                        <rect key="frame" x="40" y="68" width="334" height="24.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -36,10 +36,10 @@
                                 </subviews>
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
-                                    <constraint firstItem="rRu-lu-Lnh" firstAttribute="centerY" secondItem="WIf-Rp-cxB" secondAttribute="centerY" id="4FL-Ft-dos"/>
+                                    <constraint firstItem="rRu-lu-Lnh" firstAttribute="centerY" secondItem="WIf-Rp-cxB" secondAttribute="centerY" constant="20" id="4FL-Ft-dos"/>
                                     <constraint firstItem="rRu-lu-Lnh" firstAttribute="leading" secondItem="WIf-Rp-cxB" secondAttribute="leading" constant="40" id="6kh-vY-Xjk"/>
                                     <constraint firstAttribute="trailing" secondItem="rRu-lu-Lnh" secondAttribute="trailing" constant="40" id="Bfx-yP-ASW"/>
-                                    <constraint firstAttribute="height" constant="80" id="JtB-ei-Cl8"/>
+                                    <constraint firstAttribute="height" constant="120" id="JtB-ei-Cl8"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="b9C-e0-aEB">
@@ -133,7 +133,7 @@
                             <constraint firstItem="LgS-QB-FoL" firstAttribute="trailing" secondItem="FZb-nF-X6g" secondAttribute="trailing" id="Uk6-5M-RA1"/>
                             <constraint firstItem="LgS-QB-FoL" firstAttribute="leading" secondItem="FZb-nF-X6g" secondAttribute="leading" id="Wqs-xA-OF2"/>
                             <constraint firstItem="LgS-QB-FoL" firstAttribute="top" secondItem="FZb-nF-X6g" secondAttribute="bottom" id="Ym8-A4-cJt"/>
-                            <constraint firstItem="WIf-Rp-cxB" firstAttribute="top" secondItem="b9C-e0-aEB" secondAttribute="bottom" constant="-10" id="akO-Ag-Ctg"/>
+                            <constraint firstItem="WIf-Rp-cxB" firstAttribute="top" secondItem="b9C-e0-aEB" secondAttribute="bottom" constant="-50" id="akO-Ag-Ctg"/>
                             <constraint firstItem="WIf-Rp-cxB" firstAttribute="trailing" secondItem="d6d-aj-6ih" secondAttribute="trailing" id="n8x-la-V7c"/>
                             <constraint firstItem="b9C-e0-aEB" firstAttribute="trailing" secondItem="d6d-aj-6ih" secondAttribute="trailing" id="rGP-bO-8nn"/>
                             <constraint firstItem="LgS-QB-FoL" firstAttribute="bottom" secondItem="d6d-aj-6ih" secondAttribute="bottom" id="syF-Uc-kAk"/>
@@ -144,8 +144,16 @@
                     </view>
                     <navigationItem key="navigationItem" title="Ventas por día" id="geT-PQ-4kp">
                         <barButtonItem key="leftBarButtonItem" image="hamburguer" id="S00-FF-DxU"/>
-                        <barButtonItem key="rightBarButtonItem" title="Mes" id="JrB-na-vkh"/>
+                        <barButtonItem key="rightBarButtonItem" title="Mes" id="JrB-na-vkh">
+                            <connections>
+                                <action selector="month_action:" destination="y43-pJ-TfQ" id="Gb7-Wx-RAH"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="view_blue" destination="WIf-Rp-cxB" id="jcw-fi-caM"/>
+                        <outlet property="view_green" destination="b9C-e0-aEB" id="5N9-V9-TGq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jre-6z-9pd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

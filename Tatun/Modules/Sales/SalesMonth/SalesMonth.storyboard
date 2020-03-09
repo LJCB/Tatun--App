@@ -20,16 +20,17 @@
         <!--Ventas por mes-->
         <scene sceneID="k10-1w-n8U">
             <objects>
-                <viewController id="2fa-qV-j9k" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="2fa-qV-j9k" customClass="SalesMonthView" customModule="Tatun" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vCj-Au-KYu">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="808"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4U6-YO-8xx">
-                                <rect key="frame" x="0.0" y="200" width="414" height="80"/>
+                            <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4U6-YO-8xx">
+                                <rect key="frame" x="0.0" y="160" width="414" height="120"/>
                                 <subviews>
                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="r4o-yL-4a9">
-                                        <rect key="frame" x="0.0" y="15" width="414" height="60"/>
+                                        <rect key="frame" x="40" y="60" width="334" height="55"/>
+                                        <color key="backgroundColor" name="Blue"/>
                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="dMm-aN-xOV">
                                             <size key="itemSize" width="150" height="50"/>
                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -65,10 +66,10 @@
                                 <color key="backgroundColor" name="Blue"/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="r4o-yL-4a9" secondAttribute="bottom" constant="5" id="0IM-Ov-BtZ"/>
-                                    <constraint firstAttribute="height" constant="80" id="3I3-dd-bKm"/>
-                                    <constraint firstItem="r4o-yL-4a9" firstAttribute="leading" secondItem="4U6-YO-8xx" secondAttribute="leading" id="Mem-ac-1lp"/>
-                                    <constraint firstItem="r4o-yL-4a9" firstAttribute="top" secondItem="4U6-YO-8xx" secondAttribute="top" constant="15" id="nbO-Wh-E4c"/>
-                                    <constraint firstAttribute="trailing" secondItem="r4o-yL-4a9" secondAttribute="trailing" id="zyj-1P-GlV"/>
+                                    <constraint firstAttribute="height" constant="120" id="3I3-dd-bKm"/>
+                                    <constraint firstItem="r4o-yL-4a9" firstAttribute="leading" secondItem="4U6-YO-8xx" secondAttribute="leading" constant="40" id="Mem-ac-1lp"/>
+                                    <constraint firstItem="r4o-yL-4a9" firstAttribute="top" secondItem="4U6-YO-8xx" secondAttribute="top" constant="60" id="nbO-Wh-E4c"/>
+                                    <constraint firstAttribute="trailing" secondItem="r4o-yL-4a9" secondAttribute="trailing" constant="40" id="zyj-1P-GlV"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Zu7-Sd-PsE">
@@ -165,7 +166,7 @@
                             <constraint firstItem="hkz-s0-6Nl" firstAttribute="top" secondItem="ZH0-WE-QEb" secondAttribute="bottom" id="aYq-pi-3ji"/>
                             <constraint firstItem="4U6-YO-8xx" firstAttribute="leading" secondItem="d0i-9P-360" secondAttribute="leading" id="eHA-fZ-kDk"/>
                             <constraint firstItem="ZH0-WE-QEb" firstAttribute="leading" secondItem="d0i-9P-360" secondAttribute="leading" constant="20" id="eOI-e0-eKm"/>
-                            <constraint firstItem="4U6-YO-8xx" firstAttribute="top" secondItem="Zu7-Sd-PsE" secondAttribute="bottom" constant="-10" id="i6O-TL-pZM"/>
+                            <constraint firstItem="4U6-YO-8xx" firstAttribute="top" secondItem="Zu7-Sd-PsE" secondAttribute="bottom" constant="-50" id="i6O-TL-pZM"/>
                             <constraint firstItem="hkz-s0-6Nl" firstAttribute="bottom" secondItem="d0i-9P-360" secondAttribute="bottom" id="vyC-Pm-KMC"/>
                             <constraint firstItem="Zu7-Sd-PsE" firstAttribute="top" secondItem="d0i-9P-360" secondAttribute="top" id="wos-GW-jXN"/>
                         </constraints>
@@ -175,6 +176,10 @@
                         <barButtonItem key="leftBarButtonItem" image="hamburguer" id="sGh-AN-5uL"/>
                         <barButtonItem key="rightBarButtonItem" title="Día" id="j4r-tO-1wQ"/>
                     </navigationItem>
+                    <connections>
+                        <outlet property="view_blue" destination="4U6-YO-8xx" id="ORF-Ge-j6g"/>
+                        <outlet property="view_green" destination="Zu7-Sd-PsE" id="vm0-E7-fRq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W6h-vZ-N62" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -183,7 +188,7 @@
         <!--Navigation Controller-->
         <scene sceneID="VVB-dL-lrR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="FHB-E3-gHr" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NVCSalesMonth" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" id="FHB-E3-gHr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="XMa-Tc-dJr">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>

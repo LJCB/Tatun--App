@@ -9,20 +9,24 @@
 import Foundation
 
 class SalesDayPresenter  {
-    
-    // MARK: Properties
-    weak var view: SalesDayViewProtocol?
-    var interactor: SalesDayInteractorInputProtocol?
-    var wireFrame: SalesDayWireFrameProtocol?
-    
+  
+  // MARK: Properties
+  weak var view: SalesDayViewProtocol?
+  var interactor: SalesDayInteractorInputProtocol?
+  var wireFrame: SalesDayWireFrameProtocol?
 }
 
 extension SalesDayPresenter: SalesDayPresenterProtocol {
-    // TODO: implement presenter methods
-    func viewDidLoad() {
-    }
+  func go_sales_month() {
+    wireFrame?.show_sales_mont(from: view!)
+  }
+  
+  // TODO: implement presenter methods
+  func viewDidLoad() {
+    view?.set_layout()
+  }
 }
 
 extension SalesDayPresenter: SalesDayInteractorOutputProtocol {
-    // TODO: implement interactor output methods
+  // TODO: implement interactor output methods
 }
