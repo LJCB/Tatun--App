@@ -13,6 +13,8 @@ protocol SalesDayViewProtocol: class {
   // PRESENTER -> VIEW
   var presenter: SalesDayPresenterProtocol? { get set }
   func set_layout()
+  func add_menu()
+  func animate_menu()
   
 }
 
@@ -30,6 +32,7 @@ protocol SalesDayPresenterProtocol: class {
   
   func viewDidLoad()
   func go_sales_month()
+  func menu_action()
 }
 
 protocol SalesDayInteractorOutputProtocol: class {

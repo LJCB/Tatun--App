@@ -111,7 +111,11 @@
                         <viewLayoutGuide key="safeArea" id="4JI-A7-a5N"/>
                     </view>
                     <navigationItem key="navigationItem" title="Meseros" id="tSx-lP-wN5">
-                        <barButtonItem key="leftBarButtonItem" image="hamburguer" id="zUd-FN-d7L"/>
+                        <barButtonItem key="leftBarButtonItem" image="hamburguer" id="zUd-FN-d7L">
+                            <connections>
+                                <action selector="menu_action:" destination="CrW-oh-ecK" id="hYN-dy-aM1"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sLO-5Y-GUq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

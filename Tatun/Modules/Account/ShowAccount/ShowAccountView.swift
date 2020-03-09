@@ -10,17 +10,28 @@ import Foundation
 import UIKit
 
 class ShowAccountView: UIViewController {
-
-    // MARK: Properties
-    var presenter: ShowAccountPresenterProtocol?
-
-    // MARK: Lifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+  
+  // MARK: Properties
+  var presenter: ShowAccountPresenterProtocol?
+  
+  // MARK: Lifecycle
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    presenter?.viewDidLoad()
+  }
+  
+  @IBAction func menu_action(_ sender: Any) {
+    presenter?.menu_action()
+  }
 }
 
 extension ShowAccountView: ShowAccountViewProtocol {
-    // TODO: implement view output methods
+  func add_menu() {
+    GlobalFunctions.sharedInstance.add_menu(viewController: self, view: self.view)
+  }
+  
+  func animate_menu() {
+    GlobalFunctions.sharedInstance.animateMenu(in: self.view)
+  }
 }

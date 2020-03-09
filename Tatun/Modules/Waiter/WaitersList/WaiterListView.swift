@@ -10,17 +10,30 @@ import Foundation
 import UIKit
 
 class WaiterListView: UIViewController {
-
-    // MARK: Properties
-    var presenter: WaiterListPresenterProtocol?
-
-    // MARK: Lifecycle
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+  
+  // MARK: Properties
+  var presenter: WaiterListPresenterProtocol?
+  
+  // MARK: Lifecycle
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    presenter?.viewDidLoad()
+  }
+  
+  @IBAction func menu_action(_ sender: Any) {
+    presenter?.menu_action()
+  }
 }
 
 extension WaiterListView: WaiterListViewProtocol {
-    // TODO: implement view output methods
+  func add_menu() {
+    GlobalFunctions.sharedInstance.add_menu(viewController: self, view: self.view)
+  }
+  
+  func animate_menu() {
+    GlobalFunctions.sharedInstance.animateMenu(in: self.view)
+  }
+  
+  // TODO: implement view output methods
 }

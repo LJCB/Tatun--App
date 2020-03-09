@@ -11,9 +11,6 @@ import UIKit
 
 class OrderListView: UIViewController {
   
-  var hideMenu: Bool = Bool()
-  var MenuVC: UIViewController = UIViewController()
-  
   @IBOutlet weak var view_header: UIView!
   // MARK: Properties
   var presenter: OrderListPresenterProtocol?

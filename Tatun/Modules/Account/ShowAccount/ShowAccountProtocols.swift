@@ -10,48 +10,51 @@ import Foundation
 import UIKit
 
 protocol ShowAccountViewProtocol: class {
-    // PRESENTER -> VIEW
-    var presenter: ShowAccountPresenterProtocol? { get set }
+  // PRESENTER -> VIEW
+  var presenter: ShowAccountPresenterProtocol? { get set }
+  func add_menu()
+  func animate_menu()
 }
 
 protocol ShowAccountWireFrameProtocol: class {
-    // PRESENTER -> WIREFRAME
-    static func createShowAccountModule() -> UIViewController
+  // PRESENTER -> WIREFRAME
+  static func createShowAccountModule() -> UIViewController
 }
 
 protocol ShowAccountPresenterProtocol: class {
-    // VIEW -> PRESENTER
-    var view: ShowAccountViewProtocol? { get set }
-    var interactor: ShowAccountInteractorInputProtocol? { get set }
-    var wireFrame: ShowAccountWireFrameProtocol? { get set }
-    
-    func viewDidLoad()
+  // VIEW -> PRESENTER
+  var view: ShowAccountViewProtocol? { get set }
+  var interactor: ShowAccountInteractorInputProtocol? { get set }
+  var wireFrame: ShowAccountWireFrameProtocol? { get set }
+  
+  func viewDidLoad()
+  func menu_action()
 }
 
 protocol ShowAccountInteractorOutputProtocol: class {
-// INTERACTOR -> PRESENTER
+  // INTERACTOR -> PRESENTER
 }
 
 protocol ShowAccountInteractorInputProtocol: class {
-    // PRESENTER -> INTERACTOR
-    var presenter: ShowAccountInteractorOutputProtocol? { get set }
-    var localDatamanager: ShowAccountLocalDataManagerInputProtocol? { get set }
-    var remoteDatamanager: ShowAccountRemoteDataManagerInputProtocol? { get set }
+  // PRESENTER -> INTERACTOR
+  var presenter: ShowAccountInteractorOutputProtocol? { get set }
+  var localDatamanager: ShowAccountLocalDataManagerInputProtocol? { get set }
+  var remoteDatamanager: ShowAccountRemoteDataManagerInputProtocol? { get set }
 }
 
 protocol ShowAccountDataManagerInputProtocol: class {
-    // INTERACTOR -> DATAMANAGER
+  // INTERACTOR -> DATAMANAGER
 }
 
 protocol ShowAccountRemoteDataManagerInputProtocol: class {
-    // INTERACTOR -> REMOTEDATAMANAGER
-    var remoteRequestHandler: ShowAccountRemoteDataManagerOutputProtocol? { get set }
+  // INTERACTOR -> REMOTEDATAMANAGER
+  var remoteRequestHandler: ShowAccountRemoteDataManagerOutputProtocol? { get set }
 }
 
 protocol ShowAccountRemoteDataManagerOutputProtocol: class {
-    // REMOTEDATAMANAGER -> INTERACTOR
+  // REMOTEDATAMANAGER -> INTERACTOR
 }
 
 protocol ShowAccountLocalDataManagerInputProtocol: class {
-    // INTERACTOR -> LOCALDATAMANAGER
+  // INTERACTOR -> LOCALDATAMANAGER
 }

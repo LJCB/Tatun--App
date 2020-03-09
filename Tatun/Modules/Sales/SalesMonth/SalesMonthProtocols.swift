@@ -13,6 +13,8 @@ protocol SalesMonthViewProtocol: class {
   // PRESENTER -> VIEW
   var presenter: SalesMonthPresenterProtocol? { get set }
   func set_layout()
+  func add_menu()
+  func animate_menu()
 }
 
 protocol SalesMonthWireFrameProtocol: class {
@@ -27,6 +29,7 @@ protocol SalesMonthPresenterProtocol: class {
   var wireFrame: SalesMonthWireFrameProtocol? { get set }
   
   func viewDidLoad()
+  func menu_action()
 }
 
 protocol SalesMonthInteractorOutputProtocol: class {

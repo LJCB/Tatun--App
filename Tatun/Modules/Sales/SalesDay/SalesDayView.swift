@@ -26,15 +26,25 @@ class SalesDayView: UIViewController {
   @IBAction func month_action(_ sender: Any) {
     presenter?.go_sales_month()
   }
+  
+  @IBAction func menu_action(_ sender: Any) {
+    presenter?.menu_action()
+  }
 }
 
 extension SalesDayView: SalesDayViewProtocol {
+  func add_menu() {
+    GlobalFunctions.sharedInstance.add_menu(viewController: self, view: self.view)
+  }
+  
+  func animate_menu() {
+    GlobalFunctions.sharedInstance.animateMenu(in: self.view)
+  }
+  
   func set_layout() {
     view_blue.layer.cornerRadius = 40
     view_green.layer.cornerRadius = 40
     view_blue.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
     view_green.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
   }
-  
-  // TODO: implement view output methods
 }

@@ -10,48 +10,51 @@ import Foundation
 import UIKit
 
 protocol WaiterListViewProtocol: class {
-    // PRESENTER -> VIEW
-    var presenter: WaiterListPresenterProtocol? { get set }
+  // PRESENTER -> VIEW
+  var presenter: WaiterListPresenterProtocol? { get set }
+  func add_menu()
+  func animate_menu()
 }
 
 protocol WaiterListWireFrameProtocol: class {
-    // PRESENTER -> WIREFRAME
-    static func createWaiterListModule() -> UIViewController
+  // PRESENTER -> WIREFRAME
+  static func createWaiterListModule() -> UIViewController
 }
 
 protocol WaiterListPresenterProtocol: class {
-    // VIEW -> PRESENTER
-    var view: WaiterListViewProtocol? { get set }
-    var interactor: WaiterListInteractorInputProtocol? { get set }
-    var wireFrame: WaiterListWireFrameProtocol? { get set }
-    
-    func viewDidLoad()
+  // VIEW -> PRESENTER
+  var view: WaiterListViewProtocol? { get set }
+  var interactor: WaiterListInteractorInputProtocol? { get set }
+  var wireFrame: WaiterListWireFrameProtocol? { get set }
+  
+  func viewDidLoad()
+  func menu_action()
 }
 
 protocol WaiterListInteractorOutputProtocol: class {
-// INTERACTOR -> PRESENTER
+  // INTERACTOR -> PRESENTER
 }
 
 protocol WaiterListInteractorInputProtocol: class {
-    // PRESENTER -> INTERACTOR
-    var presenter: WaiterListInteractorOutputProtocol? { get set }
-    var localDatamanager: WaiterListLocalDataManagerInputProtocol? { get set }
-    var remoteDatamanager: WaiterListRemoteDataManagerInputProtocol? { get set }
+  // PRESENTER -> INTERACTOR
+  var presenter: WaiterListInteractorOutputProtocol? { get set }
+  var localDatamanager: WaiterListLocalDataManagerInputProtocol? { get set }
+  var remoteDatamanager: WaiterListRemoteDataManagerInputProtocol? { get set }
 }
 
 protocol WaiterListDataManagerInputProtocol: class {
-    // INTERACTOR -> DATAMANAGER
+  // INTERACTOR -> DATAMANAGER
 }
 
 protocol WaiterListRemoteDataManagerInputProtocol: class {
-    // INTERACTOR -> REMOTEDATAMANAGER
-    var remoteRequestHandler: WaiterListRemoteDataManagerOutputProtocol? { get set }
+  // INTERACTOR -> REMOTEDATAMANAGER
+  var remoteRequestHandler: WaiterListRemoteDataManagerOutputProtocol? { get set }
 }
 
 protocol WaiterListRemoteDataManagerOutputProtocol: class {
-    // REMOTEDATAMANAGER -> INTERACTOR
+  // REMOTEDATAMANAGER -> INTERACTOR
 }
 
 protocol WaiterListLocalDataManagerInputProtocol: class {
-    // INTERACTOR -> LOCALDATAMANAGER
+  // INTERACTOR -> LOCALDATAMANAGER
 }

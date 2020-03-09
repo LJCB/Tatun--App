@@ -9,20 +9,24 @@
 import Foundation
 
 class ShowAccountPresenter  {
-    
-    // MARK: Properties
-    weak var view: ShowAccountViewProtocol?
-    var interactor: ShowAccountInteractorInputProtocol?
-    var wireFrame: ShowAccountWireFrameProtocol?
-    
+  
+  // MARK: Properties
+  weak var view: ShowAccountViewProtocol?
+  var interactor: ShowAccountInteractorInputProtocol?
+  var wireFrame: ShowAccountWireFrameProtocol?
+  
 }
 
 extension ShowAccountPresenter: ShowAccountPresenterProtocol {
-    // TODO: implement presenter methods
-    func viewDidLoad() {
-    }
+  func menu_action() {
+    view?.animate_menu()
+  }
+  
+  func viewDidLoad() {
+    view?.add_menu()
+  }
 }
 
 extension ShowAccountPresenter: ShowAccountInteractorOutputProtocol {
-    // TODO: implement interactor output methods
+  // TODO: implement interactor output methods
 }

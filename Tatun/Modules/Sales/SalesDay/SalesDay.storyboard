@@ -28,7 +28,7 @@
                                 <rect key="frame" x="0.0" y="160" width="414" height="120"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha: Marzo 28, 2020" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rRu-lu-Lnh">
-                                        <rect key="frame" x="40" y="68" width="334" height="24.5"/>
+                                        <rect key="frame" x="40" y="68.5" width="334" height="23.5"/>
                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="20"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <nil key="highlightedColor"/>
@@ -61,7 +61,7 @@
                                 </constraints>
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="LgS-QB-FoL">
-                                <rect key="frame" x="20" y="312" width="374" height="462"/>
+                                <rect key="frame" x="20" y="311" width="374" height="463"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="53" id="oIP-Z8-J5r">
@@ -76,19 +76,19 @@
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Producto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xgv-PG-UIn">
-                                                            <rect key="frame" x="0.0" y="1" width="124.5" height="20"/>
+                                                            <rect key="frame" x="0.0" y="1.5" width="124.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                             <color key="textColor" name="DarkGray"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5c1-cf-l57">
-                                                            <rect key="frame" x="124.5" y="1" width="125" height="20"/>
+                                                            <rect key="frame" x="124.5" y="1.5" width="125" height="19"/>
                                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                             <color key="textColor" name="DarkGray"/>
                                                             <nil key="highlightedColor"/>
                                                         </label>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monto" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sY8-LM-isl">
-                                                            <rect key="frame" x="249.5" y="1" width="124.5" height="20"/>
+                                                            <rect key="frame" x="249.5" y="1.5" width="124.5" height="19"/>
                                                             <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                             <color key="textColor" name="DarkGray"/>
                                                             <nil key="highlightedColor"/>
@@ -101,22 +101,22 @@
                                 </prototypes>
                             </tableView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="FZb-nF-X6g">
-                                <rect key="frame" x="20" y="290" width="374" height="22"/>
+                                <rect key="frame" x="20" y="290" width="374" height="21"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Producto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="whh-xA-wuf">
-                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="22"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="124.5" height="21"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
                                         <color key="textColor" name="DarkGray"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cantidad" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Oi-Hm-7wQ">
-                                        <rect key="frame" x="124.5" y="0.0" width="125" height="22"/>
+                                        <rect key="frame" x="124.5" y="0.0" width="125" height="21"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
                                         <color key="textColor" name="DarkGray"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monto" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uhm-yc-mvq">
-                                        <rect key="frame" x="249.5" y="0.0" width="124.5" height="22"/>
+                                        <rect key="frame" x="249.5" y="0.0" width="124.5" height="21"/>
                                         <fontDescription key="fontDescription" name="Montserrat-SemiBold" family="Montserrat" pointSize="18"/>
                                         <color key="textColor" name="DarkGray"/>
                                         <nil key="highlightedColor"/>
@@ -143,7 +143,11 @@
                         <viewLayoutGuide key="safeArea" id="d6d-aj-6ih"/>
                     </view>
                     <navigationItem key="navigationItem" title="Ventas por día" id="geT-PQ-4kp">
-                        <barButtonItem key="leftBarButtonItem" image="hamburguer" id="S00-FF-DxU"/>
+                        <barButtonItem key="leftBarButtonItem" image="hamburguer" id="S00-FF-DxU">
+                            <connections>
+                                <action selector="menu_action:" destination="y43-pJ-TfQ" id="blT-v7-pg2"/>
+                            </connections>
+                        </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" title="Mes" id="JrB-na-vkh">
                             <connections>
                                 <action selector="month_action:" destination="y43-pJ-TfQ" id="Gb7-Wx-RAH"/>

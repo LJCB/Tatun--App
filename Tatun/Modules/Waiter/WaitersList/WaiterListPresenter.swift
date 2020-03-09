@@ -9,20 +9,25 @@
 import Foundation
 
 class WaiterListPresenter  {
-    
-    // MARK: Properties
-    weak var view: WaiterListViewProtocol?
-    var interactor: WaiterListInteractorInputProtocol?
-    var wireFrame: WaiterListWireFrameProtocol?
-    
+  
+  // MARK: Properties
+  weak var view: WaiterListViewProtocol?
+  var interactor: WaiterListInteractorInputProtocol?
+  var wireFrame: WaiterListWireFrameProtocol?
+  
 }
 
 extension WaiterListPresenter: WaiterListPresenterProtocol {
-    // TODO: implement presenter methods
-    func viewDidLoad() {
-    }
+  
+  func viewDidLoad() {
+    view?.add_menu()
+  }
+  
+  func menu_action() {
+    view?.animate_menu()
+  }
 }
 
 extension WaiterListPresenter: WaiterListInteractorOutputProtocol {
-    // TODO: implement interactor output methods
+  // TODO: implement interactor output methods
 }

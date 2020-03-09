@@ -9,20 +9,24 @@
 import Foundation
 
 class MenuFoodPresenter  {
-    
-    // MARK: Properties
-    weak var view: MenuFoodViewProtocol?
-    var interactor: MenuFoodInteractorInputProtocol?
-    var wireFrame: MenuFoodWireFrameProtocol?
-    
+  
+  // MARK: Properties
+  weak var view: MenuFoodViewProtocol?
+  var interactor: MenuFoodInteractorInputProtocol?
+  var wireFrame: MenuFoodWireFrameProtocol?
+  
 }
 
 extension MenuFoodPresenter: MenuFoodPresenterProtocol {
-    // TODO: implement presenter methods
-    func viewDidLoad() {
-    }
+  func menu_action() {
+    view?.animate_menu()
+  }
+  
+  func viewDidLoad() {
+    view?.add_menu()
+  }
 }
 
 extension MenuFoodPresenter: MenuFoodInteractorOutputProtocol {
-    // TODO: implement interactor output methods
+  // TODO: implement interactor output methods
 }

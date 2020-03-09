@@ -10,48 +10,51 @@ import Foundation
 import UIKit
 
 protocol MenuFoodViewProtocol: class {
-    // PRESENTER -> VIEW
-    var presenter: MenuFoodPresenterProtocol? { get set }
+  // PRESENTER -> VIEW
+  var presenter: MenuFoodPresenterProtocol? { get set }
+  func add_menu()
+  func animate_menu()
 }
 
 protocol MenuFoodWireFrameProtocol: class {
-    // PRESENTER -> WIREFRAME
-    static func createMenuFoodModule() -> UIViewController
+  // PRESENTER -> WIREFRAME
+  static func createMenuFoodModule() -> UIViewController
 }
 
 protocol MenuFoodPresenterProtocol: class {
-    // VIEW -> PRESENTER
-    var view: MenuFoodViewProtocol? { get set }
-    var interactor: MenuFoodInteractorInputProtocol? { get set }
-    var wireFrame: MenuFoodWireFrameProtocol? { get set }
-    
-    func viewDidLoad()
+  // VIEW -> PRESENTER
+  var view: MenuFoodViewProtocol? { get set }
+  var interactor: MenuFoodInteractorInputProtocol? { get set }
+  var wireFrame: MenuFoodWireFrameProtocol? { get set }
+  
+  func viewDidLoad()
+  func menu_action()
 }
 
 protocol MenuFoodInteractorOutputProtocol: class {
-// INTERACTOR -> PRESENTER
+  // INTERACTOR -> PRESENTER
 }
 
 protocol MenuFoodInteractorInputProtocol: class {
-    // PRESENTER -> INTERACTOR
-    var presenter: MenuFoodInteractorOutputProtocol? { get set }
-    var localDatamanager: MenuFoodLocalDataManagerInputProtocol? { get set }
-    var remoteDatamanager: MenuFoodRemoteDataManagerInputProtocol? { get set }
+  // PRESENTER -> INTERACTOR
+  var presenter: MenuFoodInteractorOutputProtocol? { get set }
+  var localDatamanager: MenuFoodLocalDataManagerInputProtocol? { get set }
+  var remoteDatamanager: MenuFoodRemoteDataManagerInputProtocol? { get set }
 }
 
 protocol MenuFoodDataManagerInputProtocol: class {
-    // INTERACTOR -> DATAMANAGER
+  // INTERACTOR -> DATAMANAGER
 }
 
 protocol MenuFoodRemoteDataManagerInputProtocol: class {
-    // INTERACTOR -> REMOTEDATAMANAGER
-    var remoteRequestHandler: MenuFoodRemoteDataManagerOutputProtocol? { get set }
+  // INTERACTOR -> REMOTEDATAMANAGER
+  var remoteRequestHandler: MenuFoodRemoteDataManagerOutputProtocol? { get set }
 }
 
 protocol MenuFoodRemoteDataManagerOutputProtocol: class {
-    // REMOTEDATAMANAGER -> INTERACTOR
+  // REMOTEDATAMANAGER -> INTERACTOR
 }
 
 protocol MenuFoodLocalDataManagerInputProtocol: class {
-    // INTERACTOR -> LOCALDATAMANAGER
+  // INTERACTOR -> LOCALDATAMANAGER
 }

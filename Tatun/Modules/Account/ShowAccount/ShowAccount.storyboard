@@ -163,7 +163,11 @@
                         <viewLayoutGuide key="safeArea" id="YAq-ih-ErB"/>
                     </view>
                     <navigationItem key="navigationItem" id="3ga-1e-8ll">
-                        <barButtonItem key="leftBarButtonItem" image="hamburguer" id="VfA-dK-jsS"/>
+                        <barButtonItem key="leftBarButtonItem" image="hamburguer" id="VfA-dK-jsS">
+                            <connections>
+                                <action selector="menu_action:" destination="Ta7-8N-voN" id="Crf-qZ-98E"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="O7Q-Z6-XLe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>

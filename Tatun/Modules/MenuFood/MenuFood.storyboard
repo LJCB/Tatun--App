@@ -262,6 +262,10 @@
                                                         <state key="normal" title="Terminar">
                                                             <color key="titleColor" name="Blue"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="finish_action:" destination="khT-ig-GWO" eventType="touchUpInside" id="z2C-qn-DqT"/>
+                                                            <action selector="menu_action:" destination="khT-ig-GWO" eventType="touchUpInside" id="U8S-VX-qnI"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4g-5t-k8v">
                                                         <rect key="frame" x="197" y="0.0" width="177" height="40"/>
@@ -269,6 +273,9 @@
                                                         <state key="normal" title="Agregar">
                                                             <color key="titleColor" name="Blue"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="add_action:" destination="khT-ig-GWO" eventType="touchUpInside" id="keX-kK-084"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                                 <constraints>
@@ -322,7 +329,11 @@
                         <viewLayoutGuide key="safeArea" id="7nc-E2-5KM"/>
                     </view>
                     <navigationItem key="navigationItem" title="Tu menú" id="sUj-dr-dfL">
-                        <barButtonItem key="leftBarButtonItem" image="hamburguer" id="1we-91-Yc5"/>
+                        <barButtonItem key="leftBarButtonItem" image="hamburguer" id="1we-91-Yc5">
+                            <connections>
+                                <action selector="menu_action:" destination="khT-ig-GWO" id="XfW-pb-T3b"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="oFX-D4-wDu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
