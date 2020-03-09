@@ -18,6 +18,10 @@ class SalesMonthPresenter  {
 }
 
 extension SalesMonthPresenter: SalesMonthPresenterProtocol {
+  func go_sales_day() {
+    wireFrame?.show_sales_day(from: view!)
+  }
+  
   func menu_action() {
     view?.animate_menu()
   }

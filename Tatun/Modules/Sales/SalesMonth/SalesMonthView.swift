@@ -25,7 +25,7 @@ class SalesMonthView: UIViewController {
   }
   
   @IBAction func day_action(_ sender: Any) {
-  
+    presenter?.go_sales_day()
   }
   
   @IBAction func menu_action(_ sender: Any) {

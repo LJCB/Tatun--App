@@ -20,6 +20,7 @@ protocol SalesMonthViewProtocol: class {
 protocol SalesMonthWireFrameProtocol: class {
   // PRESENTER -> WIREFRAME
   static func createSalesMonthModule() -> UIViewController
+  func show_sales_day(from view:SalesMonthViewProtocol)
 }
 
 protocol SalesMonthPresenterProtocol: class {
@@ -30,6 +31,7 @@ protocol SalesMonthPresenterProtocol: class {
   
   func viewDidLoad()
   func menu_action()
+  func go_sales_day()
 }
 
 protocol SalesMonthInteractorOutputProtocol: class {

@@ -10,32 +10,38 @@ import Foundation
 import UIKit
 
 class SalesMonthWireFrame: SalesMonthWireFrameProtocol {
-
-    class func createSalesMonthModule() -> UIViewController {
-        let navController = mainStoryboard.instantiateViewController(withIdentifier: "NVCSalesMonth")
-        if let view = navController.children.first as? SalesMonthView {
-            let presenter: SalesMonthPresenterProtocol & SalesMonthInteractorOutputProtocol = SalesMonthPresenter()
-            let interactor: SalesMonthInteractorInputProtocol & SalesMonthRemoteDataManagerOutputProtocol = SalesMonthInteractor()
-            let localDataManager: SalesMonthLocalDataManagerInputProtocol = SalesMonthLocalDataManager()
-            let remoteDataManager: SalesMonthRemoteDataManagerInputProtocol = SalesMonthRemoteDataManager()
-            let wireFrame: SalesMonthWireFrameProtocol = SalesMonthWireFrame()
-            
-            view.presenter = presenter
-            presenter.view = view
-            presenter.wireFrame = wireFrame
-            presenter.interactor = interactor
-            interactor.presenter = presenter
-            interactor.localDatamanager = localDataManager
-            interactor.remoteDatamanager = remoteDataManager
-            remoteDataManager.remoteRequestHandler = interactor
-            
-            return navController
-        }
-        return UIViewController()
+  
+  class func createSalesMonthModule() -> UIViewController {
+    let navController = mainStoryboard.instantiateViewController(withIdentifier: "NVCSalesMonth")
+    if let view = navController.children.first as? SalesMonthView {
+      let presenter: SalesMonthPresenterProtocol & SalesMonthInteractorOutputProtocol = SalesMonthPresenter()
+      let interactor: SalesMonthInteractorInputProtocol & SalesMonthRemoteDataManagerOutputProtocol = SalesMonthInteractor()
+      let localDataManager: SalesMonthLocalDataManagerInputProtocol = SalesMonthLocalDataManager()
+      let remoteDataManager: SalesMonthRemoteDataManagerInputProtocol = SalesMonthRemoteDataManager()
+      let wireFrame: SalesMonthWireFrameProtocol = SalesMonthWireFrame()
+      
+      view.presenter = presenter
+      presenter.view = view
+      presenter.wireFrame = wireFrame
+      presenter.interactor = interactor
+      interactor.presenter = presenter
+      interactor.localDatamanager = localDataManager
+      interactor.remoteDatamanager = remoteDataManager
+      remoteDataManager.remoteRequestHandler = interactor
+      
+      return navController
     }
-    
-    static var mainStoryboard: UIStoryboard {
-        return UIStoryboard(name: "SalesMonth", bundle: Bundle.main)
+    return UIViewController()
+  }
+  
+  static var mainStoryboard: UIStoryboard {
+    return UIStoryboard(name: "SalesMonth", bundle: Bundle.main)
+  }
+  
+  func show_sales_day(from view: SalesMonthViewProtocol) {
+    let new_view_controller = SalesDayWireFrame.createSalesDayModule()
+    if let new_view = view as? UIViewController{
+      new_view.show(new_view_controller, sender: view)
     }
-    
+  }
 }
