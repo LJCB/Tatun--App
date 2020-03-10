@@ -10,7 +10,7 @@ import Foundation
 import UIKit
 
 class LoginAdminWireFrame: LoginAdminWireFrameProtocol {
-  
+  var window:UIWindow?
   class func createLoginAdminModule() -> UIViewController {
     let navController = mainStoryboard.instantiateViewController(withIdentifier: "NVCAdminLogin")
     if let view = navController.children.first as? LoginAdminView {
@@ -61,9 +61,10 @@ class LoginAdminWireFrame: LoginAdminWireFrameProtocol {
   }
   
   func show_order_list(from view: LoginAdminViewProtocol) {
-    let new_view_controller = OrderListWireFrame.createOrderListModule()
+    var tabBarController = UITabBarController()
+    tabBarController = GlobalFunctions.sharedInstance.init_tab_bar(item_selected: 0)
     if let new_view = view as? UIViewController{
-      new_view.navigationController?.present(new_view_controller, animated: true, completion: nil)
+      new_view.present(tabBarController, animated: true, completion: nil)
     }
   }
 }

@@ -15,14 +15,14 @@ protocol OrderListViewProtocol: class {
   func set_layout()
   func add_menu()
   func animate_menu()
-  
-  
+  func set_tab_bar_delegate()
 }
 
 protocol OrderListWireFrameProtocol: class {
   // PRESENTER -> WIREFRAME
   static func createOrderListModule() -> UIViewController
   func show_form_new_order(from view: OrderListViewProtocol)
+ 
 }
 
 protocol OrderListPresenterProtocol: class {

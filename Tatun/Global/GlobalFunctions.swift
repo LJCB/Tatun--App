@@ -55,4 +55,41 @@ class GlobalFunctions {
       hide_menu = false
     }
   }
+  
+  func init_tab_bar(item_selected: Int) -> UITabBarController{
+    let OrderList = OrderListWireFrame.createOrderListModule()
+    let TablesList =  TablesListWireFrame.createTablesListModule()
+    let Menu = MenuFoodWireFrame.createMenuFoodModule()
+    let tabBarController = UITabBarController()
+    
+    
+    let OrderListItem: UITabBarItem = UITabBarItem(title: "Pedidos", image: nil, tag: 0)
+    let TablesListItem: UITabBarItem = UITabBarItem(title: "Mesas", image: nil, tag: 1)
+    let MenuItem: UITabBarItem = UITabBarItem(title: "Menu", image: nil, tag: 2)
+    
+    OrderList.tabBarItem = OrderListItem
+    TablesList.tabBarItem = TablesListItem
+    Menu.tabBarItem = MenuItem
+    
+    OrderList.modalPresentationStyle = .fullScreen
+    TablesList.modalPresentationStyle = .fullScreen
+    Menu.modalPresentationStyle = .fullScreen
+    
+    
+    tabBarController.viewControllers = [OrderList, TablesList, Menu]
+    
+    switch item_selected {
+    case 0:
+      tabBarController.selectedViewController = OrderList
+    case 1:
+      tabBarController.selectedViewController = TablesList
+    default:
+      tabBarController.selectedViewController = Menu
+    }
+    
+    tabBarController.modalPresentationStyle = .fullScreen
+    
+    return tabBarController
+  }
 }
+  

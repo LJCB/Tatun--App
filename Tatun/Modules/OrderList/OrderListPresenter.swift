@@ -18,6 +18,7 @@ class OrderListPresenter  {
 }
 
 extension OrderListPresenter: OrderListPresenterProtocol {
+  
   func menu_action() {
     view?.animate_menu()
   }
@@ -26,6 +27,7 @@ extension OrderListPresenter: OrderListPresenterProtocol {
   func viewDidLoad() {
     view?.set_layout()
     view?.add_menu()
+    view?.set_tab_bar_delegate()
   }
   
   func go_new_order() {

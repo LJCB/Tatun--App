@@ -36,6 +36,10 @@ class MenuFoodView: UIViewController {
 }
 
 extension MenuFoodView: MenuFoodViewProtocol {
+  func set_tab_bar_delegate() {
+    self.tabBarController?.delegate = self
+  }
+  
   func add_menu() {
     GlobalFunctions.sharedInstance.add_menu(viewController: self, view: self.view)
   }
@@ -43,6 +47,14 @@ extension MenuFoodView: MenuFoodViewProtocol {
   func animate_menu() {
     GlobalFunctions.sharedInstance.animateMenu(in: self.view)
   }
-  
-  // TODO: implement view output methods
+}
+
+extension MenuFoodView: UITabBarControllerDelegate{
+  func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
+    
+    var tabBarController = UITabBarController()
+    tabBarController = GlobalFunctions.sharedInstance.init_tab_bar(item_selected: viewController.tabBarItem.tag)
+    self.present(tabBarController, animated: true, completion: nil)
+    print("Did select Menu")
+  }
 }

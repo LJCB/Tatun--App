@@ -14,6 +14,7 @@ protocol MenuFoodViewProtocol: class {
   var presenter: MenuFoodPresenterProtocol? { get set }
   func add_menu()
   func animate_menu()
+  func set_tab_bar_delegate()
 }
 
 protocol MenuFoodWireFrameProtocol: class {

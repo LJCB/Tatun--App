@@ -24,6 +24,7 @@ extension MenuFoodPresenter: MenuFoodPresenterProtocol {
   
   func viewDidLoad() {
     view?.add_menu()
+    view?.set_tab_bar_delegate()
   }
 }
 

@@ -50,7 +50,6 @@
 		A41CA755240DC32800B0F9BD /* NewPassword.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA754240DC32800B0F9BD /* NewPassword.storyboard */; };
 		A41CA758240DD00700B0F9BD /* Menu.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA757240DD00700B0F9BD /* Menu.storyboard */; };
 		A41CA75B240DD6C600B0F9BD /* OrderList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA75A240DD6C600B0F9BD /* OrderList.storyboard */; };
-		A41CA75E240DDB2600B0F9BD /* MenuBottom.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A41CA75D240DDB2600B0F9BD /* MenuBottom.storyboard */; };
 		A42D79022409C19D0099B854 /* LoginAdminPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FB2409C19D0099B854 /* LoginAdminPresenter.swift */; };
 		A42D79032409C19D0099B854 /* LoginAdminLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FC2409C19D0099B854 /* LoginAdminLocalDataManager.swift */; };
 		A42D79042409C19D0099B854 /* LoginAdminProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A42D78FD2409C19D0099B854 /* LoginAdminProtocols.swift */; };
@@ -75,6 +74,13 @@
 		A45961A72416A67900855C76 /* SalesMonthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961A02416A67900855C76 /* SalesMonthView.swift */; };
 		A45961A82416A67900855C76 /* SalesMonthRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961A12416A67900855C76 /* SalesMonthRemoteDataManager.swift */; };
 		A45961A92416A67900855C76 /* SalesMonthWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961A22416A67900855C76 /* SalesMonthWireFrame.swift */; };
+		A45961B82416FAC000855C76 /* TablesListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961B12416FAC000855C76 /* TablesListPresenter.swift */; };
+		A45961B92416FAC000855C76 /* TablesListLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961B22416FAC000855C76 /* TablesListLocalDataManager.swift */; };
+		A45961BA2416FAC000855C76 /* TablesListProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961B32416FAC000855C76 /* TablesListProtocols.swift */; };
+		A45961BB2416FAC000855C76 /* TablesListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961B42416FAC000855C76 /* TablesListInteractor.swift */; };
+		A45961BC2416FAC000855C76 /* TablesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961B52416FAC000855C76 /* TablesListView.swift */; };
+		A45961BD2416FAC000855C76 /* TablesListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961B62416FAC000855C76 /* TablesListRemoteDataManager.swift */; };
+		A45961BE2416FAC000855C76 /* TablesListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961B72416FAC000855C76 /* TablesListWireFrame.swift */; };
 		A470B15F241174E200A13A6C /* RequestCodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B158241174E200A13A6C /* RequestCodePresenter.swift */; };
 		A470B160241174E200A13A6C /* RequestCodeLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B159241174E200A13A6C /* RequestCodeLocalDataManager.swift */; };
 		A470B161241174E200A13A6C /* RequestCodeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B15A241174E200A13A6C /* RequestCodeProtocols.swift */; };
@@ -178,7 +184,6 @@
 		A41CA754240DC32800B0F9BD /* NewPassword.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = NewPassword.storyboard; sourceTree = "<group>"; };
 		A41CA757240DD00700B0F9BD /* Menu.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Menu.storyboard; sourceTree = "<group>"; };
 		A41CA75A240DD6C600B0F9BD /* OrderList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderList.storyboard; sourceTree = "<group>"; };
-		A41CA75D240DDB2600B0F9BD /* MenuBottom.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuBottom.storyboard; sourceTree = "<group>"; };
 		A42D78FB2409C19D0099B854 /* LoginAdminPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminPresenter.swift; sourceTree = "<group>"; };
 		A42D78FC2409C19D0099B854 /* LoginAdminLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminLocalDataManager.swift; sourceTree = "<group>"; };
 		A42D78FD2409C19D0099B854 /* LoginAdminProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAdminProtocols.swift; sourceTree = "<group>"; };
@@ -205,6 +210,13 @@
 		A45961A02416A67900855C76 /* SalesMonthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesMonthView.swift; sourceTree = "<group>"; };
 		A45961A12416A67900855C76 /* SalesMonthRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesMonthRemoteDataManager.swift; sourceTree = "<group>"; };
 		A45961A22416A67900855C76 /* SalesMonthWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SalesMonthWireFrame.swift; sourceTree = "<group>"; };
+		A45961B12416FAC000855C76 /* TablesListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesListPresenter.swift; sourceTree = "<group>"; };
+		A45961B22416FAC000855C76 /* TablesListLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesListLocalDataManager.swift; sourceTree = "<group>"; };
+		A45961B32416FAC000855C76 /* TablesListProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesListProtocols.swift; sourceTree = "<group>"; };
+		A45961B42416FAC000855C76 /* TablesListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesListInteractor.swift; sourceTree = "<group>"; };
+		A45961B52416FAC000855C76 /* TablesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesListView.swift; sourceTree = "<group>"; };
+		A45961B62416FAC000855C76 /* TablesListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesListRemoteDataManager.swift; sourceTree = "<group>"; };
+		A45961B72416FAC000855C76 /* TablesListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesListWireFrame.swift; sourceTree = "<group>"; };
 		A470B158241174E200A13A6C /* RequestCodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodePresenter.swift; sourceTree = "<group>"; };
 		A470B159241174E200A13A6C /* RequestCodeLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeLocalDataManager.swift; sourceTree = "<group>"; };
 		A470B15A241174E200A13A6C /* RequestCodeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeProtocols.swift; sourceTree = "<group>"; };
@@ -503,14 +515,6 @@
 			path = OrderList;
 			sourceTree = "<group>";
 		};
-		A41CA75C240DDB1600B0F9BD /* MenuBottom */ = {
-			isa = PBXGroup;
-			children = (
-				A41CA75D240DDB2600B0F9BD /* MenuBottom.storyboard */,
-			);
-			path = MenuBottom;
-			sourceTree = "<group>";
-		};
 		A42D78FA2409C1270099B854 /* LoginAdmin */ = {
 			isa = PBXGroup;
 			children = (
@@ -566,7 +570,6 @@
 				A4E29F1A2410316200BC04B8 /* TableDetail */,
 				A4ED0545240F3201008CF14C /* TablesList */,
 				A4ED0542240F2A4C008CF14C /* NewOrder */,
-				A41CA75C240DDB1600B0F9BD /* MenuBottom */,
 				A41CA759240DD6B400B0F9BD /* OrderList */,
 				A41CA756240DCFF700B0F9BD /* Menu */,
 				A41CA74F240DBDE100B0F9BD /* RecoveryPassword */,
@@ -700,6 +703,13 @@
 			isa = PBXGroup;
 			children = (
 				A4ED0546240F3215008CF14C /* TablesList.storyboard */,
+				A45961B12416FAC000855C76 /* TablesListPresenter.swift */,
+				A45961B22416FAC000855C76 /* TablesListLocalDataManager.swift */,
+				A45961B32416FAC000855C76 /* TablesListProtocols.swift */,
+				A45961B42416FAC000855C76 /* TablesListInteractor.swift */,
+				A45961B52416FAC000855C76 /* TablesListView.swift */,
+				A45961B62416FAC000855C76 /* TablesListRemoteDataManager.swift */,
+				A45961B72416FAC000855C76 /* TablesListWireFrame.swift */,
 			);
 			path = TablesList;
 			sourceTree = "<group>";
@@ -774,7 +784,6 @@
 				A4E29F24241037CF00BC04B8 /* CancelMenuItem.storyboard in Resources */,
 				A43CA23B2409B71D00BD547F /* Montserrat-Medium.ttf in Resources */,
 				A41CA752240DBE2200B0F9BD /* RequestCode.storyboard in Resources */,
-				A41CA75E240DDB2600B0F9BD /* MenuBottom.storyboard in Resources */,
 				A40476C52412C076003B7741 /* SalesMonth.storyboard in Resources */,
 				A40476C12412C051003B7741 /* SalesDay.storyboard in Resources */,
 				A43CA2192409B53800BD547F /* LaunchScreen.storyboard in Resources */,
@@ -816,6 +825,7 @@
 				A42D79052409C19D0099B854 /* LoginAdminInteractor.swift in Sources */,
 				A470B1812411B1C000A13A6C /* OrderListInteractor.swift in Sources */,
 				A470B19D2411C20F00A13A6C /* MenuInteractor.swift in Sources */,
+				A45961BE2416FAC000855C76 /* TablesListWireFrame.swift in Sources */,
 				A40476D62412D3F9003B7741 /* WaiterListWireFrame.swift in Sources */,
 				A470B1752411877300A13A6C /* NewPasswordRemoteDataManager.swift in Sources */,
 				A40476E12412D6D3003B7741 /* ShowAccountInteractor.swift in Sources */,
@@ -850,8 +860,11 @@
 				A470B19F2411C20F00A13A6C /* MenuRemoteDataManager.swift in Sources */,
 				A470B15F241174E200A13A6C /* RequestCodePresenter.swift in Sources */,
 				A45961A92416A67900855C76 /* SalesMonthWireFrame.swift in Sources */,
+				A45961B92416FAC000855C76 /* TablesListLocalDataManager.swift in Sources */,
 				A4E29F352410560300BC04B8 /* LoginWaiterRemoteDataManager.swift in Sources */,
+				A45961BC2416FAC000855C76 /* TablesListView.swift in Sources */,
 				A470B1802411B1C000A13A6C /* OrderListProtocols.swift in Sources */,
+				A45961BA2416FAC000855C76 /* TablesListProtocols.swift in Sources */,
 				A470B165241174E200A13A6C /* RequestCodeWireFrame.swift in Sources */,
 				A470B16724117EB400A13A6C /* GlobalFunctions.swift in Sources */,
 				A470B1AC2411D3A400A13A6C /* MenuFoodView.swift in Sources */,
@@ -887,9 +900,12 @@
 				A40476D22412D3F9003B7741 /* WaiterListProtocols.swift in Sources */,
 				A41CA746240DB36200B0F9BD /* RegisterRemoteDataManager.swift in Sources */,
 				A470B18C2411BB4400A13A6C /* NewOrderPresenter.swift in Sources */,
+				A45961B82416FAC000855C76 /* TablesListPresenter.swift in Sources */,
 				A40476EF2412D812003B7741 /* SalesDayInteractor.swift in Sources */,
 				A40476E22412D6D3003B7741 /* ShowAccountView.swift in Sources */,
 				A40476F22412D812003B7741 /* SalesDayWireFrame.swift in Sources */,
+				A45961BB2416FAC000855C76 /* TablesListInteractor.swift in Sources */,
+				A45961BD2416FAC000855C76 /* TablesListRemoteDataManager.swift in Sources */,
 				A4E29F302410560300BC04B8 /* LoginWaiterPresenter.swift in Sources */,
 				A45961A32416A67900855C76 /* SalesMonthPresenter.swift in Sources */,
 				A40476D02412D3F9003B7741 /* WaiterListPresenter.swift in Sources */,
@@ -1035,6 +1051,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EEM8QJ4J6Y;
 				INFOPLIST_FILE = Tatun/Source/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -1053,6 +1070,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = EEM8QJ4J6Y;
 				INFOPLIST_FILE = Tatun/Source/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
