@@ -17,6 +17,10 @@ class MenuPresenter  {
 }
 
 extension MenuPresenter: MenuPresenterProtocol {
+  func go_order_list() {
+    wireFrame?.show_order_list(from: view!)
+  }
+  
   func go_sales() {
     wireFrame?.show_sales_day(from: view!)
   }

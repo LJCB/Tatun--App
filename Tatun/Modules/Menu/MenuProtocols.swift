@@ -22,6 +22,7 @@ protocol MenuWireFrameProtocol: class {
   func show_waiters_list(from view: MenuViewProtocol)
   func show_account(from view: MenuViewProtocol)
   func show_sales_day(from view: MenuViewProtocol)
+  func show_order_list(from view: MenuViewProtocol)
 }
 
 protocol MenuPresenterProtocol: class {
@@ -35,6 +36,7 @@ protocol MenuPresenterProtocol: class {
   func go_waiters_list()
   func go_account()
   func go_sales()
+  func go_order_list()
 }
 
 protocol MenuInteractorOutputProtocol: class {

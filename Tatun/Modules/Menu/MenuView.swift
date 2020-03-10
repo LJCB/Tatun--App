@@ -26,13 +26,17 @@ class MenuView: UIViewController {
   @IBAction func menu_item_action(_ sender: UIButton) {
     switch sender.tag {
     case 0:
-      presenter?.go_menu()
+      presenter?.go_order_list()
     case 1:
-      presenter?.go_waiters_list()
+      presenter?.go_menu()
     case 2:
-      presenter?.go_account()
+      presenter?.go_waiters_list()
     case 3:
+      presenter?.go_account()
+    case 4:
       presenter?.go_sales()
+    case 5:
+      print("Cerrar sesión")
     default:
       print("Default action")
     }

@@ -54,7 +54,7 @@ extension OrderListView: UITabBarControllerDelegate{
     print("Did select pedidos")
     var tabBarController = UITabBarController() 
     tabBarController = GlobalFunctions.sharedInstance.init_tab_bar(item_selected: viewController.tabBarItem.tag)
-    self.present(tabBarController, animated: true, completion: nil)
+    self.present(tabBarController, animated: false , completion: nil)
     
   }
 }

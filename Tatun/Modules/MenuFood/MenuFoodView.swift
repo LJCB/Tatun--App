@@ -51,10 +51,10 @@ extension MenuFoodView: MenuFoodViewProtocol {
 
 extension MenuFoodView: UITabBarControllerDelegate{
   func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-    
+    print("Did select Menu")
     var tabBarController = UITabBarController()
     tabBarController = GlobalFunctions.sharedInstance.init_tab_bar(item_selected: viewController.tabBarItem.tag)
-    self.present(tabBarController, animated: true, completion: nil)
-    print("Did select Menu")
+    self.present(tabBarController, animated: false, completion: nil)
+    
   }
 }

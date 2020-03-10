@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class MenuWireFrame: MenuWireFrameProtocol {
-  
   class func createMenuModule() -> UIViewController {
     let viewController = mainStoryboard.instantiateViewController(withIdentifier: "MenuVC")
     if let view = viewController as? MenuView {
@@ -63,6 +62,14 @@ class MenuWireFrame: MenuWireFrameProtocol {
     let new_view_controller = SalesDayWireFrame.createSalesDayModule()
     if let new_view = view as? UIViewController{
       new_view.show(new_view_controller, sender: view)
+    }
+  }
+  
+  func show_order_list(from view: MenuViewProtocol) {
+    var tabBarController = UITabBarController()
+    tabBarController = GlobalFunctions.sharedInstance.init_tab_bar(item_selected: 0)
+    if let new_view = view as? UIViewController{
+      new_view.present(tabBarController, animated: true, completion: nil)
     }
   }
 }
