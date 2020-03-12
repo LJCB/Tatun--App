@@ -24,6 +24,20 @@ class RegisterView: UIViewController {
     super.viewDidLoad()
     presenter?.viewDidLoad()
   }
+  
+  @objc func dismissKeyboard(){
+    self.view.endEditing(true)
+  }
+  
+  func setup_keyboard_dismiss_recognizer(){
+    let tapRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(
+      target: self,
+      action: #selector(self.dismissKeyboard))
+    
+    self.view.addGestureRecognizer(tapRecognizer)
+    tapRecognizer.cancelsTouchesInView = true
+  }
+  
 }
 
 extension RegisterView: RegisterViewProtocol {
@@ -37,6 +51,7 @@ extension RegisterView: RegisterViewProtocol {
   }
   
   func set_layout() {
+    setup_keyboard_dismiss_recognizer()
     GlobalFunctions.sharedInstance.custom_nav_bar(view_controller: self)
   }
 }
