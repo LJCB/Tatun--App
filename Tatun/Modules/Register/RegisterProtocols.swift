@@ -13,6 +13,8 @@ protocol RegisterViewProtocol: class {
   // PRESENTER -> VIEW
   var presenter: RegisterPresenterProtocol? { get set }
   func set_layout()
+  func get_user_location()
+  func set_google_maps_delegate()
 }
 
 protocol RegisterWireFrameProtocol: class {
