@@ -126,6 +126,8 @@
 		A470B1AD2411D3A400A13A6C /* MenuFoodRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1A62411D3A400A13A6C /* MenuFoodRemoteDataManager.swift */; };
 		A470B1AE2411D3A400A13A6C /* MenuFoodWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B1A72411D3A400A13A6C /* MenuFoodWireFrame.swift */; };
 		A4A45CD1241AB41E0098FD2D /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A45CD0241AB41E0098FD2D /* GlobalVariables.swift */; };
+		A4A45CD4241AC4B40098FD2D /* category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A45CD3241AC4B40098FD2D /* category.swift */; };
+		A4A45CD6241AF6830098FD2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4A45CD5241AF6830098FD2D /* GoogleService-Info.plist */; };
 		A4E29F1C241031AF00BC04B8 /* TableDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */; };
 		A4E29F1F2410348E00BC04B8 /* OrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */; };
 		A4E29F222410368500BC04B8 /* MenuFood.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F212410368500BC04B8 /* MenuFood.storyboard */; };
@@ -265,6 +267,8 @@
 		A470B1A62411D3A400A13A6C /* MenuFoodRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFoodRemoteDataManager.swift; sourceTree = "<group>"; };
 		A470B1A72411D3A400A13A6C /* MenuFoodWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuFoodWireFrame.swift; sourceTree = "<group>"; };
 		A4A45CD0241AB41E0098FD2D /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
+		A4A45CD3241AC4B40098FD2D /* category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = category.swift; sourceTree = "<group>"; };
+		A4A45CD5241AF6830098FD2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F212410368500BC04B8 /* MenuFood.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuFood.storyboard; sourceTree = "<group>"; };
@@ -442,6 +446,7 @@
 		A41CA739240DB34600B0F9BD /* Register */ = {
 			isa = PBXGroup;
 			children = (
+				A4A45CD2241AC4990098FD2D /* Entity */,
 				A41CA73A240DB36200B0F9BD /* RegisterPresenter.swift */,
 				A41CA73B240DB36200B0F9BD /* RegisterLocalDataManager.swift */,
 				A41CA73C240DB36200B0F9BD /* RegisterProtocols.swift */,
@@ -603,6 +608,7 @@
 		A43CA2212409B55D00BD547F /* Source */ = {
 			isa = PBXGroup;
 			children = (
+				A4A45CD5241AF6830098FD2D /* GoogleService-Info.plist */,
 				A43CA21A2409B53800BD547F /* Info.plist */,
 				A43CA2152409B53800BD547F /* Assets.xcassets */,
 				A43CA20C2409B53600BD547F /* AppDelegate.swift */,
@@ -654,6 +660,14 @@
 				A43CA2372409B71D00BD547F /* Montserrat-SemiBold.ttf */,
 			);
 			path = Montserrat;
+			sourceTree = "<group>";
+		};
+		A4A45CD2241AC4990098FD2D /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				A4A45CD3241AC4B40098FD2D /* category.swift */,
+			);
+			path = Entity;
 			sourceTree = "<group>";
 		};
 		A4E29F1A2410316200BC04B8 /* TableDetail */ = {
@@ -817,6 +831,7 @@
 				A40476C52412C076003B7741 /* SalesMonth.storyboard in Resources */,
 				A40476C12412C051003B7741 /* SalesDay.storyboard in Resources */,
 				A43CA2192409B53800BD547F /* LaunchScreen.storyboard in Resources */,
+				A4A45CD6241AF6830098FD2D /* GoogleService-Info.plist in Resources */,
 				A4E29F222410368500BC04B8 /* MenuFood.storyboard in Resources */,
 				A4E29F2824103AE700BC04B8 /* NewMenuOption.storyboard in Resources */,
 				A41CA758240DD00700B0F9BD /* Menu.storyboard in Resources */,
@@ -1001,6 +1016,7 @@
 				A40476D02412D3F9003B7741 /* WaiterListPresenter.swift in Sources */,
 				A470B18E2411BB4400A13A6C /* NewOrderProtocols.swift in Sources */,
 				A42D79082409C19D0099B854 /* LoginAdminWireFrame.swift in Sources */,
+				A4A45CD4241AC4B40098FD2D /* category.swift in Sources */,
 				A470B1722411877300A13A6C /* NewPasswordProtocols.swift in Sources */,
 				A470B1AE2411D3A400A13A6C /* MenuFoodWireFrame.swift in Sources */,
 			);

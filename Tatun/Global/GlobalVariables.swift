@@ -12,5 +12,4 @@ class GlobalVariables {
   static let sharedInstance = GlobalVariables()
   
   let google_maps_key: String = "AIzaSyCr2Q3kbTifR_WfTSXAz6kdBwNSkFroNRM"
-  
 }

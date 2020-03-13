@@ -9,6 +9,8 @@
 import UIKit
 import GoogleMaps
 
+
+
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
 
   var window: UIWindow?
@@ -26,6 +28,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     window?.windowScene = windowScene
     window?.rootViewController = principal_view
     window?.makeKeyAndVisible()
+    
+    
   }
 
   func sceneDidDisconnect(_ scene: UIScene) {
@@ -56,6 +60,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     // to restore the scene back to its current state.
   }
 
+  
+  
 
 }
 

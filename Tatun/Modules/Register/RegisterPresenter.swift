@@ -23,9 +23,14 @@ extension RegisterPresenter: RegisterPresenterProtocol {
     view?.set_layout()
     view?.set_google_maps_delegate()
     view?.get_user_location()
+    view?.set_picker_category()
+    interactor?.get_categories()
+    
   }
 }
 
 extension RegisterPresenter: RegisterInteractorOutputProtocol {
-  // TODO: implement interactor output methods
+  func show_data_categories(categories: [category]) {
+    view?.reload_picker_data(categories: categories)
+  }
 }

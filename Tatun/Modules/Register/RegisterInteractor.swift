@@ -9,14 +9,20 @@
 import Foundation
 
 class RegisterInteractor: RegisterInteractorInputProtocol {
-
-    // MARK: Properties
-    weak var presenter: RegisterInteractorOutputProtocol?
-    var localDatamanager: RegisterLocalDataManagerInputProtocol?
-    var remoteDatamanager: RegisterRemoteDataManagerInputProtocol?
-
+  
+  // MARK: Properties
+  weak var presenter: RegisterInteractorOutputProtocol?
+  var localDatamanager: RegisterLocalDataManagerInputProtocol?
+  var remoteDatamanager: RegisterRemoteDataManagerInputProtocol?
+  
+  func get_categories() {
+    remoteDatamanager?.get_categories_from_server()
+  }
 }
 
 extension RegisterInteractor: RegisterRemoteDataManagerOutputProtocol {
-    // TODO: Implement use case methods
+  func categories_recived(categories: [category]) {
+    presenter?.show_data_categories(categories: categories)
+    print("Categorias obtenidas: \(categories.count)")
+  }
 }
