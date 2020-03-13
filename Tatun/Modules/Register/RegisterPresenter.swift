@@ -27,7 +27,7 @@ extension RegisterPresenter: RegisterPresenterProtocol {
     view?.set_layout()
     view?.set_google_maps_delegate()
     view?.get_user_location()
-    view?.set_picker_category()
+    view?.set_pickers()
     interactor?.get_categories()
     
   }

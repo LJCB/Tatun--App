@@ -15,7 +15,7 @@ protocol RegisterViewProtocol: class {
   func set_layout()
   func get_user_location()
   func set_google_maps_delegate()
-  func set_picker_category()
+  func set_pickers()
   func reload_picker_data(categories: [category])
   func show_alert_incomplete_data()
 }

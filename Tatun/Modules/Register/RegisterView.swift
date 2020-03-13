@@ -39,6 +39,21 @@ class RegisterView: UIViewController {
     self.view.endEditing(true)
   }
   
+  @objc func set_hour(sender:UIDatePicker){
+    let dateFormat = DateFormatter()
+    dateFormat.dateStyle = DateFormatter.Style.medium
+    dateFormat.timeStyle = DateFormatter.Style.none
+    dateFormat.dateFormat = "yyyy-MM-dd HH:mm:ss"
+    dateFormat.dateFormat = "HH:mm"
+    print("Tag de picker: \(sender.tag)")
+    if sender.tag == 1{
+      txt_input_data[4].text = "\(dateFormat.string(from: sender.date))"
+    }else{
+      txt_input_data[5].text = "\(dateFormat.string(from: sender.date))"
+    }
+    
+  }
+  
   func setup_keyboard_dismiss_recognizer(){
     let tapRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(
       target: self,
@@ -62,10 +77,27 @@ extension RegisterView: RegisterViewProtocol {
     picker_category.reloadAllComponents()
   }
   
-  func set_picker_category() {
+  func set_pickers() {
     picker_category.backgroundColor = UIColor(red: 255, green: 255, blue:255, alpha: 0.6)
     picker_category.delegate = self
     picker_category.dataSource = self
+    
+    let picker_open_hour = UIDatePicker()
+    picker_open_hour.backgroundColor = UIColor(red: 255, green: 255, blue:255, alpha: 0.6)
+    picker_open_hour.datePickerMode = UIDatePicker.Mode.time
+    picker_open_hour.locale = Locale(identifier: "es_MX")
+    picker_open_hour.tag = 1
+    picker_open_hour.addTarget(self, action: #selector(set_hour(sender:)), for: UIControl.Event.valueChanged)
+    
+    
+    let picker_close_hour = UIDatePicker()
+    picker_close_hour.backgroundColor = UIColor(red: 255, green: 255, blue:255, alpha: 0.6)
+    picker_close_hour.datePickerMode = UIDatePicker.Mode.time
+    picker_close_hour.locale = Locale(identifier: "es_MX")
+    picker_close_hour.tag = 2
+    picker_close_hour.addTarget(self, action: #selector(set_hour(sender:)), for: UIControl.Event.valueChanged)
+    
+    
     
     //toolbar
     let tool_bar = UIToolbar(frame: CGRect(x: 0, y: 20, width: self.view.frame.size.width, height: 40))
@@ -83,9 +115,15 @@ extension RegisterView: RegisterViewProtocol {
     tool_bar.setItems([spaceButton, done_button], animated: false)
     tool_bar.isUserInteractionEnabled = true
     
+    txt_input_data[4].inputView = picker_open_hour
+    txt_input_data[4].inputAccessoryView = tool_bar
+    txt_input_data[5].inputView = picker_close_hour
+    txt_input_data[5].inputAccessoryView = tool_bar
     txt_input_data[6].inputView = picker_category
     txt_input_data[6].inputAccessoryView = tool_bar
   }
+  
+  
   
   func set_google_maps_delegate() {
     locationManager.delegate = self
@@ -125,6 +163,9 @@ extension RegisterView: CLLocationManagerDelegate{
 extension RegisterView: GMSMapViewDelegate{
   func mapView(_ mapView: GMSMapView, idleAt position: GMSCameraPosition) {
     print("Coordenadas del negocio: Lat:\(position.target.latitude), Lon:\(position.target.longitude)")
+    
+    latitude = "\(position.target.latitude)"
+    longitude = "\(position.target.longitude)"
   }
 }
 
@@ -152,6 +193,4 @@ extension RegisterView: UIPickerViewDelegate, UIPickerViewDataSource{
       txt_input_data[6].text = categories[row-1].name
     }
   }
-  
-  
 }
