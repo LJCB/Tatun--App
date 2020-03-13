@@ -17,6 +17,7 @@ protocol RegisterViewProtocol: class {
   func set_google_maps_delegate()
   func set_picker_category()
   func reload_picker_data(categories: [category])
+  func show_alert_incomplete_data()
 }
 
 protocol RegisterWireFrameProtocol: class {
@@ -31,12 +32,13 @@ protocol RegisterPresenterProtocol: class {
   var wireFrame: RegisterWireFrameProtocol? { get set }
   
   func viewDidLoad()
-  //func get_new_data(name: String, phone: String, direction: String, password: String, open_hour: String, close_hour: String, category_id: String, latitude: String, longitude: String)
+  func get_new_data(name: String, phone: String, direction: String, password: String, open_hour: String, close_hour: String, category_id: Int, latitude: String, longitude: String)
 }
 
 protocol RegisterInteractorOutputProtocol: class {
   // INTERACTOR -> PRESENTER
   func show_data_categories(categories: [category])
+  func incomplete_data()
 }
 
 protocol RegisterInteractorInputProtocol: class {
@@ -46,6 +48,7 @@ protocol RegisterInteractorInputProtocol: class {
   var remoteDatamanager: RegisterRemoteDataManagerInputProtocol? { get set }
   
   func get_categories()
+  func validate_complete_data(name: String, phone: String, direction: String, password: String, open_hour: String, close_hour: String, category_id: Int, latitude: String, longitude: String)
 }
 
 protocol RegisterDataManagerInputProtocol: class {

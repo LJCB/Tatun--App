@@ -128,6 +128,7 @@
 		A4A45CD1241AB41E0098FD2D /* GlobalVariables.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A45CD0241AB41E0098FD2D /* GlobalVariables.swift */; };
 		A4A45CD4241AC4B40098FD2D /* category.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A45CD3241AC4B40098FD2D /* category.swift */; };
 		A4A45CD6241AF6830098FD2D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A4A45CD5241AF6830098FD2D /* GoogleService-Info.plist */; };
+		A4A45CD8241B10EC0098FD2D /* CsFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A45CD7241B10EC0098FD2D /* CsFramework.swift */; };
 		A4E29F1C241031AF00BC04B8 /* TableDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */; };
 		A4E29F1F2410348E00BC04B8 /* OrderDetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */; };
 		A4E29F222410368500BC04B8 /* MenuFood.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A4E29F212410368500BC04B8 /* MenuFood.storyboard */; };
@@ -269,6 +270,7 @@
 		A4A45CD0241AB41E0098FD2D /* GlobalVariables.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalVariables.swift; sourceTree = "<group>"; };
 		A4A45CD3241AC4B40098FD2D /* category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = category.swift; sourceTree = "<group>"; };
 		A4A45CD5241AF6830098FD2D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A4A45CD7241B10EC0098FD2D /* CsFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CsFramework.swift; sourceTree = "<group>"; };
 		A4E29F1B241031AF00BC04B8 /* TableDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F1E2410348E00BC04B8 /* OrderDetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OrderDetail.storyboard; sourceTree = "<group>"; };
 		A4E29F212410368500BC04B8 /* MenuFood.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MenuFood.storyboard; sourceTree = "<group>"; };
@@ -646,6 +648,7 @@
 		A43CA2342409B6D800BD547F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A4A45CD7241B10EC0098FD2D /* CsFramework.swift */,
 			);
 			path = Frameworks;
 			sourceTree = "<group>";
@@ -980,6 +983,7 @@
 				A42D79042409C19D0099B854 /* LoginAdminProtocols.swift in Sources */,
 				A42D79032409C19D0099B854 /* LoginAdminLocalDataManager.swift in Sources */,
 				A470B1AA2411D3A400A13A6C /* MenuFoodProtocols.swift in Sources */,
+				A4A45CD8241B10EC0098FD2D /* CsFramework.swift in Sources */,
 				A470B1822411B1C000A13A6C /* OrderListView.swift in Sources */,
 				A470B164241174E200A13A6C /* RequestCodeRemoteDataManager.swift in Sources */,
 				A41CA741240DB36200B0F9BD /* RegisterPresenter.swift in Sources */,

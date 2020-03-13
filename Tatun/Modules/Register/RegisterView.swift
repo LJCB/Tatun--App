@@ -17,15 +17,19 @@ class RegisterView: UIViewController {
   
   @IBOutlet weak var view_map: GMSMapView!
   @IBOutlet var txt_input_data: [UITextField]!
+  
+  //MARK: Constant and variables
   let locationManager = CLLocationManager()
   let picker_category: UIPickerView = UIPickerView()
   var categories: [category] = [category]()
-  var db: Firestore!
+  var category_selected: category = category()
+  var latitude: String = String()
+  var longitude: String = String()
+  
   // MARK: Properties
   var presenter: RegisterPresenterProtocol?
   
   // MARK: Lifecycle
-  
   override func viewDidLoad() {
     super.viewDidLoad()
     presenter?.viewDidLoad()
@@ -39,19 +43,20 @@ class RegisterView: UIViewController {
     let tapRecognizer: UITapGestureRecognizer = UITapGestureRecognizer(
       target: self,
       action: #selector(self.dismiss_keyboard))
-    
     self.view.addGestureRecognizer(tapRecognizer)
     tapRecognizer.cancelsTouchesInView = true
   }
   
   @IBAction func store_action(_ sender: Any) {
-    
+    presenter?.get_new_data(name: txt_input_data[0].text ?? "", phone: txt_input_data[1].text ?? "", direction: txt_input_data[2].text ?? "", password: txt_input_data[3].text ?? "", open_hour: txt_input_data[4].text ?? "", close_hour: txt_input_data[5].text ?? "", category_id: category_selected.id_category, latitude: latitude, longitude: longitude)
   }
-  
-  
 }
 
 extension RegisterView: RegisterViewProtocol {
+  func show_alert_incomplete_data() {
+    CsFramework.sharedInstance.show_simple_alert(view_controller: self, title: "Datos incompletos", message: "Asegúrate de ingresar toda la información solicitada", button_tittle: "Aceptar")
+  }
+  
   func reload_picker_data(categories: [category]) {
     self.categories = categories
     picker_category.reloadAllComponents()
@@ -80,8 +85,6 @@ extension RegisterView: RegisterViewProtocol {
     
     txt_input_data[6].inputView = picker_category
     txt_input_data[6].inputAccessoryView = tool_bar
-   
-    
   }
   
   func set_google_maps_delegate() {
@@ -124,7 +127,6 @@ extension RegisterView: GMSMapViewDelegate{
     print("Coordenadas del negocio: Lat:\(position.target.latitude), Lon:\(position.target.longitude)")
   }
 }
-
 
 extension RegisterView: UIPickerViewDelegate, UIPickerViewDataSource{
   func numberOfComponents(in pickerView: UIPickerView) -> Int {
