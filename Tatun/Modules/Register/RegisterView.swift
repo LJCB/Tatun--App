@@ -63,13 +63,14 @@ class RegisterView: UIViewController {
   }
   
   @IBAction func store_action(_ sender: Any) {
-    presenter?.get_new_data(name: txt_input_data[0].text ?? "", phone: txt_input_data[1].text ?? "", direction: txt_input_data[2].text ?? "", password: txt_input_data[3].text ?? "", open_hour: txt_input_data[4].text ?? "", close_hour: txt_input_data[5].text ?? "", category_id: category_selected.id_category, latitude: latitude, longitude: longitude)
+    presenter?.get_new_data(name: txt_input_data[0].text ?? "", email: txt_input_data[7].text ?? "", phone: txt_input_data[1].text ?? "", direction: txt_input_data[2].text ?? "", password: txt_input_data[3].text ?? "", open_hour: txt_input_data[4].text ?? "", close_hour: txt_input_data[5].text ?? "", category_id: category_selected.id_category, latitude: latitude, longitude: longitude)
   }
 }
 
 extension RegisterView: RegisterViewProtocol {
-  func show_alert_incomplete_data() {
-    CsFramework.sharedInstance.show_simple_alert(view_controller: self, title: "Datos incompletos", message: "Asegúrate de ingresar toda la información solicitada", button_tittle: "Aceptar")
+ 
+  func show_warning_alert(message: String) {
+    CsFramework.sharedInstance.show_simple_alert(view_controller: self, title: "Datos incompletos", message: message, button_tittle: "Aceptar")
   }
   
   func reload_picker_data(categories: [category]) {
@@ -189,8 +190,10 @@ extension RegisterView: UIPickerViewDelegate, UIPickerViewDataSource{
   func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
     if row == 0{
       txt_input_data[6].text = ""
+      category_selected = category()
     }else{
       txt_input_data[6].text = categories[row-1].name
+      category_selected = categories[row-1]
     }
   }
 }

@@ -82,6 +82,13 @@
 		A45961BC2416FAC000855C76 /* TablesListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961B52416FAC000855C76 /* TablesListView.swift */; };
 		A45961BD2416FAC000855C76 /* TablesListRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961B62416FAC000855C76 /* TablesListRemoteDataManager.swift */; };
 		A45961BE2416FAC000855C76 /* TablesListWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A45961B72416FAC000855C76 /* TablesListWireFrame.swift */; };
+		A4627E87241C171D00A3FA8E /* ValidateRegisterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4627E80241C171D00A3FA8E /* ValidateRegisterPresenter.swift */; };
+		A4627E88241C171D00A3FA8E /* ValidateRegisterLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4627E81241C171D00A3FA8E /* ValidateRegisterLocalDataManager.swift */; };
+		A4627E89241C171D00A3FA8E /* ValidateRegisterProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4627E82241C171D00A3FA8E /* ValidateRegisterProtocols.swift */; };
+		A4627E8A241C171D00A3FA8E /* ValidateRegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4627E83241C171D00A3FA8E /* ValidateRegisterInteractor.swift */; };
+		A4627E8B241C171D00A3FA8E /* ValidateRegisterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4627E84241C171D00A3FA8E /* ValidateRegisterView.swift */; };
+		A4627E8C241C171D00A3FA8E /* ValidateRegisterRemoteDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4627E85241C171D00A3FA8E /* ValidateRegisterRemoteDataManager.swift */; };
+		A4627E8D241C171D00A3FA8E /* ValidateRegisterWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4627E86241C171D00A3FA8E /* ValidateRegisterWireFrame.swift */; };
 		A470B15F241174E200A13A6C /* RequestCodePresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B158241174E200A13A6C /* RequestCodePresenter.swift */; };
 		A470B160241174E200A13A6C /* RequestCodeLocalDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B159241174E200A13A6C /* RequestCodeLocalDataManager.swift */; };
 		A470B161241174E200A13A6C /* RequestCodeProtocols.swift in Sources */ = {isa = PBXBuildFile; fileRef = A470B15A241174E200A13A6C /* RequestCodeProtocols.swift */; };
@@ -224,6 +231,13 @@
 		A45961B52416FAC000855C76 /* TablesListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesListView.swift; sourceTree = "<group>"; };
 		A45961B62416FAC000855C76 /* TablesListRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesListRemoteDataManager.swift; sourceTree = "<group>"; };
 		A45961B72416FAC000855C76 /* TablesListWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TablesListWireFrame.swift; sourceTree = "<group>"; };
+		A4627E80241C171D00A3FA8E /* ValidateRegisterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateRegisterPresenter.swift; sourceTree = "<group>"; };
+		A4627E81241C171D00A3FA8E /* ValidateRegisterLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateRegisterLocalDataManager.swift; sourceTree = "<group>"; };
+		A4627E82241C171D00A3FA8E /* ValidateRegisterProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateRegisterProtocols.swift; sourceTree = "<group>"; };
+		A4627E83241C171D00A3FA8E /* ValidateRegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateRegisterInteractor.swift; sourceTree = "<group>"; };
+		A4627E84241C171D00A3FA8E /* ValidateRegisterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateRegisterView.swift; sourceTree = "<group>"; };
+		A4627E85241C171D00A3FA8E /* ValidateRegisterRemoteDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateRegisterRemoteDataManager.swift; sourceTree = "<group>"; };
+		A4627E86241C171D00A3FA8E /* ValidateRegisterWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateRegisterWireFrame.swift; sourceTree = "<group>"; };
 		A470B158241174E200A13A6C /* RequestCodePresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodePresenter.swift; sourceTree = "<group>"; };
 		A470B159241174E200A13A6C /* RequestCodeLocalDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeLocalDataManager.swift; sourceTree = "<group>"; };
 		A470B15A241174E200A13A6C /* RequestCodeProtocols.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestCodeProtocols.swift; sourceTree = "<group>"; };
@@ -465,6 +479,13 @@
 			isa = PBXGroup;
 			children = (
 				A41CA74D240DB8BE00B0F9BD /* ValidateRegister.storyboard */,
+				A4627E80241C171D00A3FA8E /* ValidateRegisterPresenter.swift */,
+				A4627E81241C171D00A3FA8E /* ValidateRegisterLocalDataManager.swift */,
+				A4627E82241C171D00A3FA8E /* ValidateRegisterProtocols.swift */,
+				A4627E83241C171D00A3FA8E /* ValidateRegisterInteractor.swift */,
+				A4627E84241C171D00A3FA8E /* ValidateRegisterView.swift */,
+				A4627E85241C171D00A3FA8E /* ValidateRegisterRemoteDataManager.swift */,
+				A4627E86241C171D00A3FA8E /* ValidateRegisterWireFrame.swift */,
 			);
 			path = ValidateRegister;
 			sourceTree = "<group>";
@@ -922,6 +943,7 @@
 				A40476EC2412D812003B7741 /* SalesDayPresenter.swift in Sources */,
 				A40476E02412D6D3003B7741 /* ShowAccountProtocols.swift in Sources */,
 				A470B1742411877300A13A6C /* NewPasswordView.swift in Sources */,
+				A4627E8B241C171D00A3FA8E /* ValidateRegisterView.swift in Sources */,
 				A470B161241174E200A13A6C /* RequestCodeProtocols.swift in Sources */,
 				A45961A82416A67900855C76 /* SalesMonthRemoteDataManager.swift in Sources */,
 				A470B17F2411B1C000A13A6C /* OrderListLocalDataManager.swift in Sources */,
@@ -929,6 +951,7 @@
 				A41CA743240DB36200B0F9BD /* RegisterProtocols.swift in Sources */,
 				A470B1832411B1C000A13A6C /* OrderListRemoteDataManager.swift in Sources */,
 				A45961A72416A67900855C76 /* SalesMonthView.swift in Sources */,
+				A4627E88241C171D00A3FA8E /* ValidateRegisterLocalDataManager.swift in Sources */,
 				A42D79052409C19D0099B854 /* LoginAdminInteractor.swift in Sources */,
 				A470B1812411B1C000A13A6C /* OrderListInteractor.swift in Sources */,
 				A470B19D2411C20F00A13A6C /* MenuInteractor.swift in Sources */,
@@ -966,7 +989,9 @@
 				A470B1902411BB4400A13A6C /* NewOrderView.swift in Sources */,
 				A470B19F2411C20F00A13A6C /* MenuRemoteDataManager.swift in Sources */,
 				A470B15F241174E200A13A6C /* RequestCodePresenter.swift in Sources */,
+				A4627E89241C171D00A3FA8E /* ValidateRegisterProtocols.swift in Sources */,
 				A45961A92416A67900855C76 /* SalesMonthWireFrame.swift in Sources */,
+				A4627E8A241C171D00A3FA8E /* ValidateRegisterInteractor.swift in Sources */,
 				A45961B92416FAC000855C76 /* TablesListLocalDataManager.swift in Sources */,
 				A4E29F352410560300BC04B8 /* LoginWaiterRemoteDataManager.swift in Sources */,
 				A45961BC2416FAC000855C76 /* TablesListView.swift in Sources */,
@@ -986,6 +1011,7 @@
 				A4A45CD8241B10EC0098FD2D /* CsFramework.swift in Sources */,
 				A470B1822411B1C000A13A6C /* OrderListView.swift in Sources */,
 				A470B164241174E200A13A6C /* RequestCodeRemoteDataManager.swift in Sources */,
+				A4627E8D241C171D00A3FA8E /* ValidateRegisterWireFrame.swift in Sources */,
 				A41CA741240DB36200B0F9BD /* RegisterPresenter.swift in Sources */,
 				A40476E32412D6D3003B7741 /* ShowAccountRemoteDataManager.swift in Sources */,
 				A4E29F362410560300BC04B8 /* LoginWaiterWireFrame.swift in Sources */,
@@ -1002,6 +1028,8 @@
 				A41CA744240DB36200B0F9BD /* RegisterInteractor.swift in Sources */,
 				A470B1912411BB4400A13A6C /* NewOrderRemoteDataManager.swift in Sources */,
 				A470B1A92411D3A400A13A6C /* MenuFoodLocalDataManager.swift in Sources */,
+				A4627E87241C171D00A3FA8E /* ValidateRegisterPresenter.swift in Sources */,
+				A4627E8C241C171D00A3FA8E /* ValidateRegisterRemoteDataManager.swift in Sources */,
 				A40476D32412D3F9003B7741 /* WaiterListInteractor.swift in Sources */,
 				A4E29F322410560300BC04B8 /* LoginWaiterProtocols.swift in Sources */,
 				A4A45CD1241AB41E0098FD2D /* GlobalVariables.swift in Sources */,

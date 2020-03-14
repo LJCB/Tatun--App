@@ -18,8 +18,8 @@ class RegisterPresenter  {
 }
 
 extension RegisterPresenter: RegisterPresenterProtocol {
-  func get_new_data(name: String, phone: String, direction: String, password: String, open_hour: String, close_hour: String, category_id: Int, latitude: String, longitude: String) {
-    interactor?.validate_complete_data(name: name, phone: phone, direction: direction, password: password, open_hour: open_hour, close_hour: close_hour, category_id: category_id, latitude: latitude, longitude: longitude)
+  func get_new_data(name: String, email:String, phone: String, direction: String, password: String, open_hour: String, close_hour: String, category_id: Int, latitude: String, longitude: String) {
+    interactor?.validate_complete_data(name: name, email: email, phone: phone, direction: direction, password: password, open_hour: open_hour, close_hour: close_hour, category_id: category_id, latitude: latitude, longitude: longitude)
   }
   
   
@@ -34,8 +34,16 @@ extension RegisterPresenter: RegisterPresenterProtocol {
 }
 
 extension RegisterPresenter: RegisterInteractorOutputProtocol {
+  func register_error(message: String) {
+    view?.show_warning_alert(message: message)
+  }
+  
+  func register_success() {
+    wireFrame?.show_order_list(from: view!)
+  }
+  
   func incomplete_data() {
-    view?.show_alert_incomplete_data()
+    view?.show_warning_alert(message: "Asegúrate de ingresar la información solicitada")
   }
   
   func show_data_categories(categories: [category]) {
