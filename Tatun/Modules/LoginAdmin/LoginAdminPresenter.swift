@@ -17,6 +17,10 @@ class LoginAdminPresenter  {
 }
 
 extension LoginAdminPresenter: LoginAdminPresenterProtocol {
+  func get_login_data(email: String, password: String, bussines_code: String) {
+    interactor?.validate_login_data(email: email, password: password, bussines_code: bussines_code)
+  }
+  
   func go_order_list() {
     wireFrame?.show_order_list(from: view!)
   }
@@ -39,5 +43,15 @@ extension LoginAdminPresenter: LoginAdminPresenterProtocol {
 }
 
 extension LoginAdminPresenter: LoginAdminInteractorOutputProtocol {
-  // TODO: implement interactor output methods
+  func login_error(message: String) {
+    view?.show_alert(message: message, title: "Ocurrió un error al ingresar")
+  }
+  
+  func login_success() {
+    wireFrame?.show_order_list(from: view!)
+  }
+  
+  func incomplete_data() {
+    view?.show_alert(message: "Asegúrate de ingresar los datos soliciatados", title: "Datos incompletos")
+  }
 }

@@ -17,12 +17,10 @@ class RegisterRemoteDataManager:RegisterRemoteDataManagerInputProtocol {
   var db : Firestore!
   
   func register_bussines_access(name: String, email: String, phone: String, direction: String, password: String, open_hour: String, close_hour: String, category_id: Int, latitude: String, longitude: String) {
-    Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
-      if error != nil {
-        self.remoteRequestHandler?.register_error(message: error?.localizedDescription ?? "")
-      }else{
-        self.remoteRequestHandler?.user_auth_created(name: name, email: email, phone: phone, direction: direction, password: password, open_hour: open_hour, close_hour: close_hour, category_id: category_id, latitude: latitude, longitude: longitude)
-      }
+    GlobalFunctions.sharedInstance.create_user(email: email, password: password, success: {
+      self.remoteRequestHandler?.user_auth_created(name: name, email: email, phone: phone, direction: direction, password: password, open_hour: open_hour, close_hour: close_hour, category_id: category_id, latitude: latitude, longitude: longitude)
+    }) { (error_message) in
+      self.remoteRequestHandler?.register_error(message: error_message)
     }
   }
   

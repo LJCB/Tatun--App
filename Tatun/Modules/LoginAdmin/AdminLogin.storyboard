@@ -74,13 +74,13 @@
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hkD-EB-ojx" userLabel="Input_phone">
                                                 <rect key="frame" x="20" y="231.99999999999997" width="335" height="83.666666666666657"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Teléfono" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Te-wA-Udi">
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Correo electrónico" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Te-wA-Udi">
                                                         <rect key="frame" x="0.0" y="10.000000000000002" width="335" height="18.666666666666671"/>
                                                         <fontDescription key="fontDescription" name="Montserrat-Regular" family="Montserrat" pointSize="16"/>
                                                         <color key="textColor" name="Blue"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
-                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Número teléfonico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cCn-eH-vWz">
+                                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Correo electrónico" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="cCn-eH-vWz">
                                                         <rect key="frame" x="0.0" y="33.666666666666686" width="335" height="50"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="50" id="2gH-36-0Sx"/>
@@ -265,6 +265,11 @@
                         <viewLayoutGuide key="safeArea" id="sce-eI-HEJ"/>
                     </view>
                     <navigationItem key="navigationItem" id="6e0-Ob-YPb"/>
+                    <connections>
+                        <outlet property="txt_bussines_code" destination="QqL-b5-41E" id="TN6-3D-r2T"/>
+                        <outlet property="txt_email" destination="cCn-eH-vWz" id="95G-Ze-KIX"/>
+                        <outlet property="txt_password" destination="ErD-iz-qoX" id="qy7-pv-Dz0"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2y3-Li-ZXP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

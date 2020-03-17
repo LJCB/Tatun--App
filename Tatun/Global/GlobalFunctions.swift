@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import FirebaseAuth
 class GlobalFunctions {
   static let sharedInstance = GlobalFunctions()
   
@@ -91,5 +92,25 @@ class GlobalFunctions {
     
     return tabBarController
   }
-}
   
+  func create_user(email: String, password: String, success: @escaping () -> Void, failure: @escaping (String) -> Void){
+    Auth.auth().createUser(withEmail: email, password: password) { (result, error) in
+      if error != nil {
+        failure(error?.localizedDescription ?? "")
+      }else{
+        success()
+      }
+    }
+  }
+  
+  func login(email: String, password: String, success: @escaping () -> Void, failure: @escaping (String) -> Void){
+    Auth.auth().signIn(withEmail: email, password: password) { (result, error) in
+      if error == nil{
+        success()
+      }else{
+        failure(error?.localizedDescription ?? "")
+      }
+    }
+  }
+}
+

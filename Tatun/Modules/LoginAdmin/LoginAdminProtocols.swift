@@ -13,6 +13,7 @@ protocol LoginAdminViewProtocol: class {
   // PRESENTER -> VIEW
   var presenter: LoginAdminPresenterProtocol? { get set }
   func set_layout()
+  func show_alert(message: String, title: String)
 }
 
 protocol LoginAdminWireFrameProtocol: class {
@@ -35,11 +36,15 @@ protocol LoginAdminPresenterProtocol: class {
   func go_register()
   func go_request_code()
   func go_order_list()
+  func get_login_data(email: String, password: String, bussines_code: String)
   
 }
 
 protocol LoginAdminInteractorOutputProtocol: class {
   // INTERACTOR -> PRESENTER
+  func incomplete_data()
+  func login_error(message: String)
+  func login_success()
 }
 
 protocol LoginAdminInteractorInputProtocol: class {
@@ -47,6 +52,8 @@ protocol LoginAdminInteractorInputProtocol: class {
   var presenter: LoginAdminInteractorOutputProtocol? { get set }
   var localDatamanager: LoginAdminLocalDataManagerInputProtocol? { get set }
   var remoteDatamanager: LoginAdminRemoteDataManagerInputProtocol? { get set }
+  
+  func validate_login_data(email: String, password: String, bussines_code: String)
 }
 
 protocol LoginAdminDataManagerInputProtocol: class {
@@ -56,10 +63,13 @@ protocol LoginAdminDataManagerInputProtocol: class {
 protocol LoginAdminRemoteDataManagerInputProtocol: class {
   // INTERACTOR -> REMOTEDATAMANAGER
   var remoteRequestHandler: LoginAdminRemoteDataManagerOutputProtocol? { get set }
+  func request_token(email: String, password: String)
 }
 
 protocol LoginAdminRemoteDataManagerOutputProtocol: class {
   // REMOTEDATAMANAGER -> INTERACTOR
+  func login_error(message: String)
+  func login_success()
 }
 
 protocol LoginAdminLocalDataManagerInputProtocol: class {

@@ -9,6 +9,13 @@
 import Foundation
 
 class LoginAdminRemoteDataManager:LoginAdminRemoteDataManagerInputProtocol {
-    var remoteRequestHandler: LoginAdminRemoteDataManagerOutputProtocol?
-    
+  var remoteRequestHandler: LoginAdminRemoteDataManagerOutputProtocol?
+  
+  func request_token(email: String, password: String) {
+    GlobalFunctions.sharedInstance.login(email: email, password: password, success: {
+      self.remoteRequestHandler?.login_success()
+    }) { (error_message) in
+      self.remoteRequestHandler?.login_error(message: error_message)
+    }
+  }
 }

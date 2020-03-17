@@ -35,9 +35,7 @@ class RegisterView: UIViewController {
     presenter?.viewDidLoad()
   }
   
-  @objc func dismiss_keyboard(){
-    self.view.endEditing(true)
-  }
+  
   
   @objc func set_hour(sender:UIDatePicker){
     let dateFormat = DateFormatter()
@@ -51,7 +49,10 @@ class RegisterView: UIViewController {
     }else{
       txt_input_data[5].text = "\(dateFormat.string(from: sender.date))"
     }
-    
+  }
+  
+  @objc func dismiss_keyboard(){
+    self.view.endEditing(true)
   }
   
   func setup_keyboard_dismiss_recognizer(){
@@ -68,7 +69,7 @@ class RegisterView: UIViewController {
 }
 
 extension RegisterView: RegisterViewProtocol {
- 
+  
   func show_warning_alert(message: String) {
     CsFramework.sharedInstance.show_simple_alert(view_controller: self, title: "Datos incompletos", message: message, button_tittle: "Aceptar")
   }
@@ -123,8 +124,6 @@ extension RegisterView: RegisterViewProtocol {
     txt_input_data[6].inputView = picker_category
     txt_input_data[6].inputAccessoryView = tool_bar
   }
-  
-  
   
   func set_google_maps_delegate() {
     locationManager.delegate = self
