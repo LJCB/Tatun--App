@@ -23,7 +23,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     guard let windowScene = (scene as? UIWindowScene) else { return }
     
     GMSServices.provideAPIKey(GlobalVariables.sharedInstance.google_maps_key)
-    let principal_view = LoginAdminWireFrame.createLoginAdminModule()
+    let principal_view = SplashWireFrame.createSplashModule()
     window = UIWindow(frame: UIScreen.main.bounds)
     window?.windowScene = windowScene
     window?.rootViewController = principal_view

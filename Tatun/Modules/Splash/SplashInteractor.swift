@@ -21,5 +21,11 @@ class SplashInteractor: SplashInteractorInputProtocol {
 }
 
 extension SplashInteractor: SplashRemoteDataManagerOutputProtocol {
-  // TODO: Implement use case methods
+  func user_is_active(_ is_active: Bool) {
+    if is_active{
+      presenter?.user_active()
+    }else{
+      presenter?.user_inactive()
+    }
+  }
 }

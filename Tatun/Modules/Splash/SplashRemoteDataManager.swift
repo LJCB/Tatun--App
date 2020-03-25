@@ -15,10 +15,11 @@ class SplashRemoteDataManager:SplashRemoteDataManagerInputProtocol {
   
   func get_current_user() {
     let user_data = Auth.auth().currentUser
+    print("User_Data: \(user_data)")
     if  user_data != nil{
-      
+      remoteRequestHandler?.user_is_active(true)
     }else{
-      
+      remoteRequestHandler?.user_is_active(false)
     }
   }
 }

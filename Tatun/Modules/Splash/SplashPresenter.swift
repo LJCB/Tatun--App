@@ -14,11 +14,9 @@ class SplashPresenter  {
   weak var view: SplashViewProtocol?
   var interactor: SplashInteractorInputProtocol?
   var wireFrame: SplashWireFrameProtocol?
-  
 }
 
 extension SplashPresenter: SplashPresenterProtocol {
-  // TODO: implement presenter methods
   func viewDidLoad() {
     interactor?.validate_active_Sesion()
   }
@@ -32,6 +30,4 @@ extension SplashPresenter: SplashInteractorOutputProtocol {
   func user_inactive() {
     wireFrame?.show_login(from: view!)
   }
-  
-  // TODO: implement interactor output methods
 }

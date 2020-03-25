@@ -57,6 +57,7 @@ protocol SplashRemoteDataManagerInputProtocol: class {
 
 protocol SplashRemoteDataManagerOutputProtocol: class {
   // REMOTEDATAMANAGER -> INTERACTOR
+  func user_is_active(_ is_active: Bool)
 }
 
 protocol SplashLocalDataManagerInputProtocol: class {
